@@ -1,0 +1,225 @@
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 180px;
+}
+.contacts__map {
+  width: 705px;
+  height: 412px;
+}
+.contacts__info__headingh4 {
+  margin-bottom: 8px;
+}
+.contacts__info__headingh2 {
+  margin-bottom: 40px;
+}
+.contacts__info__contact {
+  line-height: normal;
+}
+.contacts__info__contact li {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 24px;
+}
+.contacts__info__contact li a {
+  display: block;
+  font-size: 18px;
+  color: #1e212c;
+}
+.contacts__info__contact li span {
+  color: #787a80;
+  font-weight: bold;
+  font-size: 14px;
+}
+.contacts__info__contact li:last-child {
+  margin-bottom: 48px;
+}
+.contacts__info__contact li:first-child::before {
+  background: url(../img/Chat_red.svg);
+}
+.contacts__info__contact li:last-child::before {
+  background: url(../img/outline_red.svg);
+}
+.contacts__info__contact li::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../img/iPhone_red.svg);
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+.contacts__info__follow {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.contacts__info__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 304px;
+}
+
+.questions {
+  padding-bottom: 180px;
+}
+.questions__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions__question__h4 {
+  margin-bottom: 8px;
+}
+.questions__question__h2 {
+  margin-bottom: 40px;
+}
+.questions__question__form {
+  width: 705px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.questions__question__form__block {
+  margin-bottom: 24px;
+}
+.questions__question__form__block-label {
+  display: block;
+  margin-bottom: 8px;
+}
+.questions__question__form__block-input {
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 340px;
+  height: 52px;
+  padding-left: 16px;
+}
+.questions__question__form__block-message {
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 705px;
+  height: 128px;
+  margin-bottom: 48px;
+  padding-left: 16px;
+}
+.questions__question__form__block-checkbox {
+  margin-right: 12px;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+}
+.questions__question__form__block-agree {
+  display: inline;
+  position: relative;
+  width: 287px;
+  display: inline-flex;
+}
+.questions__question__form__blocking-btn {
+  padding: 18px 117px;
+}
+
+.masterclass__filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.masterclass__filters__label-span {
+  font-weight: bold;
+  margin-right: 12px;
+}
+.masterclass__filters__label-span-ev {
+  color: #787a80;
+  font-size: 14px;
+  margin-right: 12px;
+}
+.masterclass__filters__label-input {
+  width: 160px;
+  height: 44px;
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.masterclass__filters__label-input-num {
+  width: 72px;
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 44px;
+  padding-left: 16px;
+}
+.masterclass__filters__label-button {
+  margin-left: -35px;
+  margin-top: 14px;
+  position: absolute;
+}
+.masterclass__category {
+  margin-bottom: 60px;
+}
+
+.numbersbut {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 180px;
+}
+.numbersbut__li {
+  margin-right: 20px;
+}
+.numbersbut__li:last-child {
+  margin-right: 0;
+}
+.numbersbut__li-button {
+  font-weight: bold;
+}
+.numbersbut__li-button-img {
+  transform: rotate(180deg);
+}
+.numbersbut__li-button:hover {
+  color: #ff3f3a;
+}
+
+.masterclass__filters__select {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 36px;
+}
+.masterclass__filters__select span {
+  font-size: 14px;
+  color: #787A80;
+}
+.masterclass__filters__select__label {
+  margin-right: 12px;
+  font-weight: bold;
+}
+.masterclass__filters__select__select {
+  padding: 11px 16px;
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 160px;
+  height: 44px;
+  color: #424551;
+  font-size: 14px;
+}
+.masterclass__filters__select__selectnum {
+  width: 72px;
+  height: 44px;
+  margin-right: 12px;
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 11px 16px;
+  color: #424551;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
