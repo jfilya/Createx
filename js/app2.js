@@ -11,7 +11,6 @@ const activeSlide2 = n => {
     } 
     slides2[n].classList.add('rewiew-active');
 }
-console.log(activeSlide2);
 const activeDot = n => {
     for(dot of dots) {
         dot.classList.remove('control-active');

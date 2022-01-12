@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="scss/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,123 @@
 <body>
     <header class="header_course">
         <div class="container">
-            <div class="header_top header_top_course">
+            <div id="wrapper-modal-sing-in">
+                <div id="overlay"></div>
+                <div id="modal-window">
+                    <h3>Sing In</h3>
+                    <span class="modal-window-span">Sign in to your account using email and password provided during registration.</span>
+                    <form class="sing__in__form" action="">
+                        <div class="sing__in__form__email">
+                            <label for="">Email</label>
+                            <input  class="sing__in__form__email-input" type="email" placeholder="Your working email" >
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Password</label>
+                            <input class="sing__in__form__email-input" type="text" placeholder="●●●●●●●●●●●●●" >
+                            <button class="sing__in__form__email-btn" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
+                        </div>
+                        <div class="questions__question__form__blocking sing__in__form__check">  
+                            <label class="questions__question__form__block-agree sing__in__form__check__keep"> 
+                                <input class="questions__question__form__block-agree-checkbox" type="checkbox">
+                                <span class="questions__question__form__block-agree-fake"></span>
+                                <span class="questions__question__form__block-agree-span sing__in__form__check__keep-keep">Keep me signed in</span>
+                                
+                            </label>
+                            <button class="sing__in__form__check-forgot">Forgot password?</button>
+                        </div>
+                        <div class="sing__in__form__button">
+                            <button class="sing__in__form__button-btn btn" type="submit" >Sign in</button>
+                        </div>
+                        <div class="sing__in__form-span-button">
+                            <span class="sing__in__form__button-do">Don't have an account?</span> 
+                            <button class="sing__in__form__check-forgot">Sign up</button>
+                        </div>
+                    </form>
+                    <div class="sing__in__line">
+                    </div>
+                    <div class="sing__in__social">
+                        <span class="modal-window-span sing__in__social-span">Or sign in with</span>
+                        <ul class="sing__in__social__ul">
+                            <li><a href="https://facebook.com"><img src="img/Facebook-sing.svg" alt="FB"></a></li>
+                            <li><a href="https://google.com"><img src="img/Google-sing.svg" alt=""></a></li>
+                            <li><a href="https://twitter.com/"><img src="img/twitter_contact.svg" alt=""></a></li>
+                            <li><a href="https://linkedin.com"><img src="img/Linked-In-sing.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-modal-sing-up">
+                <div id="overlayup"></div>
+                <div id="modal-windowup">
+                    <h3>Sing Up</h3>
+                    <span class="modal-window-span">Sign in to your account using email and password provided during registration.</span>
+                    <form class="sing__in__form" action="">
+                        <div class="sing__in__form__email">
+                            <label for="">Full Name</label>
+                            <input  class="sing__in__form__email-input" type="text" placeholder="Your full name" >
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Email</label>
+                            <input  class="sing__in__form__email-input" type="email" placeholder="Your working email" >
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Password</label>
+                            <input class="sing__in__form__email-input" type="text" placeholder="●●●●●●●●●●●●●" >
+                            <button class="sing__in__form__email-btn" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Confirm Password</label>
+                            <input class="sing__in__form__email-input" type="text" placeholder="●●●●●●●●●●●●●" >
+                            <button class="sing__in__form__email-btnup" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
+                        </div>
+                        <div class="questions__question__form__blocking sing__in__form__check">  
+                            <label class="questions__question__form__block-agree sing__in__form__check__keep"> 
+                                <input class="questions__question__form__block-agree-checkbox" type="checkbox">
+                                <span class="questions__question__form__block-agree-fake"></span>
+                                <span class="questions__question__form__block-agree-span sing__in__form__check__keep-keep">Remember me</span>    
+                            </label>
+                        </div>
+                        <div class="sing__in__form__button">
+                            <button class="sing__in__form__button-btn btn" type="submit" >Sign up</button>
+                        </div>
+                        <div class="sing__in__form-span-button">
+                            <span class="sing__in__form__button-do">Already have an account?</span> 
+                            <button class="sing__in__form__check-forgot">Sign in</button>
+                        </div>
+                    </form>
+                    <div class="sing__in__line">
+                    </div>
+                    <div class="sing__in__social">
+                        <span class="modal-window-span sing__in__social-span">Or sign in with</span>
+                        <ul class="sing__in__social__ul">
+                            <li><a href="https://facebook.com"><img src="img/Facebook-sing.svg" alt="FB"></a></li>
+                            <li><a href="https://google.com"><img src="img/Google-sing.svg" alt=""></a></li>
+                            <li><a href="https://twitter.com/"><img src="img/twitter_contact.svg" alt=""></a></li>
+                            <li><a href="https://linkedin.com"><img src="img/Linked-In-sing.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+            <div class="header_top">
                 <ul class="header_top_menu">
                     <li class="first_chiled_menu">
-                        <a href="#"><img class="logo_header" src="img/logo.svg" alt="logo"></a>
+                        <a href="./index.html"><img class="logo_header" src="img/logo.svg" alt="logo"></a>
                     </li>
-                    <li class="li_hover"><a  href="./index.html">About Us</a></li>
+                    <li class="li_hover"><a href="./about.html">About Us</a></li>
                     <li class="li_hover"><a class="name_red_html" href="./courses.html">Courses</a></li>
-                    <li class="li_hover"><a href="./blog.html">Events</a></li>
-                    <li class="li_hover"><a href="./events.html">Blog</a></li>
-                    <li class="li_hover last_chiled_menu"><a href="./contacts.html">Contacts</a></li>
+                    <li class="li_hover"><a href="./events.html">Events</a></li>
+                    <li class="li_hover"><a href="./blog.html">Blog</a></li>
+                    <li  class="li_hover last_chiled_menu"><a href="./contacts.html">Contacts</a></li>
                 </ul>
                 <div class="header_top_actions">
                     <a class="actions_consultation btn">Get consutlation</a>
-                    <a class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in / Register</a>
+                    <button id="btn-open-sing-in" class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in</button>
+                    <span>&nbsp;/&nbsp;</span>
+                    <button id="btn-open-sing-up" class="actions_login">Register</button>
                 </div>
             </div>
         </div>
@@ -268,7 +372,7 @@
             </div>
         </div>
     </section>
-    <section class="createx_sertificate">
+    <section class="createx_sertificate our-blog"">
         <div class="container">
             <div class="wrapper">
                     <div class="createx">
@@ -400,5 +504,6 @@
         </div>
     </footer>
     <script src="js/app2.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

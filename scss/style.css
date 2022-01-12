@@ -110,18 +110,47 @@
   height: 128px;
   margin-bottom: 48px;
   padding-left: 16px;
-}
-.questions__question__form__block-checkbox {
-  margin-right: 12px;
-  top: 15px;
-  width: 16px;
-  height: 16px;
+  padding-top: 13px;
 }
 .questions__question__form__block-agree {
   display: inline;
   position: relative;
   width: 287px;
   display: inline-flex;
+  cursor: pointer;
+}
+.questions__question__form__block-agree-checkbox {
+  margin-top: 7px;
+  cursor: pointer;
+  display: none;
+}
+.questions__question__form__block-agree-fake {
+  display: inline-block;
+  border: 1px solid #ff3f3a;
+  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  position: relative;
+  margin-right: 12px;
+}
+.questions__question__form__block-agree-fake::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #ff3f3a;
+  background-repeat: no-repeat;
+  background-image: url(../img/checked.svg);
+  background-position: center center;
+  border-radius: 3px;
+  opacity: 0;
+  margin-top: -1px;
+  margin-left: -1px;
+  transition: 0.2s;
+}
+.questions__question__form__block-agree-checkbox:checked + .questions__question__form__block-agree-fake::before {
+  opacity: 1;
 }
 .questions__question__form__blocking-btn {
   padding: 18px 117px;
@@ -196,7 +225,7 @@
 }
 .masterclass__filters__select span {
   font-size: 14px;
-  color: #787A80;
+  color: #787a80;
 }
 .masterclass__filters__select__label {
   margin-right: 12px;
@@ -222,4 +251,274 @@
   padding: 11px 16px;
   color: #424551;
   font-size: 14px;
+}
+
+.journal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+}
+.journal__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.journal__all_podcast {
+  display: flex;
+  position: relative;
+}
+.journal__blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bloggrid {
+  margin-bottom: 80px;
+}
+.bloggrid__podcast {
+  margin-bottom: 60px;
+}
+
+.blog__agree {
+  width: 500px;
+}
+
+.sing__in__form {
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: 24px;
+}
+.sing__in__form__check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.sing__in__form__check__keep {
+  width: 138px;
+}
+.sing__in__form__check-forgot {
+  color: #ff3f3a;
+}
+.sing__in__form__email {
+  display: block;
+  margin-bottom: 20px;
+}
+.sing__in__form__email-btn {
+  position: absolute;
+  top: 47.5%;
+  right: 15%;
+}
+.sing__in__form__email-btnup {
+  position: absolute;
+  top: 58.5%;
+  right: 15%;
+}
+.sing__in__form__email-input {
+  border: 1px solid #d7dadd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+  width: 390px;
+  height: 44px;
+}
+.sing__in__form__button {
+  margin-bottom: 24px;
+}
+.sing__in__form__button-btn {
+  width: 390px;
+  height: 44px;
+}
+.sing__in__form__button-btn-do {
+  text-align: start;
+  margin-bottom: 24px;
+}
+.sing__in__line {
+  display: flex;
+  margin-left: -49px;
+  background-color: #d7dadd;
+  height: 1px;
+  width: 486px;
+  margin-bottom: 24px;
+}
+.sing__in__social-span {
+  margin-bottom: 16px;
+  display: block;
+}
+.sing__in__social__ul {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.sing__in__social__ul li {
+  margin-right: 12px;
+}
+.sing__in__social__ul li:last-child {
+  margin-right: 0;
+}
+
+.header__about {
+  padding-top: 28px;
+  padding-bottom: 18px;
+}
+.header__top {
+  margin-bottom: 80px;
+}
+
+.about__as {
+  width: 600px;
+}
+.about__as__h2 {
+  margin-bottom: 42px;
+}
+.about__as__createx {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.about__as__provide {
+  line-height: 25px;
+  color: #424551;
+  margin-bottom: 60px;
+}
+.about__as__img img {
+  width: 465px;
+  height: 400px;
+}
+
+.computer-section {
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/computer.svg);
+}
+
+.computer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 180px;
+}
+.computer__text li {
+  margin-bottom: 20px;
+}
+.computer__text span {
+  font-weight: bold;
+}
+
+.core {
+  margin-bottom: 180px;
+}
+.core__our {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.core__our__values {
+  width: 240px;
+  height: 162px;
+  text-align: center;
+}
+.core__our__values img {
+  margin-bottom: 24px;
+}
+.core__our__values p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.core__our__values span {
+  color: #787a80;
+}
+.core__our__line {
+  background-image: linear-gradient(#ffffff 0%, #dadbdd 50%, #ffffff 100%);
+  width: 1px;
+  height: 162px;
+}
+
+.best__jobs {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.best__jobs__element {
+  display: flex;
+  flex-wrap: wrap;
+}
+.best__jobs__element-li {
+  margin-right: 102px;
+  margin-bottom: 40px;
+}
+
+.meet__your__team {
+  padding-bottom: 120px;
+}
+.meet__your__team__teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__styding {
+  background-position: center center;
+  background-size: contain;
+  background-image: url(../img/backgrabout.svg);
+  background-repeat: no-repeat;
+}
+
+.styding {
+  align-items: flex-end;
+  padding-bottom: 180px;
+}
+.styding__process__h2 {
+  margin-bottom: 60px;
+}
+.styding__process__text {
+  display: flex;
+}
+.styding__process__text__img {
+  margin-right: 40px;
+}
+.styding__process__text__img-ball {
+  width: 16px;
+  height: 16px;
+  background-color: #ff3f3a;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+}
+.styding__process__text__img-line {
+  height: 126px;
+  width: 1px;
+  background-color: #9a9ca5;
+  margin-left: 7px;
+}
+.styding__process__text__img-line:last-child {
+  height: 90px;
+}
+.styding__process__text__text {
+  width: 446px;
+  line-height: 25px;
+  margin-top: -5px;
+}
+.styding__process__text__text__step {
+  margin-bottom: 32px;
+}
+.styding__process__text__text__step-span {
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #787a80;
+  margin-bottom: 2px;
+}
+.styding__process__text__text__step-p1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.styding__process__text__text__step-p2 {
+  color: #787A80;
 }/*# sourceMappingURL=style.css.map */

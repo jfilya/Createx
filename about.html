@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="scss/style.css">
 
@@ -11,12 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <title>СREATEX</title>
+    <title>CREATEX</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header_container container">
-
+    <header>
+        <div class="container header__about">
             <div id="wrapper-modal-sing-in">
                 <div id="overlay"></div>
                 <div id="modal-window">
@@ -118,357 +118,229 @@
                     </div>
                 </div>
             </div>
-
-            <div class="header_top headering_top">
+            <div class="header_top header__top">
                 <ul class="header_top_menu">
                     <li class="first_chiled_menu">
                         <a href="./index.html"><img class="logo_header" src="img/logo.svg" alt="logo"></a>
                     </li>
-                    <li class="li_hover"><a href="./about.html">About Us</a></li>
-                    <li class="li_hover"><a href="./courses.html">Courses</a></li>
+                    <li class="li_hover"><a class="name_red_html" href="./about.html">About Us</a></li>
+                    <li class="li_hover"><a  href="./courses.html">Courses</a></li>
                     <li class="li_hover"><a href="./events.html">Events</a></li>
                     <li class="li_hover"><a href="./blog.html">Blog</a></li>
                     <li class="li_hover last_chiled_menu"><a href="./contacts.html">Contacts</a></li>
                 </ul>
                 <div class="header_top_actions">
-                    <a  href="./contacts.html" class="actions_consultation btn">Get consutlation</a>
+                    <a class="actions_consultation btn">Get consutlation</a>
                     <button id="btn-open-sing-in" class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in</button>
                     <span>&nbsp;/&nbsp;</span>
                     <button id="btn-open-sing-up" class="actions_login">Register</button>
                 </div>
-            </div>
-            <div class="header_middle">
+            </div>         
+            <div class="header_middle header_middle-about">
                 <div class="header_middle_left">
-                    <a  target="_blank" href="https://youtube.com" class="header_middle_play">      
+                    <div class="about__as">
+                        <h4>
+                            About us
+                        </h4>
+                        <h2 class="about__as__h2">
+                            Createx Online School
+                        </h2>
+                        <p class="about__as__createx">
+                            Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
+                        </p>
+                        <p class="about__as__provide">
+                            We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
+                        </p>
+                    </div>
+                    <div class="header_middle_about">
+                        <a href="#" class="btn-about btn about">Explore events</a>
+                        <a  href="#" class="explore_btn btn">Browse courses</a>
+                    </div>
+                </div>
+                <div class="header_middle_right about__as__img">
+                    <img src="img/header-middle-about.svg" alt="header_middle">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="computer-section">
+        <div class="container">
+            <div class="computer">
+                <div class="computer__img">
+                    <div class="header_middle_play">
                         <div class="play_img">
                             <img src="img/arrow_right_header.svg" alt="arrow_right">
                         </div>
                         <span class="play_text">
-                            Play showreel  
+                            Watch video
                         </span>
-                    </a>
-                    <h1 class="header_middle_title">
-                        Enjoy studying with Createx Online Courses
-                    </h1>
-                    <div class="header_middle_about">
-                        <a href="./about.html" class="btn-about btn about">About us</a>
-                        <a  href="./courses.html" class="explore_btn btn">Explore courses</a>
                     </div>
+                    <img src="img/computer-about.png" alt="computer">
                 </div>
-                <div class="header_middle_right">
-                    <img src="img/header_middle.svg" alt="header_middle">
-                </div>
-            </div>
-            <ul class="header_bottom">
-                <li class="header_bottom_strong">
-                    <div class="strong">1200</div>
-                    <span>Students graduated</span>
-                </li>
-                <li class="ellipse"></li>
-                <li class="header_bottom_strong">
-                    <div class="strong">84</div>
-                    <span>Completed courses</span>
-                </li>
-                <li class="ellipse"></li>
-                <li class="header_bottom_strong">
-                    <div class="strong">16</div>
-                    <span>Qualified tutors</span>
-                </li>
-                <li class="ellipse"></li>
-                <li class="header_bottom_strong">
-                    <div class="strong">5</div>
-                    <span>Years of experience</span>
-                </li>
-            </ul>
-        </div>
-
-    </header>
-    <section class="about_us">
-        <div class="container">
-            <div class="wrapper">
-                <div class="image1">
-                    <img src="img/iimage.png" alt="image">
-                </div>
-                <div class="text">
-                    <div class="text-text">
-                        <h4>Who we are</h4>
-                        <h2>
-                            Why Createx?
-                        </h2>
-                    </div>
-                    <ul>
-                        <li> A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                        <li> Vulputate placerat amet pulvinar lorem nisl.</li>
-                        <li> Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                        <li> Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                        <li> Tincidunt sagittis neque sem ac eget.</li>
-                        <li> Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
-                    </ul>
-                    <a class="btn more" href="./about.html">More about us</a>
-                </div>            
+                <ul class="computer__text">
+                    <li class="header_bottom_strong">
+                        <div class="strong name_red_html">1200</div>
+                        <span>Students graduated</span>
+                    </li>
+                    <li class="header_bottom_strong">
+                        <div class="strong name_red_html">84</div>
+                        <span>Completed courses</span>
+                    </li>
+                    <li class="header_bottom_strong">
+                        <div class="strong name_red_html">16</div>
+                        <span>Qualified tutors</span>
+                    </li>
+                    <li class="header_bottom_strong">
+                        <div class="strong name_red_html">5</div>
+                        <span>Years of experience</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <h4>
-                Ready to learn?
-            </h4>
-            <div class="div">
-                <h2>
-                    Featured Courses
-                </h2>
-                <a class="btn about" href="./courses.html">View all course</a>
+            <div class="core">
+                <div class="benefits">
+                    <h4>
+                        We always stand for
+                    </h4>
+                    <h2>
+                        Our core values
+                    </h2>
+                </div>
+                <div class="core__our">
+                    <div class="core__our__values">
+                        <img src="img/ic-structure.svg" alt="ic-structure">
+                        <p>
+                            Structured Approach
+                        </p>
+                        <span>
+                            Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris. 
+                        </span>
+                    </div>
+                    <div class="core__our__line"> 
+                    </div>
+                    <div class="core__our__values">
+                        <img src="img/ic-chat.svg" alt="ic-chat">
+                        <p>
+                            Professional Feedbacks
+                        </p>
+                        <span>
+                            Culpa nostrud commodo ea consequat reprehenderit aliquip. 
+                        </span>
+                    </div>
+                    <div class="core__our__line">
+                    </div>
+                    <div class="core__our__values">
+                        <img src="img/ic-target.svg" alt="ic-target">
+                        <p>
+                            Efficiency
+                        </p>
+                        <span>
+                            Viverra scelerisque consequat net. Adipisicing esse consequat.  
+                        </span>
+                    </div>
+                    <div class="core__our__line">
+                    </div>
+                    <div class="core__our__values">
+                        <img src="img/ic-calendar.svg" alt="ic-calendar">
+                        <p>
+                            Flexible Shedule
+                        </p>
+                        <span>
+                            Aute eiusmod dolore dolore deserunt veniam ad deserunt. . 
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image1.png" alt="image1">
-                    </div>
-                    <div class="card">
-                        <span class="green bad">Marketing</span>
-                        <p class="badge">The Ultimate Google Ads Training Course</p>
-                        <p class="speaker"><span class="price">$100</span>| by Jerome Bel</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image4.png" alt="image4">
-                    </div>
-                    <div class="card">
-                        <span class="blue bad">Management</span>
-                        <p class="badge">Prduct Management Fundamentals</p>
-                        <p class="speaker"><span class="price">$480</span>| by Marvin McKinney</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image2.png" alt="image2">
-                    </div>
-                    <div class="card">
-                        <span class="orange bad">HR & Recruting</span>
-                        <p class="badge">HR Management and Analytics</p>
-                        <p class="speaker"><span class="price">$200</span>| by Leslie Alexander Li</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image5.png" alt="image5">
-                    </div>
-                    <div class="card">
-                        <span class="green bad">Marketing</span>
-                        <p class="badge">Brand Management & PR Communications</p>
-                        <p class="speaker"><span class="price">$530</span>| by Kristin Watson</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image3.png" alt="image3">
-                    </div>
-                    <div class="card">
-                        <span class="blue bad">Management</span>
-                        <p class="badge">Business Development Management</p>
-                        <p class="speaker"><span class="price">$400</span>| by Dianne Russel</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image6.png" alt="image6">
-                    </div>
-                    <div class="card">
-                        <span class="pink bad">Design</span>
-                        <p class="badge">Graphic Design Basic</p>
-                        <p class="speaker"><span class="price">$500</span>| by Guy Hawkins</p>
-                    </div>
-                </div>
-
-             </div>
         </div>
     </section>
-    <section>
+
+
+    <section class="about__styding">
         <div class="container">
-            <div class="benefits">
-                <h4>Our benefits</h4>
-                <h2>That’s how we do it</h2>
-             </div>
-            <ul class="tabs">
-                <li class="star"><a class="btn about stars"href="#"><img src="img/Star.svg" alt="star">&nbsp;Experienced Tutors</a></li>
-                <li class="feed">Feedback & Support</li>
-                <li class="online">24/7 Online Library</li>
-                <li class="community">Community</li>
-            </ul>
-             <div class="wrapper">
-                 <div class="texty">
-                    <h3>
-                        Only practicing tutors
-                    </h3>
-                    <p>Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
-                 </div>
-                 <div class="image-ben">
-                     <img src="img/benef.png" alt="img">
-                 </div>
-             </div>
-        </div>
-    </section>
-    <section class="our_events">
-        <div class="container">
-            <div class="events">
-                <div class="event-head">
-                <h4>
-                    Our Events
-                </h4>
-                <h2>
-                    Lectures & workshops
-                </h2>
-            </div>
-                <div class="event">
-                    <div class="dates">
-                        <div class="num">
-                            <p>05</p>
+            <div class="wrapper styding">
+                <div class="styding__process">
+                    <h4 class="styding__process__h4">
+                        Studying process
+                    </h4>
+                    <h2 class="styding__process__h2">
+                        That’s how we do it
+                    </h2>
+                    <div class="styding__process__text">
+                        <div class="styding__process__text__img">
+                            <div class="styding__process__text__img-ball"></div>
+                            <div class="styding__process__text__img-line"></div>
+                            <div class="styding__process__text__img-ball"></div>
+                            <div class="styding__process__text__img-line"></div>
+                            <div class="styding__process__text__img-ball"></div>
+                            <div class="styding__process__text__img-line"></div>
+                            <div class="styding__process__text__img-ball"></div>
+                            <div class="styding__process__text__img-line"></div>
                         </div>
-                        <div class="date">
-                            <p>
-                                August 
-                            </p>
-                            <span>
-                                11:00&nbsp;-&nbsp;14:00
-                            </span>
+                        <div class="styding__process__text__text">
+                            <div class="styding__process__text__text__step">
+                                <span class="styding__process__text__text__step-span">STEP 1</span>
+                                <p class="styding__process__text__text__step-p1">
+                                    Watching online video lectures
+                                </p>
+                                <p class="styding__process__text__text__step-p2">
+                                    Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.
+                                </p>
+                            </div>
+                            <div class="styding__process__text__text__step">
+                                <span class="styding__process__text__text__step-span">STEP 2</span>
+                                <p class="styding__process__text__text__step-p1">
+                                    Passing test
+                                </p>
+                                <p class="styding__process__text__text__step-p2">
+                                    Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam. 
+                                </p>
+                            </div>
+                            <div class="styding__process__text__text__step">
+                                <span class="styding__process__text__text__step-span">STEP 3</span>
+                                <p class="styding__process__text__text__step-p1">
+                                    Curator’s feedback
+                                </p>
+                                <p class="styding__process__text__text__step-p2">
+                                    Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis.
+                                </p>
+                            </div>
+                            <div class="styding__process__text__text__step">
+                                <span class="styding__process__text__text__step-span">STEP 4</span>
+                                <p class="styding__process__text__text__step-p1">
+                                    Corrections if needed
+                                </p>
+                                <p class="styding__process__text__text__step-p2">
+                                    Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="info">
-                        <p>
-                            Formation of the organizational structure of the company in the face of uncertainty.
-                        </p>
-                        <span>Onine master-class</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
                     </div>
                 </div>
-                <div class="event">
-                    <div class="dates">
-                        <div class="num">
-                            <p>24</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                               July 
-                            </p>
-                            <span>
-                                11:00&nbsp;-&nbsp;12:30
-                            </span>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <p>
-                            Building a customer service department. Best Practices.
-                        </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
+                <div class="styding__img">
+                    <img src="img/illustratioabout.svg" alt="illustratioabout">
                 </div>
-                <div class="event event-last-chiled">
-                    <div class="dates">
-                        <div class="num">
-                            <p>16</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                July 
-                            </p>
-                            <span>
-                                10:00&nbsp;-&nbsp;13:00
-                            </span>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <p>
-                            How to apply methods of speculative design in practice. Worldbuilding prototyping.
-                        </p>
-                        <span>Onine workshop</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
-                </div>
-                <div class="do">
-                    <h3>
-                        Do you want more?
-                    </h3>
-                    <a  class="btn" href="./blog.html">Explore all events</a>
-                </div>         
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <div class="wrapper">
-                    <div class="createx">
-                        <h4>
-                            Createx Certificate
-                        </h4>
-                        <h2>
-                            Your expertise will be confirmed
-                        </h2>
-                        <p>
-                            We are accredited by international professional organizations and institutes:
-                        </p>
-                        <img src="img/log1.svg" alt="del mar strategy">
-                        <img src="img/log2.svg" alt="sential consulting">
-                        <img src="img/log3.svg" alt="national">
-                    </div>
-                    <div class="certificat">
-                        <img src="img/certificat.png" alt="certificat">
-                        <div class="shape-cerf">
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="team team_people_block">
-        <div class="container">
-            <div class="teams">
-                <div class="team-heads">
-                    <div class="team-head">
-                        <h4>
-                            Best tutors are all here
-                        </h4>
-                        <h2>
-                            Meet our team
-                        </h2>
-                    </div>
-                    <div class="button">
-                        <div class="arrow-left" id="btn-prev">
-                            <div class="arrow-black-left">
-                                <img src="img/prev-btn.svg" alt="arrow-left">
-                            </div>
-                            <div class="arrow-red-left">
-                                <img src="img/Right.svg" alt="arrow-left">
-                            </div>
-                        </div>
-                        <div class="arrow-right" id="btn-next">
-                            <div class="arrow-black-right">
-                                <img src="img/prev-btn.svg" alt="arrow-right">
-                            </div> 
-                            <div class="arrow-red-right">
-                                <img src="img/Right.svg" alt="arrow-right">
-                            </div>
-                        </div>
-                    </div>
+            <div class="meet__your__team">
+                <div class="benefits">
+                    <h4>
+                        Best tutors are all here
+                    </h4>
+                    <h2>
+                        Meet our team
+                    </h2>
                 </div>
-                <div class="team-people people-active">
-                    <div class="people"> 
+                <div class="meet__your__team__teams">
+                    <div class="people peoples"> 
                         <div class="team-card">
-                             <img src="img/Dianne.png" alt="Dianne">
-                             <div class="show">                            
+                            <img src="img/Dianne.png" alt="Dianne">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -484,10 +356,10 @@
                             Founder and CEO
                         </span>
                     </div>
-                    <div class="people"> 
+                    <div class="people peoples"> 
                         <div class="team-card">
-                             <img src="img/Jerome.png" alt="Jerome">
-                             <div class="show">                            
+                            <img src="img/Jerome.png" alt="Jerome">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -503,10 +375,10 @@
                             Founder and Program Director
                         </span>
                     </div>      
-                    <div class="people"> 
+                    <div class="people peoples"> 
                         <div class="team-card">
-                             <img src="img/Kristin.png" alt="Kristin">
-                             <div class="show">                            
+                            <img src="img/Kristin.png" alt="Kristin">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -522,10 +394,10 @@
                             Marketer, Curator of Marketing Course
                         </span>
                     </div>      
-                    <div class="people"> 
+                    <div class="people peoples"> 
                         <div class="team-card">
-                             <img src="img/Marvin.png" alt="Marvin">
-                             <div class="show">                            
+                            <img src="img/Marvin.png" alt="Marvin">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -540,13 +412,11 @@
                         <span>
                             PM, Curator of Management Course
                         </span>
-                    </div>            
-                </div>              
-                <div class="team-people">
+                    </div>
                     <div class="people"> 
                         <div class="team-card">
-                             <img src="img/Brooklyn.png" alt="Brooklyn">
-                             <div class="show">                            
+                            <img src="img/Brooklyn.png" alt="Brooklyn">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -564,8 +434,8 @@
                     </div>
                     <div class="people"> 
                         <div class="team-card">
-                             <img src="img/Leslie.png" alt="Leslie">
-                             <div class="show">                            
+                            <img src="img/Leslie.png" alt="Leslie">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -583,8 +453,8 @@
                     </div>      
                     <div class="people"> 
                         <div class="team-card">
-                             <img src="img/Kathryn.png" alt="Kathryn">
-                             <div class="show">                            
+                            <img src="img/Kathryn.png" alt="Kathryn">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -602,8 +472,8 @@
                     </div>      
                     <div class="people"> 
                         <div class="team-card">
-                             <img src="img/Cody.png" alt="Cody">
-                             <div class="show">                            
+                            <img src="img/Cody.png" alt="Cody">
+                            <div class="show">                            
                                 <img src="img/gradient.png" alt="gradient">
                                 <div class="icon">
                                     <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
@@ -618,12 +488,12 @@
                         <span>
                             UX Designer, Curator of Design Course
                         </span>
-                    </div>            
+                    </div>                    
                 </div>
             </div>
         </div>
     </section>
-    <section class="team slider_team">
+    <section class="team slider_team slider_team-about">
         <div class="container">
             <div class="benefits">
                 <h4>Testimonials</h4>
@@ -750,6 +620,31 @@
                 <div class="control"></div>
                 <div class="control"></div>
                 <div class="control"></div>
+            </div>
+
+            <div class="best__jobs">
+                <div class="benefits">
+                    <h4>
+                        best jobs for you
+                    </h4>
+                    <h2>
+                        Our students work here
+                    </h2>
+                </div>
+                <ul class="best__jobs__element">
+                    <li class="best__jobs__element-li"><img src="img/jobs__element1.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element2.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element3.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element4.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element5.svg" alt="jobs__element"></li>
+                    <li><img src="img/jobs__element6.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element7.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element8.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element9.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"> <img src="img/jobs__element10.svg" alt="jobs__element"></li>
+                    <li class="best__jobs__element-li"><img src="img/jobs__element11.svg" alt="jobs__element"></li>
+                    <li><img src="img/jobs__element12.svg" alt="jobs__element"></li>  
+                </ul>
             </div>
         </div>
     </section>
@@ -971,7 +866,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/app.js"></script>
     <script src="js/app2.js"></script>
     <script src="js/modal.js"></script>
 </body>

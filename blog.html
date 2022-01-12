@@ -17,283 +17,412 @@
 <body>
     <header>
         <div class="container header_course">
+            <div id="wrapper-modal-sing-in">
+                <div id="overlay"></div>
+                <div id="modal-window">
+                    <h3>Sing In</h3>
+                    <span class="modal-window-span">Sign in to your account using email and password provided during registration.</span>
+                    <form class="sing__in__form" action="">
+                        <div class="sing__in__form__email">
+                            <label for="">Email</label>
+                            <input  class="sing__in__form__email-input" type="email" placeholder="Your working email" >
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Password</label>
+                            <input class="sing__in__form__email-input" type="text" placeholder="●●●●●●●●●●●●●" >
+                            <button class="sing__in__form__email-btn" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
+                        </div>
+                        <div class="questions__question__form__blocking sing__in__form__check">  
+                            <label class="questions__question__form__block-agree sing__in__form__check__keep"> 
+                                <input class="questions__question__form__block-agree-checkbox" type="checkbox">
+                                <span class="questions__question__form__block-agree-fake"></span>
+                                <span class="questions__question__form__block-agree-span sing__in__form__check__keep-keep">Keep me signed in</span>
+                                
+                            </label>
+                            <button class="sing__in__form__check-forgot">Forgot password?</button>
+                        </div>
+                        <div class="sing__in__form__button">
+                            <button class="sing__in__form__button-btn btn" type="submit" >Sign in</button>
+                        </div>
+                        <div class="sing__in__form-span-button">
+                            <span class="sing__in__form__button-do">Don't have an account?</span> 
+                            <button class="sing__in__form__check-forgot">Sign up</button>
+                        </div>
+                    </form>
+                    <div class="sing__in__line">
+                    </div>
+                    <div class="sing__in__social">
+                        <span class="modal-window-span sing__in__social-span">Or sign in with</span>
+                        <ul class="sing__in__social__ul">
+                            <li><a href="https://facebook.com"><img src="img/Facebook-sing.svg" alt="FB"></a></li>
+                            <li><a href="https://google.com"><img src="img/Google-sing.svg" alt=""></a></li>
+                            <li><a href="https://twitter.com/"><img src="img/twitter_contact.svg" alt=""></a></li>
+                            <li><a href="https://linkedin.com"><img src="img/Linked-In-sing.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-modal-sing-up">
+                <div id="overlayup"></div>
+                <div id="modal-windowup">
+                    <h3>Sing Up</h3>
+                    <span class="modal-window-span">Sign in to your account using email and password provided during registration.</span>
+                    <form class="sing__in__form" action="">
+                        <div class="sing__in__form__email">
+                            <label for="">Full Name</label>
+                            <input  class="sing__in__form__email-input" type="text" placeholder="Your full name" >
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Email</label>
+                            <input  class="sing__in__form__email-input" type="email" placeholder="Your working email" >
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Password</label>
+                            <input class="sing__in__form__email-input" type="text" placeholder="●●●●●●●●●●●●●" >
+                            <button class="sing__in__form__email-btn" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
+                        </div>
+                        <div class="sing__in__form__email">
+                            <label for="">Confirm Password</label>
+                            <input class="sing__in__form__email-input" type="text" placeholder="●●●●●●●●●●●●●" >
+                            <button class="sing__in__form__email-btnup" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
+                        </div>
+                        <div class="questions__question__form__blocking sing__in__form__check">  
+                            <label class="questions__question__form__block-agree sing__in__form__check__keep"> 
+                                <input class="questions__question__form__block-agree-checkbox" type="checkbox">
+                                <span class="questions__question__form__block-agree-fake"></span>
+                                <span class="questions__question__form__block-agree-span sing__in__form__check__keep-keep">Remember me</span>    
+                            </label>
+                        </div>
+                        <div class="sing__in__form__button">
+                            <button class="sing__in__form__button-btn btn" type="submit" >Sign up</button>
+                        </div>
+                        <div class="sing__in__form-span-button">
+                            <span class="sing__in__form__button-do">Already have an account?</span> 
+                            <button class="sing__in__form__check-forgot">Sign in</button>
+                        </div>
+                    </form>
+                    <div class="sing__in__line">
+                    </div>
+                    <div class="sing__in__social">
+                        <span class="modal-window-span sing__in__social-span">Or sign in with</span>
+                        <ul class="sing__in__social__ul">
+                            <li><a href="https://facebook.com"><img src="img/Facebook-sing.svg" alt="FB"></a></li>
+                            <li><a href="https://google.com"><img src="img/Google-sing.svg" alt=""></a></li>
+                            <li><a href="https://twitter.com/"><img src="img/twitter_contact.svg" alt=""></a></li>
+                            <li><a href="https://linkedin.com"><img src="img/Linked-In-sing.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
             <div class="header_top">
                 <ul class="header_top_menu">
                     <li class="first_chiled_menu">
-                        <a href="#"><img class="logo_header" src="img/logo.svg" alt="logo"></a>
+                        <a href="./index.html"><img class="logo_header" src="img/logo.svg" alt="logo"></a>
                     </li>
-                    <li class="li_hover"><a href="./index.html">About Us</a></li>
-                    <li class="li_hover"><a href="./courses.html">Courses</a></li>
+                    <li class="li_hover"><a href="./about.html">About Us</a></li>
+                    <li class="li_hover"><a  href="./courses.html">Courses</a></li>
                     <li class="li_hover"><a href="./events.html">Events</a></li>
                     <li class="li_hover"><a class="name_red_html" href="./blog.html">Blog</a></li>
                     <li class="li_hover last_chiled_menu"><a href="./contacts.html">Contacts</a></li>
                 </ul>
                 <div class="header_top_actions">
                     <a class="actions_consultation btn">Get consutlation</a>
-                    <a class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in / Register</a>
+                    <button id="btn-open-sing-in" class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in</button>
+                    <span>&nbsp;/&nbsp;</span>
+                    <button id="btn-open-sing-up" class="actions_login">Register</button>
                 </div>
             </div> 
         </div>
     </header>
-    <section class="master-classes">
-        <div class="container masterclass">
+    <section>
+        <div class="container">
             <div class="benefits">
                 <h4>
-                    Our events
+                    Our blog
                 </h4>
                 <h2>
-                    Lectures, workshops & master-classes
+                    Createx School Journal
                 </h2>
             </div>
-            <form class="masterclass__filters">
+            <div class="journal">
+                <div class="journal__all">
+                    <button class="btn about">All</button>
+                    <div class="podcast journal__all_podcast">
+                        <img src="img/Files.svg" alt="mic">
+                        <p>&nbsp;Article</p>
+                    </div>
+                    <div class="podcast journal__all_podcast">
+                        <img src="img/vid.svg" alt="vid">
+                        <p>&nbsp;Video</p>
+                    </div>
+                    <div class="podcast journal__all_podcast">
+                        <img src="img/mic.svg" alt="mic">
+                        <p>&nbsp;Podcast</p>
+                    </div>
+                </div>
+                <form class="journal__blog">
                     <div class="masterclass__filters__select">
-                        <label class="masterclass__filters__select__label" for="">Event category</label>
+                        <label class="masterclass__filters__select__label" for="">Blog category</label>
                         <select class="masterclass__filters__select__select" name="nevest" id="nevest">
                             <option value="1">all themes</option>
-                            <option value="1">Online master-class</option>
-                            <option value="1">Online lecture</option>
-                            <option value="1">Onine workshop</option>
+                            <option value="2">Marketing</option>
+                            <option value="3">Development</option>
+                            <option value="4">Design</option>
+                            <option value="5">HR & Recruting</option>
+                            <option value="6">Management</option>
                         </select>
                     </div>
-                    <div class="masterclass__filters__select">
-                        <label  class="masterclass__filters__select__label" for="">Sort by</label>
-                        <select class="masterclass__filters__select__select" name="nevest" id="nevest">
-                            <option value="1">nevest</option>
-                            <option value="1">oldest</option>
-                        </select>
-                    </div>
-                    <div class="masterclass__filters__select">
-                        <label class="masterclass__filters__select__label" for="">Show</label>
-                        <select class="masterclass__filters__select__selectnum" name="nevest" id="nevest">
-                            <option value="1">9</option>
-                            <option value="1">6</option>
-                            <option value="1">3</option>
-                        </select>
-                        <span>events per page</span>
-                    </div>
-                    <div class="form-search-course masterclass__filters__select">
-                        <input class="input_search_course" type="text" placeholder="Search course..." name="text" required>
+                    <div class="form-search-course">
+                        <input  class="input_search_course" type="text" placeholder="Search blog..." name="text" required>
                         <button class="button_search_course"><img src="img/search.svg" alt="search"></button>
                     </div>
-                    <button><img src="img/gridactive.svg" alt="list"></button>
-                    <button><img src="img/grid.svg" alt="grid"></button>
-            </form>
-            <div class="masterclass__category">
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>05</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                August 
-                            </p>
+                </form>
+            </div>
+            <div class="bloggrid blogs">
+                <div class="blog bloggrid__podcast">
+                    <div class="podcast">
+                        <img src="img/mic.svg" alt="mic">
+                        <p>&nbsp;Podcast</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                11:00&nbsp;-&nbsp;14:00
+                                Marketing
                             </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                September 4, 2020
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
+                            <span>
+                                36 min
+                            </span> 
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            Formation of the organizational structure of the company in the face of uncertainty.
+                            What is traffic arbitrage and does it really make money?
                         </p>
-                        <span>Onine master-class</span>
-                    </div>
-                    <div>
-                        <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Listen<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>24</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                               July 
-                            </p>
+                <div class="blog blogdevelopment bloggrid__podcast">
+                    <div class="podcast">
+                        <img src="img/Files.svg" alt="art">
+                        <p>&nbsp;Article</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                11:00&nbsp;-&nbsp;12:30
+                                Development
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                September 1, 2020
                             </span>
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            Building a customer service department. Best Practices.
+                            How to choose the first programming language for a beginner
                         </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Read<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>16</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                July 
-                            </p>
+                <div class="blog blogarticle bloggrid__podcast">
+                    <div class="podcast">
+                        <img src="img/vid.svg" alt="video">
+                        <p>&nbsp;Video</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                10:00&nbsp;-&nbsp;13:00
+                                Design
                             </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                August 8, 2020
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
+                            <span>
+                                40 min
+                            </span> 
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            How to apply methods of speculative design in practice. Worldbuilding prototyping.
+                            Should you choose a creative profession if you are attracted to creativity?
                         </p>
-                        <span>Onine workshop</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Watch<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>10</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                July 
-                            </p>
+                <div class="bloggrid__podcast blog blogstatist">
+                    <div class="podcast">
+                        <img src="img/Files.svg" alt="Files">
+                        <p>&nbsp;Article</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                9:00&nbsp;-&nbsp;14:00
+                                HR & Recruting
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                August 3, 2020
                             </span>
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            Find and evaluate: search and assessment tools for candidates.
+                            HR statistics: job search,  interviews, hiring and recruiting
                         </p>
-                        <span>Onine workshop</span>
-                    </div>
-                    <div>
-                        <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Read<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>27</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                               June 
-                            </p>
+                <div class="bloggrid__podcast blog blogvidblog">
+                    <div class="podcast">
+                        <img src="img/vid.svg" alt="mic">
+                        <p>&nbsp;Video</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                15:00&nbsp;-&nbsp;19:00
+                                Management
                             </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                August 2, 2020
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
+                            <span>
+                                45 min
+                            </span> 
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI..
+                            What to do and who to talk to if you want to get feedback on the product
                         </p>
-                        <span>Onine master-class</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Watch<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>15</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                June 
-                            </p>
+                <div class="blog blogdesign">
+                    <div class="podcast">
+                        <img src="img/mic.svg" alt="mic">
+                        <p>&nbsp;Podcast</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                10:00&nbsp;-&nbsp;12:00
+                                Design
                             </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                July 28, 2020
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
+                            <span>
+                                36 min
+                            </span> 
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            Marketing or growth hacking: main differences and what business needs.
+                            What are color profiles and how they work in graphic design
                         </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Listen<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>02</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                June 
-                            </p>
+                <div class="blog blogstartup">
+                    <div class="podcast">
+                        <img src="img/vid.svg" alt="video">
+                        <p>&nbsp;Video</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                11:00&nbsp;-&nbsp;13:00
+                                Management
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                July 15, 2020
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
+                            <span>
+                                45 min
                             </span>
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            How to brief a client and present your design to approve it from the first show.
+                            Startup: how to build a team that will live longer than a year
                         </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                        <a href="#" class="btn about active">View more</a>
-                    </div>
+                        <span>
+                            Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Watch<img src="img/arrow-red.svg" alt="arrow"></a>
+                        </div>
+                    </div>   
                 </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>29</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                               May 
-                            </p>
+                <div class="bloghowto blog">
+                    <div class="podcast">
+                        <img src="img/Files.svg" alt="art">
+                        <p>&nbsp;Article</p>
+                    </div>
+                    <div class="posts info">
+                        <div class="meta info">
                             <span>
-                                11:00&nbsp;-&nbsp;12:00
+                                Marketing
+                            </span>
+                            <img class="divider" src="img/divider.svg" alt="divider">
+                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
+                            <span>    
+                                July 9, 2020
                             </span>
                         </div>
-                    </div>
-                    <div class="info">
                         <p>
-                            Who is a project manager and do I want to be PM?
+                            How to get customers to love your business from the start
                         </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
-                </div>
-                <div class="event event-blogs">
-                    <div class="dates">
-                        <div class="num">
-                            <p>18</p>
+                        <span>
+                            Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam arcu tristique ac...
+                        </span>
+                        <div class="search">
+                            <a class="arrow_red_search" href="#">Read<img src="img/arrow-red.svg" alt="arrow"></a>
                         </div>
-                        <div class="date">
-                            <p>
-                                May 
-                            </p>
-                            <span>
-                                10:00&nbsp;-&nbsp;12:00
-                            </span>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <p>
-                            The company's business page as an additional tool to support the announcement of vacancies
-                        </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
+                    </div>   
                 </div>
             </div>
             <ul class="numbersbut">
@@ -303,34 +432,34 @@
                 <li class="numbersbut__li"><button class="numbersbut__li-button">4</button></li>
                 <li class="numbersbut__li"><button class="numbersbut__li-button"><img class="numbersbut__li-button-img" src="img/prev-btn.svg" alt="arrow"></button></li>
             </ul>
-        </div> 
-    </section>
-    <section class="subscribe_input">
-            <div class="container inputing">
-                <div class="benefits inputs">
-                    <h4>
-                        Don’t miss anything
-                    </h4>
-                    <h2>
-                        Subscribe to the Createx School announcements
-                    </h2>
-                </div>
-                <div class="input">
-                    <input type="email"  placeholder="Your working email" name="email" required class="inp">
-                    <button type="submit" class="btn btn-form">Subscribe</button>
+        </div>
+    </section >
+    <section class="team">
+        <div class="container">
+            <div class="wrapper">
+                <img src="img/illustrationblog.svg" alt="illustration">
+                <div class="imput__blog">
+                    <h3 class="blog_h3_want">
+                        Want to get the best articles weekly? Subscribe to our newsletter!
+                    </h3>
+                    <form action="">
+                        <div class="input_illustration_blog">
+                            <input class="illustration_blog" type="email" placeholder="Your working email" required>
+                            <button  class="btn illustration_blog_btn" type="submit">Subscribe</button>
+                        </div>
+                        <div class="questions__question__form__blocking ">  
+                            <label class="questions__question__form__block-agree blog__agree"> 
+                                <input class="questions__question__form__block-agree-checkbox" type="checkbox">
+                                <span class="questions__question__form__block-agree-fake"></span>
+                                <span class="questions__question__form__block-agree-span"> I agree to receive communications from Createx Online School</span> 
+                            </label>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="inpimg">
-                <div class="inp-left-img">
-                    <img src="img/input.png" alt="image">
-                </div>
-                <div class="inp-right-img">
-                    <img src="img/input.png" alt="image">
-                </div>
-            </div>
+        </div>
     </section>
-    <footer>
+        <footer>
             <div class="footer">
                 <div class="container">
                     <div class="foot">
@@ -412,6 +541,7 @@
                     </div>
                 </div>
             </div>
-    </footer>
+        </footer>
+        <script src="js/modal.js"></script>
 </body>
 </html>
