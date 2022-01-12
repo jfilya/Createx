@@ -806,3 +806,16 @@
     }
   }
 }
+.do-single{
+  padding-top:85;
+  padding-bottom: 185px;
+}
+.bloges{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display:none;
+}
+.active-blogs{
+  display:flex;
+}
