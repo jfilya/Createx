@@ -37,6 +37,5 @@ const prevSlide = () => {
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
-setInterval( nextSlide, 5000 );
 
 

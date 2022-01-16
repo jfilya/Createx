@@ -806,16 +806,9 @@
     }
   }
 }
-.do-single{
-  padding-top:85;
-  padding-bottom: 185px;
+
+@media (max-width: 1280px){
+.masterclass__filters__choose{
+  margin-right: 10px;
 }
-.bloges{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  display:none;
-}
-.active-blogs{
-  display:flex;
 }
