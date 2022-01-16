@@ -1140,7 +1140,9 @@ h3 {
 .active-blogs {
   display: flex;
 }
-
+.foot-link{
+  margin-right:0px;
+}
 
 
 
