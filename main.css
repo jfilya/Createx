@@ -1607,5 +1607,8 @@ display:flex;
   width: 120px;
   height: auto;
 }
+.block-foot4>ul{
+  display:block;
+}
 }
 
