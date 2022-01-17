@@ -232,6 +232,9 @@
       }
     }
   }
+  &__category {
+    margin-bottom: 60px;
+  }
 }
 .journal {
   display: flex;
@@ -360,7 +363,7 @@
 
 .about {
   &__as {
-    width: 600px;
+    max-width: 600px;
     &__h2 {
       margin-bottom: 42px;
     }
@@ -581,7 +584,7 @@
   justify-content: space-between;
   margin-bottom: 120px;
   &__right {
-    width: 810px;
+    max-width: 810px;
     &__head {
       margin-bottom: 12px;
       &__image {
@@ -619,40 +622,40 @@
       &__braces {
         font-weight: bold;
         font-size: 20px;
-        display:flex;
+        display: flex;
         align-items: start;
-        margin-bottom:48px;
-        &__image{
+        margin-bottom: 48px;
+        &__image {
           margin-right: 30px;
         }
       }
-      &__list{
+      &__list {
         margin-bottom: 24px;
-        li::before{
-          Content:'';
+        li::before {
+          content: "";
           position: absolute;
-          width:16px;
-          height:16px;
-          background:url(../img/check.svg);
+          width: 16px;
+          height: 16px;
+          background: url(../img/check.svg);
           background-repeat: no-repeat;
-          left:0;
-          top:5px;
+          left: 0;
+          top: 5px;
         }
-        li{
-          display:flex;
-          position:relative;
+        li {
+          display: flex;
+          position: relative;
           padding-left: 32px;
           margin-bottom: 4px;
-          &:last-child{
-          margin-bottom: 0px;
+          &:last-child {
+            margin-bottom: 0px;
           }
         }
       }
     }
     &__foot {
-      display:flex;
+      display: flex;
       justify-content: space-between;
-      button{
+      button {
         margin-right: 12px;
       }
     }
@@ -687,7 +690,7 @@
           &-shar {
             font-weight: bold;
             margin-right: 12px;
-            &-btn{
+            &-btn {
               border: 1px solid #d7dadd;
               border-radius: 4px;
               padding: 5px 16px;
@@ -715,7 +718,7 @@
     }
   }
   &__left {
-    width: 342px;
+    max-width: 342px;
     &__choose {
       margin-bottom: 60px;
       &__make {
@@ -807,8 +810,277 @@
   }
 }
 
-@media (max-width: 1280px){
-.masterclass__filters__choose{
-  margin-right: 10px;
+@media (max-width: 1280px) {
+  .masterclass {
+    &__filters {
+      text-align: center;
+      &__choose {
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .teach {
+    &__card {
+      justify-content: space-around;
+    }
+  }
+  .best {
+    &__jobs {
+      &__element {
+        justify-content: space-around;
+        &-li {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  .journal {
+    &__all {
+      display: block;
+    }
+    &__blog {
+      align-items: normal;
+    }
+  }
+  .statistics {
+    &__right {
+      max-width: 600px;
+    }
+  }
 }
+
+@media (max-width: 1024px) {
+  .numbersbut {
+    margin-bottom: 60px;
+  }
+  .statistics {
+    &__right {
+      max-width: 570px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .questions {
+    &__container {
+      display: block;
+      text-align: center;
+    }
+    &__question {
+      &__field {
+        flex-direction: column;
+        width: auto;
+        &__block {
+          &-agree {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .contacts {
+    &__info {
+      &__contact {
+        max-width: 300px;
+      }
+    }
+    &__map {
+      width: 400px;
+    }
+  }
+  .statistics {
+    justify-content: center;
+    &__right {
+      max-width: 760px;
+      
+    }
+    &__left {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__container {
+      flex-direction: column;
+      display: block;
+    }
+    &__map {
+      width: 100%;
+    }
+    &__info {
+      margin-bottom: 30px;
+      &__social {
+        width: auto;
+      }
+    }
+  }
+  .questions {
+    &__question {
+      &__field {
+        max-width: 500px;
+        &__block {
+          &-message {
+            max-width: 500px;
+          }
+          &-enter {
+            max-width: 500px;
+          }
+        }
+        &__blocking {
+          &-btn {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  .core {
+    &__our {
+      flex-direction: column;
+      &__line {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .meet {
+    &__your {
+      &__team {
+        &__teams {
+          align-items: normal;
+        }
+      }
+    }
+  }
+  .computer {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .teach {
+    padding-bottom: 60px;
+    &__card {
+      &__grid {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .styding {
+    padding-bottom: 60px;
+  }
+  .best {
+    &__jobs {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  .core {
+    margin-bottom: 60px;
+  }
+  .journal {
+    &__blog {
+      display: block;
+    }
+  }
+  .statistics {
+    &__right {
+      max-width: 570px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .questions {
+    padding-bottom: 60px;
+    &__question {
+      &__field {
+        &__block {
+          &-message {
+            max-width: 358px;
+          }
+        }
+      }
+    }
+  }
+  .journal {
+    flex-direction: column;
+  }
+  .contacts {
+    &__container {
+      padding-bottom: 60px;
+    }
+  }
+  .questions {
+    &__question {
+      &__field {
+        &__block {
+          &-agree {
+            &-span {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .statistics {
+    &__right {
+      max-width: 380px;
+      &__foot {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .questions {
+    &__question {
+      &__field {
+        &__block {
+          &-enter {
+            max-width: 280px;
+          }
+          &-message {
+            max-width: 280px;
+          }
+        }
+      }
+    }
+  }
+  .statistics {
+    &__right {
+      max-width: 300px;
+      &__caption {
+        &__headingfoot {
+          display:block;
+          &__share {
+            display:block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .questions {
+    &__question {
+      &__field {
+        &__block {
+          &-agree {
+            &-span {
+              width: 230px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .statistics {
+    &__right {
+      max-width: 270px;
+    }
+  }
 }

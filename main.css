@@ -457,8 +457,9 @@ h3 {
   margin-bottom: 24px;
   border-radius: 4px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding: 32px 40px 32px 40px;
+  justify-content: space-between;
 }
 .do {
   display: flex;
@@ -491,7 +492,7 @@ h3 {
   margin-bottom: 4px;
 }
 .info {
-  max-width: 767px;
+  width: 767px;
 }
 .info > span,
 .date > span {
@@ -786,7 +787,8 @@ h3 {
 .blogstatist {
   max-width: 705px;
 }
-.blogstatist > .posts,.blogstatist > .posts > p  {
+.blogstatist > .posts,
+.blogstatist > .posts > p {
   max-width: 705px;
 }
 .subscribe_input {
@@ -851,9 +853,6 @@ h3 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 38px;
   margin-top: 0;
-}
-.block-foot1 > a {
-  margin-right: 20px;
 }
 .foot-p {
   margin: 0;
@@ -1090,15 +1089,16 @@ h3 {
   padding-left: 16px;
 }
 .illustration_blog_btn {
-  position: absolute;
   width: 154px;
   height: 50px;
 }
 .input_illustration_blog {
   margin-bottom: 24px;
+  display: flex;
+    align-items: center;
 }
 .blog_h3_want {
-  width: 600px;
+  max-width: 600px;
   margin-bottom: 48px;
 }
 .header_middle-about {
@@ -1140,19 +1140,9 @@ h3 {
 .active-blogs {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.foot-link {
+  margin-right: 20px;
+}
 
 @media (max-width: 1280px) {
   .container {
@@ -1221,12 +1211,29 @@ h3 {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-
-
-
-
-
-
+  .cards_course {
+    max-width: 330px;
+    height: auto;
+  }
+  .card_course {
+    margin: 0px;
+    padding: 20px;
+  }
+  .illustration_blog {
+    max-width: 310px;
+  }
+  .blogstatist,
+  .blog-stat-img,
+  .blogstatist > .posts > p,
+  .blogstatist > .posts > span {
+    max-width: 585px;
+  }
+  .blogvidblog,
+  .blogvid-img,
+  .blogvidblog > .posts > p,
+  .blogvidblog > .posts > span {
+    max-width: 410px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1260,6 +1267,48 @@ h3 {
   }
   .foot {
     flex-wrap: wrap;
+  }
+  .cards_course {
+    max-width: 310px;
+  }
+  .posts > p,
+  .posts > span,
+  .meta,
+  .info,
+  .blog {
+    max-width: 300px;
+  }
+  .header_middle-about {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .bloggrid {
+    flex-wrap: wrap;
+  }
+  .blogstatist,
+  .blog-stat-img,
+  .blogstatist > .posts > p,
+  .blogstatist > .posts > span {
+    max-width: 540px;
+  }
+  .blogvidblog,
+  .blogvid-img,
+  .blogvidblog > .posts > p,
+  .blogvidblog > .posts > span {
+    max-width: 380px;
+  }
+  .wrapper-blog-inp{
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .imput__blog{
+    text-align: center;
+  }
+  .input_illustration_blog {
+    justify-content: center;
+  }
+  .imput__blog{
+    padding-top: 20px;
   }
 }
 
@@ -1313,6 +1362,42 @@ h3 {
   .header_top {
     margin-bottom: 40px;
   }
+  .our_styding {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .our_styding > li {
+    margin-bottom: 10px;
+  }
+  .card_course {
+    max-width: 200px;
+  }
+  .cards_course {
+    max-width: 245px;
+  }
+  .btn-events {
+    display: none;
+  }
+  .posts > p,
+  .posts > span,
+  .meta,
+  .info,
+  .blog {
+    max-width: 240px;
+  }
+  .blogstatist,
+  .blog-stat-img,
+  .blogstatist > .posts > p,
+  .blogstatist > .posts > span {
+    max-width: 440px;
+  }
+  .blogvidblog,
+  .blogvid-img,
+  .blogvidblog > .posts > p,
+  .blogvidblog > .posts > span {
+    max-width: 280px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1354,10 +1439,11 @@ h3 {
   .card-content {
     margin-bottom: 30px;
   }
-  .texty, .text ul {
+  .texty,
+  .text ul {
     width: auto;
   }
-  .texty{
+  .texty {
     text-align: center;
   }
   .benefits,
@@ -1377,7 +1463,6 @@ h3 {
   .info > p {
     max-width: 560px;
   }
-
   .event {
     display: inline-block;
     height: auto;
@@ -1435,6 +1520,53 @@ h3 {
   }
   .image1 {
     text-align: center;
+  }
+  .cards_course {
+    max-width: 390px;
+  }
+  .card_course {
+    max-width: 280px;
+  }
+  .course_team {
+    justify-content: center;
+  }
+  .btn-course-all {
+    display: flex;
+  }
+  .masterclass__category {
+    text-align: center;
+  }
+  .posts > p,
+  .posts > span,
+  .meta,
+  .info,
+  .blog {
+    max-width: 330px;
+  }
+  .blogstatist,
+  .blog-stat-img,
+  .blogstatist > .posts > p,
+  .blogstatist > .posts > span {
+    max-width: 380px;
+  }
+  .blogvidblog,
+  .blogvid-img,
+  .blogvidblog > .posts > p,
+  .blogvidblog > .posts > span {
+    max-width: 380px;
+  }
+  .blogs-single{
+    justify-content: center;
+  }
+  .do-single{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .do-single>h3{
+    margin-right: 0px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -1496,7 +1628,8 @@ h3 {
     margin-right: 10px;
   }
   .people {
-    width: 150px;
+    width: 170px;
+    height: auto;
   }
   .badge {
     width: 200px;
@@ -1514,98 +1647,158 @@ h3 {
     padding-top: 15px;
     margin-top: 0px;
   }
-  .img{
+  .img {
     background: #ffcf2d;
     height: 210px;
     width: 350px;
   }
-  .card, .badge{
+  .card,
+  .badge {
     width: 350px;
     padding-left: 0px;
   }
-  .our-blog,.inputing {
+  .our-blog,
+  .inputing {
     padding-top: 50px;
   }
   .blogs {
     margin-bottom: 50px;
   }
-  .subscribe_input{
+  .subscribe_input {
     padding-bottom: 50px;
   }
-  .foot{
+  .foot {
     text-align: center;
-    justify-content: space-around
+    justify-content: space-around;
   }
   .block-foot1 {
     max-width: 400px;
   }
-  .block-foot4>ul{
-display:flex;
+  .block-foot4 {
+    padding: 30px 0 35px 0;
   }
-  .block-foot4{
-    padding:30px 0 35px 0;
-  }
-  .footer_footer{
+  .footer_footer {
     text-align: center;
   }
   .team-card {
-    width: 176px;
+    width: 170px;
     height: auto;
-}
-.people {
-  width:170px;
-}
-.team-card {
-  width: 170px;
-  height: auto;
+  }
+  .card_course {
+    padding-left: 15px;
+  }
+  .cards_course {
+    margin-bottom: 30px;
+  }
+  .course_team_course {
+    padding-bottom: 60px;
+  }
+  .course_team {
+    margin-bottom: 40px;
+  }
+  .blogstatist,
+  .blog-stat-img,
+  .blogstatist > .posts > p,
+  .blogstatist > .posts > span {
+    max-width: 310px;
+  }
+  .blogvidblog,
+  .blogvid-img,
+  .blogvidblog > .posts > p,
+  .blogvidblog > .posts > span {
+    max-width: 310px;
+  }
+  .input_illustration_blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .illustration_blog{
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
 }
 
-}
 @media (max-width: 420px) {
-  .container{
+  .container {
     width: 90%;
   }
-  .texty, .text > ul {
+  .texty,
+  .text > ul {
     width: auto;
-}
-.rewiews{
-  height: 345px;
-}
+  }
+  .rewiews {
+    height: 345px;
+  }
+  .block-foot4 > ul {
+    display: flex;
+  }
+  .info {
+    max-width: 230px;
+  }
+  .blogdesign{
+    max-width:  230px;
+  }
 }
 
 @media (max-width: 375px) {
-  .container{
+  .container {
     width: 90%;
   }
-  .texty, .text > ul {
+  .texty,
+  .text > ul {
     width: auto;
+  }
+  .card,
+  .badge,
+  .img,
+  .cards {
+    width: 280px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input > input {
+    width: 280px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-right: 0px;
+  }
+  .input > button {
+    width: 280px;
+  }
+  .rewiews {
+    height: 385px;
+  }
+  .people {
+    width: 120px;
+  }
+  .team-card {
+    width: 120px;
+    height: auto;
+  }
+  .block-foot4 > ul {
+    display: block;
+  }
+  .form-search-course {
+    width: 200px;
+  }
+  .blogstatist,
+  .blog-stat-img,
+  .blogstatist > .posts > p,
+  .blogstatist > .posts > span {
+    max-width: 250px;
+  }
+  .blogvidblog,
+  .blogvid-img,
+  .blogvidblog > .posts > p,
+  .blogvidblog > .posts > span {
+    max-width: 250px;
+  }
+  .illustration_blog{
+    width: 280px;
+  }
+  
 }
-.card, .badge, .img, .cards{
-  width: 280px;
-}
-.input{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.input>input{
-  width: 280px;
-  margin-bottom: 15px;
- text-align: center;
- margin-right: 0px;
-}
-.input>button{
-  width: 280px;
-}
-.rewiews{
-  height: 385px;
-}
-.people {
-  width: 120px;
-}
-.team-card {
-  width: 120px;
-  height: auto;
-}
-}
-
