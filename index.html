@@ -1,981 +1,1160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="scss/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="scss/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>СREATEX</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header_container container">
-            <div id="wrapper-modal-sing-in">
-                <div id="overlay"></div>
-                <div id="modal-window">
-                    <h3>Sing In</h3>
-                    <span class="modal-window-sing">Sign in to your account using email and password provided during registration.</span>
-                    
-                    <form class="sing__in__field" action="">
-                        <div class="sing__in__field__feed">
-                            <label for="">Email</label>
-                            <input  class="sing__in__field__feed-back" type="email" placeholder="Your working email" >
-                        </div>
-                        <div class="sing__in__field__feed">
-                            <label for="">Password</label>
-                            <input class="sing__in__field__feed-back" type="password" placeholder="●●●●●●●●●●●●●" >
-                            <button class="sing__in__field__feed-btn" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
-                        </div>
-                        <div class="questions__question__field__blocking sing__in__field__check">  
-                            <label class="questions__question__field__block-agree sing__in__field__check__keep"> 
-                                <input class="questions__question__field__block-agree-checkbox" type="checkbox">
-                                <span class="questions__question__field__block-agree-fake"></span>
-                                <span class="questions__question__field__block-agree-span sing__in__field__check__keep-keep">Keep me signed in</span>
-                                
-                            </label>
-                            <button class="sing__in__field__check-forgot">Forgot password?</button>
-                        </div>
-                        <div class="sing__in__field__btns">
-                            <button class="sing__in__field__btns-btn btn" type="submit" >Sign in</button>
-                        </div>
-                        <div class="sing__in__field-account-btn">
-                            <span class="sing__in__field__btn-do">Don't have an account?</span> 
-                            <button class="sing__in__field__check-forgot">Sign up</button>
-                        </div>
-                    </form>
+      <div class="header_container container">
+        <input type="checkbox" id="burger" />
+        <label for="burger"></label>
+        <nav>
+          <ul>
+            <li class="navigation-check">
+              <a href="./about.html">About Us</a>
+            </li>
+            <li class="navigation-check">
+              <a href="./courses.html">Courses</a>
+            </li>
+            <li class="navigation-check"><a href="./events.html">Events</a></li>
+            <li class="navigation-check"><a href="./blog.html">Blog</a></li>
+            <li class="navigation-check">
+              <a href="./contacts.html">Contacts</a>
+            </li>
+            <li>
+              <button id="btn-open-sing-in" class="actions_login">
+                <img class="login_img" src="img/login_img.svg" alt="login">
+                Log in
+              </button>
+            </li>
+            <li>
+              <button id="btn-open-sing-up" class="actions_login">
+                <img class="login_img" src="img/login_img.svg" alt="login">
+                Register
+              </button>
+            </li>
+            <li  class="get-consultation-navigation"><a href="./contacts.html" class="btn">Get consutlation</a></li>
+          </ul>
+        </nav>
 
-                    <div class="sing__in__line">
-                    </div>
-                    <div class="sing__in__social">
-                        <span class="modal-window-sing sing__in__social-span">Or sign in with</span>
-                        <ul class="sing__in__social__list">
-                            <li><a href="https://facebook.com"><img src="img/Facebook-sing.svg" alt="FB"></a></li>
-                            <li><a href="https://google.com"><img src="img/Google-sing.svg" alt=""></a></li>
-                            <li><a href="https://twitter.com/"><img src="img/twitter_contact.svg" alt=""></a></li>
-                            <li><a href="https://linkedin.com"><img src="img/Linked-In-sing.svg" alt=""></a></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                    </div>
-                </div>
-            </div>
-            <div id="wrapper-modal-sing-up">
-                <div id="overlayup"></div>
-                <div id="modal-windowup">
-                    <h3>Sing Up</h3>
-                    <span class="modal-window-sing">Sign in to your account using email and password provided during registration.</span>
-                    <form class="sing__in__field" action="">
-                        <div class="sing__in__field__feed">
-                            <label for="">Full Name</label>
-                            <input  class="sing__in__field__feed-back" type="text" placeholder="Your full name" >
-                        </div>
-                        <div class="sing__in__field__feed">
-                            <label for="">Email</label>
-                            <input  class="sing__in__field__feed-back" type="email" placeholder="Your working email" >
-                        </div>
-                        <div class="sing__in__field__feed">
-                            <label for="">Password</label>
-                            <input class="sing__in__field__feed-back" type="password" placeholder="●●●●●●●●●●●●●" >
-                            <button class="sing__in__field__feed-btn" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
-                        </div>
-                        <div class="sing__in__field__feed">
-                            <label for="">Confirm Password</label>
-                            <input class="sing__in__field__feed-back" type="password" placeholder="●●●●●●●●●●●●●" >
-                            <button class="sing__in__field__feed-btnup" type="submit"> <img src="img/Eye.svg" alt="Eye"></button>
-                        </div>
-                        <div class="questions__question__field__blocking sing__in__field__check">  
-                            <label class="questions__question__field__block-agree sing__in__field__check__keep"> 
-                                <input class="questions__question__field__block-agree-checkbox" type="checkbox">
-                                <span class="questions__question__field__block-agree-fake"></span>
-                                <span class="questions__question__field__block-agree-span sing__in__field__check__keep-keep">Remember me</span>    
-                            </label>
-                        </div>
-                        <div class="sing__in__field__btns">
-                            <button class="sing__in__field__btns-btn btn" type="submit" >Sign up</button>
-                        </div>
-                        <div class="sing__in__field-account-btn">
-                            <span class="sing__in__field-btn-do">Already have an account?</span> 
-                            <button class="sing__in__field__check-forgot">Sign in</button>
-                        </div>
-                    </form>
-                    <div class="sing__in__line">
-                    </div>
-                    <div class="sing__in__social">
-                        <span class="modal-window-sing sing__in__social-span">Or sign in with</span>
-                        <ul class="sing__in__social__list">
-                            <li><a href="https://facebook.com"><img src="img/Facebook-sing.svg" alt="FB"></a></li>
-                            <li><a href="https://google.com"><img src="img/Google-sing.svg" alt=""></a></li>
-                            <li><a href="https://twitter.com/"><img src="img/twitter_contact.svg" alt=""></a></li>
-                            <li><a href="https://linkedin.com"><img src="img/Linked-In-sing.svg" alt=""></a></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                    </div>
-                </div>
-            </div>
+        <div id="wrapper-modal-sing-in">
+          <div id="overlay"></div>
+          <div id="modal-window">
+            <h3>Sing In</h3>
+            <span class="modal-window-sing"
+              >Sign in to your account using email and password provided during
+              registration.</span
+            >
 
-            <div class="header_top headering_top">
-                <ul class="header_top_menu">
-                    <li class="first_chiled_menu">
-                        <a href="./index.html"><img class="logo_header" src="img/logo.svg" alt="logo"></a>
-                    </li>
-                    <li class="li_hover"><a href="./about.html">About Us</a></li>
-                    <li class="li_hover"><a href="./courses.html">Courses</a></li>
-                    <li class="li_hover"><a href="./events.html">Events</a></li>
-                    <li class="li_hover"><a href="./blog.html">Blog</a></li>
-                    <li class="li_hover last_chiled_menu"><a href="./contacts.html">Contacts</a></li>
-                </ul>
-                <div class="header_top_actions">
-                    <a  href="./contacts.html" class="actions_consultation btn">Get consutlation</a>
-                    <button id="btn-open-sing-in" class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in</button>
-                    <span>&nbsp;/&nbsp;</span>
-                    <button id="btn-open-sing-up" class="actions_login">Register</button>
-                </div>
+            <form class="sing__in__field" action="">
+              <div class="sing__in__field__feed">
+                <label for="">Email</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="email"
+                  placeholder="Your working email"
+                />
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Password</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="password"
+                  placeholder="●●●●●●●●●●●●●"
+                />
+                <button class="sing__in__field__feed-btn" type="submit">
+                  <img src="img/Eye.svg" alt="Eye" />
+                </button>
+              </div>
+              <div
+                class="questions__question__field__blocking sing__in__field__check"
+              >
+                <label
+                  class="questions__question__field__block-agree sing__in__field__check__keep"
+                >
+                  <input
+                    class="questions__question__field__block-agree-checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    class="questions__question__field__block-agree-fake"
+                  ></span>
+                  <span
+                    class="questions__question__field__block-agree-span sing__in__field__check__keep-keep"
+                    >Keep me signed in</span
+                  >
+                </label>
+                <button class="sing__in__field__check-forgot">
+                  Forgot password?
+                </button>
+              </div>
+              <div class="sing__in__field__btns">
+                <button class="sing__in__field__btns-btn btn" type="submit">
+                  Sign in
+                </button>
+              </div>
+              <div class="sing__in__field-account-btn">
+                <span class="sing__in__field__btn-do"
+                  >Don't have an account?</span
+                >
+                <button class="sing__in__field__check-forgot">Sign up</button>
+              </div>
+            </form>
+
+            <div class="sing__in__line"></div>
+            <div class="sing__in__social">
+              <span class="modal-window-sing sing__in__social-span"
+                >Or sign in with</span
+              >
+              <ul class="sing__in__social__list">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="img/Facebook-sing.svg" alt="FB"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://google.com"
+                    ><img src="img/Google-sing.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><img src="img/twitter_contact.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com"
+                    ><img src="img/Linked-In-sing.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </div>
-            <div class="header_middle">
-                <div class="header_middle_left">
-                    <a  target="_blank" href="https://youtube.com" class="header_middle_play">      
-                        <div class="play_img">
-                            <img src="img/arrow_right_header.svg" alt="arrow_right">
-                        </div>
-                        <span class="play_text">
-                            Play showreel  
-                        </span>
-                    </a>
-                    <h1 class="header_middle_title">
-                        Enjoy studying with Createx Online Courses
-                    </h1>
-                    <div class="header_middle_about">
-                        <a href="./about.html" class="btn-about btn about">About us</a>
-                        <a  href="./courses.html" class="explore_btn btn">Explore courses</a>
-                    </div>
-                </div>
-                <div class="header_middle_right">
-                    <img src="img/header_middle.svg" alt="header_middle">
-                </div>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div id="wrapper-modal-sing-up">
+          <div id="overlayup"></div>
+          <div id="modal-windowup">
+            <h3>Sing Up</h3>
+            <span class="modal-window-sing"
+              >Sign in to your account using email and password provided during
+              registration.</span
+            >
+            <form class="sing__in__field" action="">
+              <div class="sing__in__field__feed">
+                <label for="">Full Name</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="text"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Email</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="email"
+                  placeholder="Your working email"
+                />
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Password</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="password"
+                  placeholder="●●●●●●●●●●●●●"
+                />
+                <button class="sing__in__field__feed-btn" type="submit">
+                  <img src="img/Eye.svg" alt="Eye" />
+                </button>
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Confirm Password</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="password"
+                  placeholder="●●●●●●●●●●●●●"
+                />
+                <button class="sing__in__field__feed-btnup" type="submit">
+                  <img src="img/Eye.svg" alt="Eye" />
+                </button>
+              </div>
+              <div
+                class="questions__question__field__blocking sing__in__field__check"
+              >
+                <label
+                  class="questions__question__field__block-agree sing__in__field__check__keep"
+                >
+                  <input
+                    class="questions__question__field__block-agree-checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    class="questions__question__field__block-agree-fake"
+                  ></span>
+                  <span
+                    class="questions__question__field__block-agree-span sing__in__field__check__keep-keep"
+                    >Remember me</span
+                  >
+                </label>
+              </div>
+              <div class="sing__in__field__btns">
+                <button class="sing__in__field__btns-btn btn" type="submit">
+                  Sign up
+                </button>
+              </div>
+              <div class="sing__in__field-account-btn">
+                <span class="sing__in__field-btn-do"
+                  >Already have an account?</span
+                >
+                <button class="sing__in__field__check-forgot">Sign in</button>
+              </div>
+            </form>
+            <div class="sing__in__line"></div>
+            <div class="sing__in__social">
+              <span class="modal-window-sing sing__in__social-span"
+                >Or sign in with</span
+              >
+              <ul class="sing__in__social__list">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="img/Facebook-sing.svg" alt="FB"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://google.com"
+                    ><img src="img/Google-sing.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><img src="img/twitter_contact.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com"
+                    ><img src="img/Linked-In-sing.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </div>
-            <ul class="header_bottom">
-                <li class="header_bottom_strong">
-                    <div class="strong">1200</div>
-                    <span>Students graduated</span>
-                </li>
-                <li class="ellipse"></li>
-                <li class="header_bottom_strong">
-                    <div class="strong">84</div>
-                    <span>Completed courses</span>
-                </li>
-                <li class="ellipse"></li>
-                <li class="header_bottom_strong">
-                    <div class="strong">16</div>
-                    <span>Qualified tutors</span>
-                </li>
-                <li class="ellipse"></li>
-                <li class="header_bottom_strong">
-                    <div class="strong">5</div>
-                    <span>Years of experience</span>
-                </li>
-            </ul>
+            <div class="content"></div>
+          </div>
         </div>
 
+        <div class="header_top headering_top">
+          <ul class="header_top_menu">
+            <li class="first_chiled_menu">
+              <a href="./index.html"
+                ><img class="logo_header" src="img/logo.svg" alt="logo"
+              /></a>
+            </li>
+            <li class="li_hover"><a href="./about.html">About Us</a></li>
+            <li class="li_hover"><a href="./courses.html">Courses</a></li>
+            <li class="li_hover"><a href="./events.html">Events</a></li>
+            <li class="li_hover"><a href="./blog.html">Blog</a></li>
+            <li class="li_hover last_chiled_menu">
+              <a href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+          <div class="header_top_actions">
+            <a href="./contacts.html" class="actions_consultation btn">Get consutlation</a>
+            <div class="btn-login">
+                <button id="btn-open-sing-in1" class="actions_login">
+                  <img class="login_img" src="img/login_img.svg" alt="login" />
+                  Log in&nbsp;/&nbsp;
+                </button>
+                <button id="btn-open-sing-up1" class="actions_login">
+                  Register
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="header_middle">
+          <div class="header_middle_left">
+            <a
+              target="_blank"
+              href="https://youtube.com"
+              class="header_middle_play"
+            >
+              <div class="play_img">
+                <img src="img/arrow_right_header.svg" alt="arrow_right" />
+              </div>
+              <span class="play_text"> Play showreel </span>
+            </a>
+            <h1 class="header_middle_title">
+              Enjoy studying with Createx Online Courses
+            </h1>
+            <div class="header_middle_about">
+              <a href="./about.html" class="btn-about btn about">About us</a>
+              <a href="./courses.html" class="explore_btn btn"
+                >Explore courses</a
+              >
+            </div>
+          </div>
+          <div class="header_middle_right">
+            <img src="img/header_middle.svg" alt="header_middle" />
+          </div>
+        </div>
+        <ul class="header_bottom">
+          <li class="header_bottom_strong">
+            <div class="strong">1200</div>
+            <span>Students graduated</span>
+          </li>
+          <li class="ellipse"></li>
+          <li class="header_bottom_strong">
+            <div class="strong">84</div>
+            <span>Completed courses</span>
+          </li>
+          <li class="ellipse"></li>
+          <li class="header_bottom_strong">
+            <div class="strong">16</div>
+            <span>Qualified tutors</span>
+          </li>
+          <li class="ellipse"></li>
+          <li class="header_bottom_strong">
+            <div class="strong">5</div>
+            <span>Years of experience</span>
+          </li>
+        </ul>
+      </div>
     </header>
     <section class="about_us">
-        <div class="container">
-            <div class="wrapper">
-                <div class="image1">
-                    <img src="img/iimage.png" alt="image">
-                </div>
-                <div class="text">
-                    <div class="text-text">
-                        <h4>Who we are</h4>
-                        <h2>
-                            Why Createx?
-                        </h2>
-                    </div>
-                    <ul>
-                        <li> A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                        <li> Vulputate placerat amet pulvinar lorem nisl.</li>
-                        <li> Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                        <li> Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                        <li> Tincidunt sagittis neque sem ac eget.</li>
-                        <li> Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
-                    </ul>
-                    <a class="btn more" href="./about.html">More about us</a>
-                </div>            
+      <div class="container">
+        <div class="wrapper">
+          <div class="image1">
+            <img src="img/iimage.png" alt="image" />
+          </div>
+          <div class="text">
+            <div class="text-text">
+              <h4>Who we are</h4>
+              <h2>Why Createx?</h2>
             </div>
+            <ul>
+              <li>
+                A fermentum in morbi pretium aliquam adipiscing donec tempus.
+              </li>
+              <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+              <li>
+                Consequat feugiat habitant gravida quisque elit bibendum id
+                adipiscing sed.
+              </li>
+              <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+              <li>Tincidunt sagittis neque sem ac eget.</li>
+              <li>
+                Ultricies amet justo et eget quisque purus vulputate dapibus
+                tortor.
+              </li>
+            </ul>
+            <a class="btn more" href="./about.html">More about us</a>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="container">
-            <h4 class="learn">
-                Ready to learn?
-            </h4>
-            <div class="ready">
-                <h2>
-                    Featured Courses
-                </h2>
-                <a class="btn about" href="./courses.html">View all course</a>
-            </div>
-            <div class="card-content">
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image1.png" alt="image1">
-                    </div>
-                    <div class="card">
-                        <span class="green bad">Marketing</span>
-                        <p class="badge">The Ultimate Google Ads Training Course</p>
-                        <p class="speaker"><span class="price">$100</span>| by Jerome Bel</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image4.png" alt="image4">
-                    </div>
-                    <div class="card">
-                        <span class="blue bad">Management</span>
-                        <p class="badge">Prduct Management Fundamentals</p>
-                        <p class="speaker"><span class="price">$480</span>| by Marvin McKinney</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image2.png" alt="image2">
-                    </div>
-                    <div class="card">
-                        <span class="orange bad">HR & Recruting</span>
-                        <p class="badge">HR Management and Analytics</p>
-                        <p class="speaker"><span class="price">$200</span>| by Leslie Alexander Li</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image5.png" alt="image5">
-                    </div>
-                    <div class="card">
-                        <span class="green bad">Marketing</span>
-                        <p class="badge">Brand Management & PR Communications</p>
-                        <p class="speaker"><span class="price">$530</span>| by Kristin Watson</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image3.png" alt="image3">
-                    </div>
-                    <div class="card">
-                        <span class="blue bad">Management</span>
-                        <p class="badge">Business Development Management</p>
-                        <p class="speaker"><span class="price">$400</span>| by Dianne Russel</p>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="img">
-                        <img src="img/image6.png" alt="image6">
-                    </div>
-                    <div class="card">
-                        <span class="pink bad">Design</span>
-                        <p class="badge">Graphic Design Basic</p>
-                        <p class="speaker"><span class="price">$500</span>| by Guy Hawkins</p>
-                    </div>
-                </div>
-
-             </div>
+      <div class="container">
+        <h4 class="learn">Ready to learn?</h4>
+        <div class="ready">
+          <h2>Featured Courses</h2>
+          <a class="btn about" href="./courses.html">View all course</a>
         </div>
+        <div class="card-content">
+          <div class="cards">
+            <div class="img">
+              <img src="img/image1.png" alt="image1" />
+            </div>
+            <div class="card">
+              <span class="green bad">Marketing</span>
+              <p class="badge">The Ultimate Google Ads Training Course</p>
+              <p class="speaker">
+                <span class="price">$100</span>| by Jerome Bel
+              </p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="img">
+              <img src="img/image4.png" alt="image4" />
+            </div>
+            <div class="card">
+              <span class="blue bad">Management</span>
+              <p class="badge">Prduct Management Fundamentals</p>
+              <p class="speaker">
+                <span class="price">$480</span>| by Marvin McKinney
+              </p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="img">
+              <img src="img/image2.png" alt="image2" />
+            </div>
+            <div class="card">
+              <span class="orange bad">HR & Recruting</span>
+              <p class="badge">HR Management and Analytics</p>
+              <p class="speaker">
+                <span class="price">$200</span>| by Leslie Alexander Li
+              </p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="img">
+              <img src="img/image5.png" alt="image5" />
+            </div>
+            <div class="card">
+              <span class="green bad">Marketing</span>
+              <p class="badge">Brand Management & PR Communications</p>
+              <p class="speaker">
+                <span class="price">$530</span>| by Kristin Watson
+              </p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="img">
+              <img src="img/image3.png" alt="image3" />
+            </div>
+            <div class="card">
+              <span class="blue bad">Management</span>
+              <p class="badge">Business Development Management</p>
+              <p class="speaker">
+                <span class="price">$400</span>| by Dianne Russel
+              </p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="img">
+              <img src="img/image6.png" alt="image6" />
+            </div>
+            <div class="card">
+              <span class="pink bad">Design</span>
+              <p class="badge">Graphic Design Basic</p>
+              <p class="speaker">
+                <span class="price">$500</span>| by Guy Hawkins
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="benefits-tabs">
-        <div class="container">
-            <div class="benefits">
-                <h4>Our benefits</h4>
-                <h2>That’s how we do it</h2>
-             </div>
-            <ul class="tabs">
-                <li class="star"><a class="btn about stars"href="./courses.html"><img src="img/Star.svg" alt="star">&nbsp;Experienced Tutors</a></li>
-                <li class="feed">Feedback & Support</li>
-                <li class="online">24/7 Online Library</li>
-                <li class="community">Community</li>
-            </ul>
-             <div class="wrapper">
-                 <div class="texty">
-                    <h3>
-                        Only practicing tutors
-                    </h3>
-                    <p>Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
-                 </div>
-                 <div class="image-ben">
-                     <img src="img/benef.png" alt="img">
-                 </div>
-             </div>
+      <div class="container">
+        <div class="benefits">
+          <h4>Our benefits</h4>
+          <h2>That’s how we do it</h2>
         </div>
+        <ul class="tabs">
+          <li class="star">
+            <a class="btn about stars" href="./courses.html"
+              ><img src="img/Star.svg" alt="star" />&nbsp;Experienced Tutors</a
+            >
+          </li>
+          <li class="feed">Feedback & Support</li>
+          <li class="online">24/7 Online Library</li>
+          <li class="community">Community</li>
+        </ul>
+        <div class="wrapper">
+          <div class="texty">
+            <h3>Only practicing tutors</h3>
+            <p>
+              Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
+              dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
+              mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+              Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
+              dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+            </p>
+          </div>
+          <div class="image-ben">
+            <img src="img/benef.png" alt="img" />
+          </div>
+        </div>
+      </div>
     </section>
     <section class="our_events">
-        <div class="container">
-            <div class="events">
-                <div class="event-head">
-                <h4>
-                    Our Events
-                </h4>
-                <h2>
-                    Lectures & workshops
-                </h2>
+      <div class="container">
+        <div class="events">
+          <div class="event-head">
+            <h4>Our Events</h4>
+            <h2>Lectures & workshops</h2>
+          </div>
+          <div class="event">
+            <div class="dates">
+              <div class="num">
+                <p>05</p>
+              </div>
+              <div class="date">
+                <p>August</p>
+                <span> 11:00&nbsp;-&nbsp;14:00 </span>
+              </div>
             </div>
-                <div class="event">
-                    <div class="dates">
-                        <div class="num">
-                            <p>05</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                August 
-                            </p>
-                            <span>
-                                11:00&nbsp;-&nbsp;14:00
-                            </span>
-                        </div>
-                    </div>
-                    <div class="info-text-event">
-                        <p>
-                            Formation of the organizational structure of the company in the face of uncertainty.
-                        </p>
-                        <span>Onine master-class</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="dates">
-                        <div class="num">
-                            <p>24</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                               July 
-                            </p>
-                            <span>
-                                11:00&nbsp;-&nbsp;12:30
-                            </span>
-                        </div>
-                    </div>
-                    <div class="info-text-event">
-                        <p>
-                            Building a customer service department. Best Practices.
-                        </p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
-                </div>
-                <div class="event event-last-chiled">
-                    <div class="dates">
-                        <div class="num">
-                            <p>16</p>
-                        </div>
-                        <div class="date">
-                            <p>
-                                July 
-                            </p>
-                            <span>
-                                10:00&nbsp;-&nbsp;13:00
-                            </span>
-                        </div>
-                    </div>
-                    <div class="info-text-event">
-                        <p>
-                            How to apply methods of speculative design in practice. Worldbuilding prototyping.
-                        </p>
-                        <span>Onine workshop</span>
-                    </div>
-                    <div>
-                    <a href="#" class="btn about active">View more</a>
-                    </div>
-                </div>
-                <div class="do">
-                    <h3>
-                        Do you want more?
-                    </h3>
-                    <a  class="btn" href="./events.html">Explore all events</a>
-                </div>         
+            <div class="info-text-event">
+              <p>
+                Formation of the organizational structure of the company in the
+                face of uncertainty.
+              </p>
+              <span>Onine master-class</span>
             </div>
+            <div>
+              <a href="#" class="btn about active">View more</a>
+            </div>
+          </div>
+          <div class="event">
+            <div class="dates">
+              <div class="num">
+                <p>24</p>
+              </div>
+              <div class="date">
+                <p>July</p>
+                <span> 11:00&nbsp;-&nbsp;12:30 </span>
+              </div>
+            </div>
+            <div class="info-text-event">
+              <p>Building a customer service department. Best Practices.</p>
+              <span>Onine lecture</span>
+            </div>
+            <div>
+              <a href="#" class="btn about active">View more</a>
+            </div>
+          </div>
+          <div class="event event-last-chiled">
+            <div class="dates">
+              <div class="num">
+                <p>16</p>
+              </div>
+              <div class="date">
+                <p>July</p>
+                <span> 10:00&nbsp;-&nbsp;13:00 </span>
+              </div>
+            </div>
+            <div class="info-text-event">
+              <p>
+                How to apply methods of speculative design in practice.
+                Worldbuilding prototyping.
+              </p>
+              <span>Onine workshop</span>
+            </div>
+            <div>
+              <a href="#" class="btn about active">View more</a>
+            </div>
+          </div>
+          <div class="do">
+            <h3>Do you want more?</h3>
+            <a class="btn" href="./events.html">Explore all events</a>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="container">
-            <div class="wrapper">
-                    <div class="createx">
-                        <h4>
-                            Createx Certificate
-                        </h4>
-                        <h2>
-                            Your expertise will be confirmed
-                        </h2>
-                        <p>
-                            We are accredited by international professional organizations and institutes:
-                        </p>
-                        <img src="img/log1.svg" alt="del mar strategy">
-                        <img src="img/log2.svg" alt="sential consulting">
-                        <img src="img/log3.svg" alt="national">
-                    </div>
-                    <div class="certificat">
-                        <img src="img/certificat.png" alt="certificat">
-                        <div class="shape-cerf">
-                        </div>
-                    </div>
-            </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="createx">
+            <h4>Createx Certificate</h4>
+            <h2>Your expertise will be confirmed</h2>
+            <p>
+              We are accredited by international professional organizations and
+              institutes:
+            </p>
+            <img src="img/log1.svg" alt="del mar strategy" />
+            <img src="img/log2.svg" alt="sential consulting" />
+            <img src="img/log3.svg" alt="national" />
+          </div>
+          <div class="certificat">
+            <img src="img/certificat.png" alt="certificat" />
+            <div class="shape-cerf"></div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="team team_people_block">
-        <div class="container">
-            <div class="teams">
-                <div class="team-heads">
-                    <div class="team-head">
-                        <h4>
-                            Best tutors are all here
-                        </h4>
-                        <h2>
-                            Meet our team
-                        </h2>
-                    </div>
-                    <div class="button">
-                        <div class="arrow-left" id="btn-prev">
-                            <div class="arrow-black-left">
-                                <img src="img/prev-btn.svg" alt="arrow-left">
-                            </div>
-                            <div class="arrow-red-left">
-                                <img src="img/Right.svg" alt="arrow-left">
-                            </div>
-                        </div>
-                        <div class="arrow-right" id="btn-next">
-                            <div class="arrow-black-right">
-                                <img src="img/prev-btn.svg" alt="arrow-right">
-                            </div> 
-                            <div class="arrow-red-right">
-                                <img src="img/Right.svg" alt="arrow-right">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-people people-active">
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Dianne.png" alt="Dianne">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Dianne Russell
-                        </p>
-                        <span>
-                            Founder and CEO
-                        </span>
-                    </div>
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Jerome.png" alt="Jerome">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Jerome Bell
-                        </p>
-                        <span>
-                            Founder and Program Director
-                        </span>
-                    </div>      
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Kristin.png" alt="Kristin">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Kristin Watson
-                        </p>
-                        <span>
-                            Curator of Marketing Course
-                        </span>
-                    </div>      
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Marvin.png" alt="Marvin">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Marvin McKinney
-                        </p>
-                        <span>
-                            Curator of Management Course
-                        </span>
-                    </div>            
-                </div>              
-                <div class="team-people">
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Brooklyn.png" alt="Brooklyn">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Brooklyn Simmons
-                        </p>
-                        <span>
-                            Developmen
-                        </span>
-                    </div>
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Leslie.png" alt="Leslie">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Leslie Alexander Li
-                        </p>
-                        <span>
-                            HR & Recruting
-                        </span>
-                    </div>      
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Kathryn.png" alt="Kathryn">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Kathryn Murphy
-                        </p>
-                        <span>
-                            HR & Recruting
-                        </span>
-                    </div>      
-                    <div class="people"> 
-                        <div class="team-card">
-                             <img src="img/Cody.png" alt="Cody">
-                             <div class="show">                            
-                                <img src="img/gradient.png" alt="gradient">
-                                <div class="icon">
-                                    <a target="_blank" href="https://facebook.com"><img src="img/Facebook.svg" alt="Facebook"></a>
-                                    <a target="_blank" href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="instagram"></a>
-                                    <a target="_blank" href="https://ru.linkedin.com/"><img src="img/Linked-In.svg" alt="Linked-In"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Cody Fisher
-                        </p>
-                        <span>
-                            Curator of Design Course
-                        </span>
-                    </div>            
-                </div>
+      <div class="container">
+        <div class="teams">
+          <div class="team-heads">
+            <div class="team-head">
+              <h4>Best tutors are all here</h4>
+              <h2>Meet our team</h2>
             </div>
+            <div class="button">
+              <div class="arrow-left" id="btn-prev">
+                <div class="arrow-black-left">
+                  <img src="img/prev-btn.svg" alt="arrow-left" />
+                </div>
+                <div class="arrow-red-left">
+                  <img src="img/Right.svg" alt="arrow-left" />
+                </div>
+              </div>
+              <div class="arrow-right" id="btn-next">
+                <div class="arrow-black-right">
+                  <img src="img/prev-btn.svg" alt="arrow-right" />
+                </div>
+                <div class="arrow-red-right">
+                  <img src="img/Right.svg" alt="arrow-right" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-people people-active">
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Dianne.png" alt="Dianne" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Dianne Russell</p>
+              <span> Founder and CEO </span>
+            </div>
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Jerome.png" alt="Jerome" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Jerome Bell</p>
+              <span> Founder and Program Director </span>
+            </div>
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Kristin.png" alt="Kristin" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Kristin Watson</p>
+              <span> Curator of Marketing Course </span>
+            </div>
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Marvin.png" alt="Marvin" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Marvin McKinney</p>
+              <span> Curator of Management Course </span>
+            </div>
+          </div>
+          <div class="team-people">
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Brooklyn.png" alt="Brooklyn" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Brooklyn Simmons</p>
+              <span> Developmen </span>
+            </div>
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Leslie.png" alt="Leslie" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Leslie Alexander Li</p>
+              <span> HR & Recruting </span>
+            </div>
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Kathryn.png" alt="Kathryn" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Kathryn Murphy</p>
+              <span> HR & Recruting </span>
+            </div>
+            <div class="people">
+              <div class="team-card">
+                <img src="img/Cody.png" alt="Cody" />
+                <div class="show">
+                  <img src="img/gradient.png" alt="gradient" />
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com"
+                      ><img src="img/Facebook.svg" alt="Facebook"
+                    /></a>
+                    <a target="_blank" href="https://www.instagram.com/"
+                      ><img src="img/Instagram.svg" alt="instagram"
+                    /></a>
+                    <a target="_blank" href="https://ru.linkedin.com/"
+                      ><img src="img/Linked-In.svg" alt="Linked-In"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p>Cody Fisher</p>
+              <span> Curator of Design Course </span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="team slider_team">
-        <div class="container">
-            <div class="benefits">
-                <h4>Testimonials</h4>
-                <h2>What our students say</h2>
-            </div>
-            <div class="benefit">
-            <div class="button button2">
-                <div class="arrow-left" id="btn-prev1">
-                    <div class="arrow-black-left">
-                        <img src="img/prev-btn.svg" alt="arrow-left">
-                    </div>
-                    <div class="arrow-red-left">
-                        <img src="img/Right.svg" alt="arrow-left">
-                    </div>
-                </div>
-            </div>
-            <div class="rewiews">
-                <img class="braces" src="img/braces.svg" alt="braces">
-                <div class="rewiew rewiew-active" >
-                    <p class="text-study">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-                    </p>
-                    <div class="study-user">
-                        <div class="study-img">
-                            <img src="img/image.png" alt="image">
-                        </div>
-                        <div class="study-name">
-                            <p>
-                                Eleanor Pena
-                            </p>
-                            <span>
-                                Position, Course
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="rewiew">
-                    <p class="text-study">
-                        Feedback is a written or oral statement based on the expression of a personal emotional and evaluative attitude to what he saw, heard or experienced. This is an opinion about someone or something, analysis, analysis, evaluation of a product or service provided
-                    </p>
-                    <div class="study-user">
-                        <div class="study-img">
-                            <img src="img/Diana.png" alt="image">
-                        </div>
-                        <div class="study-name">
-                            <p>
-                                Diana Anderson
-                            </p>
-                            <span>
-                                Position, Course
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="rewiew">
-                    <p class="text-study">
-                        Thank you very much for your work! I express my deep gratitude to the entire team. I signed up, quickly helped with the design. The whole team is very friendly, polite and tactful. And also there are always pleasant conditions and discounts for us. Thank you very much for your work!
-                    </p>
-                    <div class="study-user">
-                        <div class="study-img">
-                            <img src="img/Andrea.png" alt="image">
-                        </div>
-                        <div class="study-name">
-                            <p>
-                                Andrea Pearson
-                            </p>
-                            <span>
-                                Position, Course
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="rewiew">
-                    <p class="text-study">
-                        Customer reviews - feedback from users on your products or services and an obligatory attribute of a business. However, companies do not always understand their meaning: they do not collect, they only respond to positive responses and do not work with negative ones. This approach is a mistake. Reviews form customer loyalty. 
-                    </p>
-                    <div class="study-user">
-                        <div class="study-img">
-                            <img src="img/Maria.png" alt="image">
-                        </div>
-                        <div class="study-name">
-                            <p>
-                                Maria Longoria
-                            </p>
-                            <span>
-                                Position, Course
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="rewiew">
-                    <p class="text-study">  
-                        Customer reviews are one of the pillars of business. Whole sales systems are built on reviews, a reputation is earned, and the company acquires loyal customers. At the same time, such a phenomenon as negative reviews cannot be ruled out. No matter how hard you try, you can't avoid criticism.
-                    </p>
-                    <div class="study-user">
-                        <div class="study-img">
-                            <img src="img/Alex.png" alt="image">
-                        </div>
-                        <div class="study-name">
-                            <p>
-                                Alex Evans
-                            </p>
-                            <span>
-                                Position, Course
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="button button2">
-                <div class="arrow-right" id="btn-next1">
-                    <div class="arrow-black-right">
-                        <img src="img/prev-btn.svg" alt="arrow-right">
-                    </div> 
-                    <div class="arrow-red-right">
-                        <img src="img/Right.svg" alt="arrow-right">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="slider-controls">
-                <div class="control control-active"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-            </div>
+      <div class="container">
+        <div class="benefits">
+          <h4>Testimonials</h4>
+          <h2>What our students say</h2>
         </div>
+        <div class="benefit">
+          <div class="button button2">
+            <div class="arrow-left" id="btn-prev1">
+              <div class="arrow-black-left">
+                <img src="img/prev-btn.svg" alt="arrow-left" />
+              </div>
+              <div class="arrow-red-left">
+                <img src="img/Right.svg" alt="arrow-left" />
+              </div>
+            </div>
+          </div>
+          <div class="rewiews">
+            <img class="braces" src="img/braces.svg" alt="braces" />
+            <div class="rewiew rewiew-active">
+              <p class="text-study">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/image.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Eleanor Pena</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Feedback is a written or oral statement based on the expression
+                of a personal emotional and evaluative attitude to what he saw,
+                heard or experienced. This is an opinion about someone or
+                something, analysis, analysis, evaluation of a product or
+                service provided
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Diana.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Diana Anderson</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Thank you very much for your work! I express my deep gratitude
+                to the entire team. I signed up, quickly helped with the design.
+                The whole team is very friendly, polite and tactful. And also
+                there are always pleasant conditions and discounts for us. Thank
+                you very much for your work!
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Andrea.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Andrea Pearson</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Customer reviews - feedback from users on your products or
+                services and an obligatory attribute of a business. However,
+                companies do not always understand their meaning: they do not
+                collect, they only respond to positive responses and do not work
+                with negative ones. This approach is a mistake. Reviews form
+                customer loyalty.
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Maria.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Maria Longoria</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Customer reviews are one of the pillars of business. Whole sales
+                systems are built on reviews, a reputation is earned, and the
+                company acquires loyal customers. At the same time, such a
+                phenomenon as negative reviews cannot be ruled out. No matter
+                how hard you try, you can't avoid criticism.
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Alex.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Alex Evans</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button button2">
+            <div class="arrow-right" id="btn-next1">
+              <div class="arrow-black-right">
+                <img src="img/prev-btn.svg" alt="arrow-right" />
+              </div>
+              <div class="arrow-red-right">
+                <img src="img/Right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <div class="control control-active"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+        </div>
+      </div>
     </section>
     <section class="our-blog">
-        <div class="container">
-            <div class="team-heads blogins">
-                <div class="team-head">
-                    <h4>
-                        Our blog
-                    </h4>
-                    <h2>
-                        Latest posts
-                    </h2>
-                </div>
-                <div >
-                    <a class="btn" href="./blog.html">Go to blog</a>
-                </div>
-            </div>
-            <div class="blogs">
-                <div class="blog">
-                    <div class="podcast">
-                        <img src="img/mic.svg" alt="mic">
-                        <p>&nbsp;Podcast</p>
-                    </div>
-                    <div class="posts info">
-                        <img src="img/imagepodcast.png" alt="image">
-                        <div class="meta info">
-                            <span>
-                                Marketing
-                            </span>
-                            <img class="divider" src="img/divider.svg" alt="divider">
-                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
-                            <span>    
-                                September 4, 2020
-                            </span>
-                            <img class="divider" src="img/divider.svg" alt="divider">
-                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
-                            <span>
-                                36 min
-                            </span> 
-                        </div>
-                        <p>
-                            What is traffic arbitrage and does it really make money?
-                        </p>
-                        <span class="posts-info-text">
-                            Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
-                        </span>
-                        <div class="search">
-                            <a class="arrow_red_search" href="./single_post.html">Listen <img src="img/arrow-red.svg" alt="arrow"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog blogvid">
-                    <div class="podcast">
-                        <img src="img/vid.svg" alt="vid">
-                        <p>&nbsp;Video</p>
-                    </div>
-                    <div class="posts info">
-                        <img src="img/imagevideo.png" alt="image">
-                        <div class="meta info">
-                            <span>
-                                Management
-                            </span>
-                            <img class="divider" src="img/divider.svg" alt="divider">
-                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
-                            <span>    
-                                August 25, 2020
-                            </span>
-                            <img class="divider" src="img/divider.svg" alt="divider">
-                            <img class="calendar" src="img/Clock.svg" alt="Clock"> 
-                            <span>
-                                45 min
-                            </span> 
-                        </div>
-                        <p>
-                            What to do and who to talk to if you want to get feedback on the product
-                        </p>
-                        <span class="posts-info-text">
-                            Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...
-                        </span>
-                        <div class="search">
-                            <a class="arrow_red_search" href="./single_post.html">Watch<img src="img/arrow-red.svg" alt="arrow"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog blogarticle">
-                    <div class="podcast">
-                        <img src="img/Files.svg" alt="mic">
-                        <p>&nbsp;Article</p>
-                    </div>
-                    <div class="posts info">
-                        <img src="img/imagearticle.png" alt="image">
-                        <div class="meta info">
-                            <span>
-                                Design
-                            </span>
-                            <img class="divider" src="img/divider.svg" alt="divider">
-                            <img  class="calendar" src="img/Calendar.svg" alt="cal">
-                            <span>    
-                                August 8, 2020
-                            </span>
-                        </div>
-                        <p>
-                            Should you choose a creative profession if you are attracted to creativity?
-                        </p>
-                        <span class="posts-info-text">
-                            Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...
-                        </span>
-                        <div class="search">
-                            <a class="arrow_red_search" href="./single_post.html">Read<img src="img/arrow-red.svg" alt="arrow"></a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+      <div class="container">
+        <div class="team-heads blogins">
+          <div class="team-head">
+            <h4>Our blog</h4>
+            <h2>Latest posts</h2>
+          </div>
+          <div>
+            <a class="btn" href="./blog.html">Go to blog</a>
+          </div>
         </div>
+        <div class="blogs">
+          <div class="blog">
+            <div class="podcast">
+              <img src="img/mic.svg" alt="mic" />
+              <p>&nbsp;Podcast</p>
+            </div>
+            <div class="posts info">
+              <img src="img/imagepodcast.png" alt="image" />
+              <div class="meta info">
+                <span> Marketing </span>
+                <img class="divider" src="img/divider.svg" alt="divider" />
+                <img class="calendar" src="img/Calendar.svg" alt="cal" />
+                <span> September 4, 2020 </span>
+                <img class="divider" src="img/divider.svg" alt="divider" />
+                <img class="calendar" src="img/Clock.svg" alt="Clock" />
+                <span> 36 min </span>
+              </div>
+              <p>What is traffic arbitrage and does it really make money?</p>
+              <span class="posts-info-text">
+                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                Convallis proin dignissim lacus, purus gravida...
+              </span>
+              <div class="search">
+                <a class="arrow_red_search" href="./single_post.html"
+                  >Listen <img src="img/arrow-red.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog blogvid">
+            <div class="podcast">
+              <img src="img/vid.svg" alt="vid" />
+              <p>&nbsp;Video</p>
+            </div>
+            <div class="posts info">
+              <img src="img/imagevideo.png" alt="image" />
+              <div class="meta info">
+                <span> Management </span>
+                <img class="divider" src="img/divider.svg" alt="divider" />
+                <img class="calendar" src="img/Calendar.svg" alt="cal" />
+                <span> August 25, 2020 </span>
+                <img class="divider" src="img/divider.svg" alt="divider" />
+                <img class="calendar" src="img/Clock.svg" alt="Clock" />
+                <span> 45 min </span>
+              </div>
+              <p>
+                What to do and who to talk to if you want to get feedback on the
+                product
+              </p>
+              <span class="posts-info-text">
+                Neque a, senectus consectetur odio in aliquet nec eu. Ultricies
+                ac nibh urna urna sagittis faucibus...
+              </span>
+              <div class="search">
+                <a class="arrow_red_search" href="./single_post.html"
+                  >Watch<img src="img/arrow-red.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog blogarticle">
+            <div class="podcast">
+              <img src="img/Files.svg" alt="mic" />
+              <p>&nbsp;Article</p>
+            </div>
+            <div class="posts info">
+              <img src="img/imagearticle.png" alt="image" />
+              <div class="meta info">
+                <span> Design </span>
+                <img class="divider" src="img/divider.svg" alt="divider" />
+                <img class="calendar" src="img/Calendar.svg" alt="cal" />
+                <span> August 8, 2020 </span>
+              </div>
+              <p>
+                Should you choose a creative profession if you are attracted to
+                creativity?
+              </p>
+              <span class="posts-info-text">
+                Curabitur nisl tincidunt eros venenatis vestibulum ac placerat.
+                Tortor, viverra sed vulputate ultrices...
+              </span>
+              <div class="search">
+                <a class="arrow_red_search" href="./single_post.html"
+                  >Read<img src="img/arrow-red.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="subscribe_input">
-        <div class="container inputing">
-            <div class="benefits inputs">
-                <h4>
-                    Don’t miss anything
-                </h4>
-                <h2>
-                    Subscribe to the Createx School announcements
-                </h2>
-            </div>
-            <form class="input">
-                <input type="email"  placeholder="Your working email" name="email" required class="inp">
-                <button type="submit" class="btn btn-form">Subscribe</button>
-            </form>
+      <div class="container inputing">
+        <div class="benefits inputs">
+          <h4>Don’t miss anything</h4>
+          <h2>Subscribe to the Createx School announcements</h2>
         </div>
-        <div class="inpimg">
-            <div class="inp-left-img">
-                <img src="img/input.png" alt="image">
-            </div>
-            <div class="inp-right-img">
-                <img src="img/input.png" alt="image">
-            </div>
+        <form class="input">
+          <input
+            type="email"
+            placeholder="Your working email"
+            name="email"
+            required
+            class="inp"
+          />
+          <button type="submit" class="btn btn-form">Subscribe</button>
+        </form>
+      </div>
+      <div class="inpimg">
+        <div class="inp-left-img">
+          <img src="img/input.png" alt="image" />
         </div>
+        <div class="inp-right-img">
+          <img src="img/input.png" alt="image" />
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="foot">
-                    <div class="block-foot1">
-                        <img class="logo-foot" src="img/logofoot.svg" alt="Logo">
-                        <p>
-                            Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to&nbsp;online learning, internships and employment in&nbsp;the&nbsp;largest companies in the country. 
-                        </p>
-                        <a class="foot-link" href="https://facebook.com" target="_blank"><img src="img/Facebook-fot.svg" alt="FB"></a>
-                        <a class="foot-link" href="https://twitter.com/" target="_blank"><img src="img/Twitter-fot.svg" alt="TW"></a>
-                        <a class="foot-link" href="https://Youtube.com" target="_blank"><img src="img/YouTube-fot.svg" alt="Y"></a>
-                        <a class="foot-link"href="https://telegram.com" target="_blank"><img src="img/telegram-fot.svg" alt="Telegram"></a>
-                        <a class="foot-link" href="https://instagram.com" target="_blank"><img src="img/Instagram-fot.svg" alt="Inst"></a>
-                        <a href="https://linkedin.com" target="_blank"><img src="img/Linked-In-fot.svg" alt="IN"></a>
-                    </div>
-                    <div class="block-foot2">
-                        <p class="foot-p">
-                            SITE MAP
-                        </p>
-                        <ul class="ul-foot">
-                            <li><a class="li-foot" href="#">About Us</a></li>
-                            <li><a class="li-foot" href="#">Courses</a></li>
-                            <li><a class="li-foot" href="#">Events</a></li>
-                            <li><a class="li-foot" href="#">Blog</a></li>
-                            <li><a class="li-foot" href="#">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <div class="block-foot3">
-                        <p class="foot-p">
-                            COURSES
-                        </p>
-                        <ul class="ul-foot">
-                            <li><a class="li-foot" href="#">Marketing</a></li>
-                            <li><a class="li-foot" href="#">Management</a></li>
-                            <li><a class="li-foot" href="#">HR & Recruting</a></li>
-                            <li><a class="li-foot" href="#">Design</a></li>
-                            <li><a class="li-foot" href="#">Development</a></li>
-                        </ul>
-                    </div>
-                    <div class="block-foot4">
-                        <p class="foot-p">
-                            CONTACT US
-                        </p>
-                        <ul class="ul-foot">
-                            <li><a class="li-foot" href="tel:(405)555-0128"><img class="icon-foot icon-foot1" src="img/iPhone.svg" alt="Phone">(405) 555-0128</a></li>
-                            <li><a class="li-foot" href="mailto:hello@createx.com"><img class="icon-foot" src="img/Mail.svg" alt="mail">hello@createx.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="block-foot5">
-                        <p class="foot-p">
-                            SIGN UP TO OUR NEWSLETTER
-                        </p>
-                        <form  class="form-footer" action="#">
-                            <input class="address" type="email" placeholder="Email address" name="email" required>
-                            <button class="arrowmail" type="submit"><img src="img/arrowemail.svg" alt="arrow"></button>
-                        </form>
-                        <p class="subscribe">
-                            *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
-                        </p>
-                    </div>
-                </div>
+      <div class="footer">
+        <div class="container">
+          <div class="foot">
+            <div class="block-foot1">
+              <img class="logo-foot" src="img/logofoot.svg" alt="Logo" />
+              <p>
+                Createx Online School is a leader in online studying. We have
+                lots of courses and programs from the main market experts. We
+                provide relevant approaches to&nbsp;online learning, internships
+                and employment in&nbsp;the&nbsp;largest companies in the
+                country.
+              </p>
+              <a class="foot-link" href="https://facebook.com" target="_blank"
+                ><img src="img/Facebook-fot.svg" alt="FB"
+              /></a>
+              <a class="foot-link" href="https://twitter.com/" target="_blank"
+                ><img src="img/Twitter-fot.svg" alt="TW"
+              /></a>
+              <a class="foot-link" href="https://Youtube.com" target="_blank"
+                ><img src="img/YouTube-fot.svg" alt="Y"
+              /></a>
+              <a class="foot-link" href="https://telegram.com" target="_blank"
+                ><img src="img/telegram-fot.svg" alt="Telegram"
+              /></a>
+              <a class="foot-link" href="https://instagram.com" target="_blank"
+                ><img src="img/Instagram-fot.svg" alt="Inst"
+              /></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><img src="img/Linked-In-fot.svg" alt="IN"
+              /></a>
             </div>
-        </div>
-        <div class="footer_footer">
-            <div class="container">
-                <div class="all-rights">
-                    <div class="all-right">
-                        <p>
-                            © All rights reserved.Made with
-                        </p>
-                        <img  class="heart" src="img/Heart.svg" alt="heart">
-                        <p>
-                            by Createx Studio 
-                        </p>
-                    </div>
-                    <div class="go">
-                        <a href="#">GO TO TOP</a>                   
-                    </div>
-                </div>
+            <div class="block-foot2">
+              <p class="foot-p">SITE MAP</p>
+              <ul class="ul-foot">
+                <li><a class="li-foot" href="#">About Us</a></li>
+                <li><a class="li-foot" href="#">Courses</a></li>
+                <li><a class="li-foot" href="#">Events</a></li>
+                <li><a class="li-foot" href="#">Blog</a></li>
+                <li><a class="li-foot" href="#">Contacts</a></li>
+              </ul>
             </div>
+            <div class="block-foot3">
+              <p class="foot-p">COURSES</p>
+              <ul class="ul-foot">
+                <li><a class="li-foot" href="#">Marketing</a></li>
+                <li><a class="li-foot" href="#">Management</a></li>
+                <li><a class="li-foot" href="#">HR & Recruting</a></li>
+                <li><a class="li-foot" href="#">Design</a></li>
+                <li><a class="li-foot" href="#">Development</a></li>
+              </ul>
+            </div>
+            <div class="block-foot4">
+              <p class="foot-p">CONTACT US</p>
+              <ul class="ul-foot">
+                <li>
+                  <a class="li-foot" href="tel:(405)555-0128"
+                    ><img
+                      class="icon-foot icon-foot1"
+                      src="img/iPhone.svg"
+                      alt="Phone"
+                    />(405) 555-0128</a
+                  >
+                </li>
+                <li>
+                  <a class="li-foot" href="mailto:hello@createx.com"
+                    ><img
+                      class="icon-foot"
+                      src="img/Mail.svg"
+                      alt="mail"
+                    />hello@createx.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="block-foot5">
+              <p class="foot-p">SIGN UP TO OUR NEWSLETTER</p>
+              <form class="form-footer" action="#">
+                <input
+                  class="address"
+                  type="email"
+                  placeholder="Email address"
+                  name="email"
+                  required
+                />
+                <button class="arrowmail" type="submit">
+                  <img src="img/arrowemail.svg" alt="arrow" />
+                </button>
+              </form>
+              <p class="subscribe">
+                *Subscribe to our newsletter to receive communications and early
+                updates from Createx SEO Agency.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footer_footer">
+        <div class="container">
+          <div class="all-rights">
+            <div class="all-right">
+              <p>© All rights reserved.Made with</p>
+              <img class="heart" src="img/Heart.svg" alt="heart" />
+              <p>by Createx Studio</p>
+            </div>
+            <div class="go">
+              <a href="#">GO TO TOP</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/app.js"></script>
     <script src="js/app2.js"></script>
     <script src="js/modal.js"></script>
-</body>
+  </body>
 </html>

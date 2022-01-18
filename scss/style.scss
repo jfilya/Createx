@@ -247,7 +247,7 @@
     align-items: center;
     &_podcast {
       display: flex;
-      position: relative;
+      position: revert;
     }
   }
   &__blog {
@@ -893,7 +893,6 @@
     justify-content: center;
     &__right {
       max-width: 760px;
-      
     }
     &__left {
       display: none;
@@ -1033,6 +1032,33 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .sing {
+    &__in {
+      &__field {
+        &__feed {
+          &-back {
+            max-width: 300px;
+          }
+        }
+        &__btns {
+          &-btn {
+            max-width: 300px;
+          }
+        }
+        &__check{
+          &-forgot{
+            margin-top: -20px;
+          }
+        }
+      }
+      &__line {
+        width: 400px;
+      }
+    }
+  }
+
+}
 
 @media (max-width: 420px) {
   .questions {
@@ -1054,11 +1080,31 @@
       max-width: 300px;
       &__caption {
         &__headingfoot {
-          display:block;
+          display: block;
           &__share {
-            display:block;
+            display: block;
           }
         }
+      }
+    }
+  }
+  .sing {
+    &__in {
+      &__field {
+        &__feed {
+          &-back {
+            max-width: 280px;
+          }
+        }
+        &__btns {
+          &-btn {
+            max-width: 280px;
+          }
+        }
+      }
+      &__line {
+        width: 300px;
+        margin-left: -11px;
       }
     }
   }
@@ -1069,20 +1115,20 @@
     &__question {
       &__field {
         &__block {
-          &-enter{
-             width: 230px;
+          &-enter {
+            width: 230px;
           }
-         &-message{
-          width: 230px;
-         }
+          &-message {
+            width: 230px;
+          }
           &-agree {
             &-span {
               width: 230px;
             }
           }
         }
-        &__blocking{
-          &-btn{
+        &__blocking {
+          &-btn {
             width: 230px;
             padding: 18px 66px;
           }

@@ -17,6 +17,36 @@
 <body>
     <header>
         <div class="container header__about">
+            <input type="checkbox" id="burger" />
+            <label for="burger"></label>
+            <nav>
+              <ul>
+                <li class="navigation-check">
+                  <a class="name_red_html" href="./about.html">About Us</a>
+                </li>
+                <li class="navigation-check">
+                  <a href="./courses.html">Courses</a>
+                </li>
+                <li class="navigation-check"><a href="./events.html">Events</a></li>
+                <li class="navigation-check"><a href="./blog.html">Blog</a></li>
+                <li class="navigation-check">
+                  <a href="./contacts.html">Contacts</a>
+                </li>
+                <li>
+                  <button id="btn-open-sing-in" class="actions_login">
+                    <img class="login_img" src="img/login_img.svg" alt="login">
+                    Log in
+                  </button>
+                </li>
+                <li>
+                  <button id="btn-open-sing-up" class="actions_login">
+                    <img class="login_img" src="img/login_img.svg" alt="login">
+                    Register
+                  </button>
+                </li>
+                <li  class="get-consultation-navigation"><a href="./contacts.html" class="btn">Get consutlation</a></li>
+              </ul>
+            </nav>
             <div id="wrapper-modal-sing-in">
                 <div id="overlay"></div>
                 <div id="modal-window">
@@ -133,9 +163,15 @@
                 </ul>
                 <div class="header_top_actions">
                     <a href="./contacts.html" class="actions_consultation btn">Get consutlation</a>
-                    <button id="btn-open-sing-in" class="actions_login"><img class="login_img" src="img/login_img.svg" alt="login"> Log in</button>
-                    <span>&nbsp;/&nbsp;</span>
-                    <button id="btn-open-sing-up" class="actions_login">Register</button>
+                    <div class="btn-login">
+                        <button id="btn-open-sing-in1" class="actions_login">
+                          <img class="login_img" src="img/login_img.svg" alt="login" />
+                          Log in&nbsp;/&nbsp;
+                        </button>
+                        <button id="btn-open-sing-up1" class="actions_login">
+                          Register
+                        </button>
+                    </div>
                 </div>
             </div>         
             <div class="header_middle header_middle-about">
