@@ -1802,7 +1802,6 @@ h3 {
   #modal-windowup,
   #modal-window {
     width: 400px;
-    top: 40%;
   }
   [for="burger"] {
     padding: 0px;
