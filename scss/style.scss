@@ -264,7 +264,7 @@
 }
 .blog {
   &__agree {
-    width: 500px;
+    max-width: 500px;
   }
 }
 .sing {
@@ -1069,10 +1069,22 @@
     &__question {
       &__field {
         &__block {
+          &-enter{
+             width: 230px;
+          }
+         &-message{
+          width: 230px;
+         }
           &-agree {
             &-span {
               width: 230px;
             }
+          }
+        }
+        &__blocking{
+          &-btn{
+            width: 230px;
+            padding: 18px 66px;
           }
         }
       }

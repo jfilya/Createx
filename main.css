@@ -263,7 +263,9 @@ button {
   height: 8px;
   border-radius: 50%;
 }
-
+.info-text-event{
+  width: 757px;
+}
 .btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: 0.2s;
@@ -483,6 +485,7 @@ h3 {
   color: #fff;
   transition: 0.2s;
 }
+.info-text-event>p,
 .info > p,
 .date > p {
   font-size: 20px;
@@ -491,9 +494,7 @@ h3 {
   margin: 0;
   margin-bottom: 4px;
 }
-.info {
-  width: 767px;
-}
+.info-text-event>span,
 .info > span,
 .date > span {
   color: #787a80;
@@ -1095,7 +1096,7 @@ h3 {
 .input_illustration_blog {
   margin-bottom: 24px;
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 .blog_h3_want {
   max-width: 600px;
@@ -1225,15 +1226,20 @@ h3 {
   .blogstatist,
   .blog-stat-img,
   .blogstatist > .posts > p,
-  .blogstatist > .posts > span {
+  .blogstatist > .posts > span,
+  .blogstatist > .info {
     max-width: 585px;
   }
   .blogvidblog,
   .blogvid-img,
   .blogvidblog > .posts > p,
-  .blogvidblog > .posts > span {
+  .blogvidblog > .posts > span,
+  .blogvidblog > .info {
     max-width: 410px;
   }
+  .info-text-event {
+    max-width: 550px;
+}
 }
 
 @media (max-width: 1024px) {
@@ -1297,19 +1303,22 @@ h3 {
   .blogvidblog > .posts > span {
     max-width: 380px;
   }
-  .wrapper-blog-inp{
+  .wrapper-blog-inp {
     flex-direction: column;
     padding-bottom: 30px;
   }
-  .imput__blog{
+  .imput__blog {
     text-align: center;
   }
   .input_illustration_blog {
     justify-content: center;
   }
-  .imput__blog{
+  .imput__blog {
     padding-top: 20px;
   }
+  .info-text-event {
+    max-width: 450px;
+}
 }
 
 @media (max-width: 960px) {
@@ -1398,6 +1407,9 @@ h3 {
   .blogvidblog > .posts > span {
     max-width: 280px;
   }
+  .info-text-event {
+    max-width: 310px;
+}
 }
 
 @media (max-width: 768px) {
@@ -1540,7 +1552,7 @@ h3 {
   .posts > span,
   .meta,
   .info,
-  .blog {
+  .blog, .info-text-event {
     max-width: 330px;
   }
   .blogstatist,
@@ -1552,18 +1564,19 @@ h3 {
   .blogvidblog,
   .blogvid-img,
   .blogvidblog > .posts > p,
-  .blogvidblog > .posts > span {
+  .blogvidblog > .posts > span,
+  .info {
     max-width: 380px;
   }
-  .blogs-single{
+  .blogs-single {
     justify-content: center;
   }
-  .do-single{
+  .do-single {
     flex-direction: column;
     display: flex;
     align-items: center;
   }
-  .do-single>h3{
+  .do-single > h3 {
     margin-right: 0px;
     text-align: center;
     margin-bottom: 20px;
@@ -1700,22 +1713,25 @@ h3 {
   .blog-stat-img,
   .blogstatist > .posts > p,
   .blogstatist > .posts > span {
-    max-width: 310px;
+    max-width: 250px;
   }
   .blogvidblog,
   .blogvid-img,
   .blogvidblog > .posts > p,
   .blogvidblog > .posts > span {
-    max-width: 310px;
+    max-width: 250px;
   }
-  .input_illustration_blog{
+  .input_illustration_blog {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .illustration_blog{
+  .illustration_blog {
     margin-bottom: 20px;
     margin-right: 0px;
+  }
+  .blog__agree {
+    width: 250px;
   }
 }
 
@@ -1733,12 +1749,28 @@ h3 {
   .block-foot4 > ul {
     display: flex;
   }
-  .info {
+  .info, .info-text-event {
     max-width: 230px;
   }
-  .blogdesign{
-    max-width:  230px;
+  .input{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
   }
+  .inp{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .btn-form{
+    width: 300px;
+  }
+}
+@media (max-width: 400px){
+  .people {
+    width: 145px;
+    height: auto;
+}
 }
 
 @media (max-width: 375px) {
@@ -1753,21 +1785,13 @@ h3 {
   .badge,
   .img,
   .cards {
-    width: 280px;
+    width: 245px;
   }
-  .input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .inp, .btn-form {
+    width: 250px;
   }
-  .input > input {
-    width: 280px;
-    margin-bottom: 15px;
-    text-align: center;
-    margin-right: 0px;
-  }
-  .input > button {
-    width: 280px;
+  .input_search_course{
+    width: 200px;
   }
   .rewiews {
     height: 385px;
@@ -1797,8 +1821,10 @@ h3 {
   .blogvidblog > .posts > span {
     max-width: 250px;
   }
-  .illustration_blog{
+  .illustration_blog {
     width: 280px;
   }
-  
+  .cards_course {
+    max-width: 245px;
+  }
 }

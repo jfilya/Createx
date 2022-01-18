@@ -248,7 +248,7 @@
 }
 
 .blog__agree {
-  width: 500px;
+  max-width: 500px;
 }
 
 .sing__in__field {
@@ -952,8 +952,18 @@
   }
 }
 @media (max-width: 375px) {
+  .questions__question__field__block-enter {
+    width: 230px;
+  }
+  .questions__question__field__block-message {
+    width: 230px;
+  }
   .questions__question__field__block-agree-span {
     width: 230px;
+  }
+  .questions__question__field__blocking-btn {
+    width: 230px;
+    padding: 18px 66px;
   }
 
   .statistics__right {
