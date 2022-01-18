@@ -980,11 +980,19 @@
   .journal {
     &__blog {
       display: block;
+      text-align: center;
     }
   }
   .statistics {
     &__right {
       max-width: 570px;
+    }
+  }
+  .masterclass{
+    &__filters{
+      &__choose{
+        margin-right: 0px;
+      }
     }
   }
 }
@@ -1046,8 +1054,8 @@
             max-width: 300px;
           }
         }
-        &__check{
-          &-forgot{
+        &__check {
+          &-forgot {
             margin-top: -20px;
           }
         }
@@ -1057,7 +1065,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 420px) {
@@ -1092,6 +1099,12 @@
     &__in {
       &__field {
         &__feed {
+          &-btn {
+            top: 43.5%;
+          }
+          &-btnup {
+            top: 54%;
+          }
           &-back {
             max-width: 280px;
           }
@@ -1128,6 +1141,7 @@
           }
         }
         &__blocking {
+          margin-bottom: 5px;
           &-btn {
             width: 230px;
             padding: 18px 66px;

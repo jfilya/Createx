@@ -90,7 +90,6 @@ button {
 
 #modal-window,
 #modal-windowup {
-  position: absolute;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -140,6 +139,7 @@ nav {
     0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
+  z-index: 2;
 }
 .navigation-check {
   margin-bottom: 20px;
@@ -1292,7 +1292,6 @@ h3 {
   }
   #burger:checked + label + nav {
     display: block;
-    transition: 0.5s;
   }
   .card-content {
     justify-content: center;
@@ -1367,8 +1366,8 @@ h3 {
   .get-consultation-navigation {
     display: none;
   }
-  [for="burger"] {
-    right: 10px;
+  .header_top{
+    justify-content: flex-start;  
   }
 }
 
@@ -1798,11 +1797,14 @@ h3 {
   }
   nav {
     height: 450px;
+    position: fixed;
+  }
+  nav>ul{
+    position: absolute;
   }
   #modal-windowup,
   #modal-window {
     width: 400px;
-    top: 40%;
   }
   [for="burger"] {
     padding: 0px;
@@ -1842,9 +1844,9 @@ h3 {
   #modal-windowup,
   #modal-window {
     width: 300px;
-    top: 40%;
     padding: 10px;
   }
+
 }
 @media (max-width: 400px) {
   .container {
@@ -1890,9 +1892,7 @@ h3 {
   .block-foot4 > ul {
     display: block;
   }
-  .form-search-course {
-    width: 200px;
-  }
+
   .blogstatist,
   .blog-stat-img,
   .blogstatist > .posts > p,
@@ -1911,4 +1911,7 @@ h3 {
   .cards_course {
     max-width: 245px;
   }
+  .input_search_course {
+    width: 270px;
+}
 }
