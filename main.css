@@ -1846,6 +1846,9 @@ h3 {
     width: 300px;
     padding: 10px;
   }
+    .blogdesign {
+    max-width: 230px;
+  }
 
 }
 @media (max-width: 400px) {
