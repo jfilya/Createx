@@ -1859,6 +1859,9 @@ h3 {
     width: 145px;
     height: auto;
   }
+    .team-card{
+    width: 150px;
+  }
 }
 
 @media (max-width: 375px) {
