@@ -1366,8 +1366,8 @@ h3 {
   .get-consultation-navigation {
     display: none;
   }
-  .header_top{
-    justify-content: flex-start;  
+  .header_top {
+    justify-content: flex-start;
   }
 }
 
@@ -1799,7 +1799,7 @@ h3 {
     height: 450px;
     position: fixed;
   }
-  nav>ul{
+  nav > ul {
     position: absolute;
   }
   #modal-windowup,
@@ -1846,7 +1846,9 @@ h3 {
     width: 300px;
     padding: 10px;
   }
-
+  .blogdesign {
+    max-width: 230px;
+  }
 }
 @media (max-width: 400px) {
   .container {
@@ -1855,6 +1857,9 @@ h3 {
   .people {
     width: 145px;
     height: auto;
+  }
+  .team-card{
+    width: 150px;
   }
 }
 
@@ -1913,5 +1918,5 @@ h3 {
   }
   .input_search_course {
     width: 270px;
-}
+  }
 }
