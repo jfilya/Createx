@@ -1859,6 +1859,9 @@ h3 {
   .blogdesign {
     max-width: 230px;
   }
+    .blogdesign {
+    max-width: 230px;
+  }
 }
 @media (max-width: 400px) {
   .container {
@@ -1877,7 +1880,10 @@ h3 {
   .show{
     margin-top: 20px;
   }
-}
+    .team-card{
+    width: 150px;
+  }
+
 
 @media (max-width: 375px) {
   .container {
