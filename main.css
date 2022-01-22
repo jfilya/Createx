@@ -1366,8 +1366,8 @@ h3 {
   .get-consultation-navigation {
     display: none;
   }
-  .header_top {
-    justify-content: flex-start;
+  .header_top{
+    justify-content: flex-start;  
   }
 }
 
@@ -1462,8 +1462,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-}
 
 @media (max-width: 768px) {
   .container {
@@ -1635,6 +1633,12 @@ h3 {
     text-align: center;
     margin-bottom: 20px;
   }
+  .show>img{
+    width: 130px;
+  }
+  .show{
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1787,6 +1791,12 @@ h3 {
   .blog__agree {
     width: 250px;
   }
+  .show>img{
+    width: 170px;
+  }
+  .show{
+    margin-top: 20px;
+  }
 }
 @media (max-width: 500px) {
   .actions_consultation {
@@ -1799,7 +1809,7 @@ h3 {
     height: 450px;
     position: fixed;
   }
-  nav > ul {
+  nav>ul{
     position: absolute;
   }
   #modal-windowup,
@@ -1861,6 +1871,12 @@ h3 {
   .team-card{
     width: 150px;
   }
+  .show>img{
+    width: 150px;
+  }
+  .show{
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1918,5 +1934,11 @@ h3 {
   }
   .input_search_course {
     width: 270px;
-  }
+}
+.show>img{
+  width: 120px;
+}
+.show{
+  margin-top: 16px;
+}
 }
