@@ -440,7 +440,7 @@
 }
 .best {
   &__jobs {
-    padding-top: 80px;
+    padding-top: 180px;
     padding-bottom: 100px;
     &__element {
       display: flex;
@@ -809,6 +809,357 @@
     }
   }
 }
+.course {
+  &__user {
+    padding-top: 28px;
+    background-color: #ffdad6;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/background-course-user.svg);
+  }
+}
+.human {
+  padding: 120px 0 120px 0;
+  text-align: center;
+  h2 {
+    max-width: 1020px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+.expirience {
+  padding: 120px 0 114px 0;
+  &__course {
+    max-width: 600px;
+    &__about {
+      p {
+        padding: 40px 0 48px 0;
+      }
+    }
+  }
+  &__join {
+    padding: 40px 32px;
+    width: 495px;
+    height: 550px;
+    border: 1px solid #e5e8ed;
+    box-sizing: border-box;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    &__dates {
+      margin-bottom: 32px;
+      &__data {
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      &__red {
+        font-weight: bold;
+        font-size: 24px;
+        color: #ff3f3a;
+        margin-bottom: 8px;
+      }
+      &__info {
+        color: #787a80;
+      }
+    }
+    &__btn {
+      width: 431px;
+      height: 44px;
+    }
+  }
+}
+.fishers {
+  padding-bottom: 180px;
+  padding-top: 66px;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/back-fisher.svg);
+  background-repeat: no-repeat;
+}
+.fisher {
+  align-items: flex-start;
+  &__image {
+    width: 495px;
+    height: 580px;
+    background-color: #ffcf2d;
+    img {
+      position: absolute;
+      margin-left: 19px;
+      margin-top: -20px;
+    }
+  }
+  &__curator {
+    max-width: 600px;
+    h2 {
+      display: block;
+      margin-bottom: 16px;
+    }
+    span {
+      color: #787a80;
+      font-size: 20px;
+      display: block;
+      margin-bottom: 32px;
+    }
+    &__rate {
+      margin-bottom: 32px;
+      li {
+        font-weight: bold;
+        margin-bottom: 4px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        &:first-child::before {
+          background: url(../img/star-Fisher.svg);
+          background-repeat: no-repeat;
+        }
+        &:last-child::before {
+          background: url(../img/person-Fisher.svg);
+          background-repeat: no-repeat;
+        }
+      }
+      li::before {
+        content: "";
+        background: url(../img/play-Fisher.svg);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        padding-right: 24px;
+      }
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    &__social {
+      display: flex;
+      width: 168px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.steps {
+  padding-bottom: 180px;
+  &__heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__idle {
+      max-width: 285px;
+      &__number {
+        display: flex;
+        align-items: center;
+        p {
+          display: flex;
+          font-weight: 900;
+          font-size: 46px;
+          color: #d7dadd;
+          width: 116px;
+          height: 116px;
+          align-items: center;
+          justify-content: center;
+          margin-left: -30px;
+          &:hover {
+            transition: 0.2s;
+            background-color: #ffdddd;
+            color: #ff3f3a;
+            border-radius: 50%;
+            border: 16px solid #fff3f3;
+          }
+        }
+        &__line {
+          height: 1px;
+          background: repeating-linear-gradient(
+            to right,
+            #d7dadd 0,
+            #d7dadd 5px,
+            transparent 3px,
+            transparent 7px
+          );
+          width: 190px;
+        }
+      }
+      &__text {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      span {
+        color: #787a80;
+        display: flex;
+      }
+    }
+  }
+}
+
+.discount {
+  padding: 48px 65px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #ffdad6;
+  background-image: url(../img/CTA.svg);
+  margin-bottom: 180px;
+}
+
+.choosejoin {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__check {
+    &__full {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    &__pick {
+      border: 1px solid #d7dadd;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 291px;
+      height: 44px;
+      padding-left: 16px;
+    }
+  }
+}
+
+.whom {
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 126px;
+  &__for {
+    max-width: 492px;
+  }
+  &__list {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    li {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 30px;
+      max-width: 580px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+.course {
+  &__program {
+    padding: 54px 0 120px 0;
+    align-items: start;
+    img {
+      padding-top: 70px;
+    }
+  }
+}
+.accordion {
+  max-width: 602px;
+  h2 {
+    margin-bottom: 60px;
+  }
+  details[open] > summary {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(..//img/Minus.svg);
+      height: 20px;
+      width: 20px;
+      margin-top: 3px;
+      margin-right: 20px;
+      background-repeat: no-repeat;
+    }
+    &::marker {
+      content: "";
+    }
+  }
+  &__lesson {
+    &__lessons {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 24px;
+      cursor: pointer;
+      span {
+        margin-left: 40px;
+        margin-right: 8px;
+        font-weight: 400;
+      }
+      &::marker {
+        content: "";
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(..//img/Plus.svg);
+        height: 20px;
+        width: 20px;
+        margin-top: 3px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+      }
+    }
+    &__nulla {
+      margin-bottom: 24px;
+      margin-left: 40px;
+    }
+  }
+}
+
+.leave{
+  h2{
+    margin-bottom: 40px;
+  }
+  &__choose{
+    display:block;
+    &__pick{
+      width: 495px;
+      height: 52px;
+      margin-bottom: 24px; 
+         &:last-child{
+      margin-bottom: 40px;
+    }
+    }
+    &__btn{
+      width: 495px;
+      height: 52px;
+    }
+  }
+}
+.teamliave{
+  padding-bottom:100px ;
+  background-image: url(../img/Frame542.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sliderteamleave{
+  padding-bottom: 190px;
+}
+.check{
+  &__other{
+    padding:120px 0 180px 0;
+  }
+}
+.card{
+  &__content{
+    &__course{
+      margin-bottom: 0px;
+    }
+  }
+}
+.teams{
+  &__course{
+    margin-bottom: 0px;
+  }
+}
+
 
 @media (max-width: 1280px) {
   .masterclass {
@@ -988,9 +1339,9 @@
       max-width: 570px;
     }
   }
-  .masterclass{
-    &__filters{
-      &__choose{
+  .masterclass {
+    &__filters {
+      &__choose {
         margin-right: 0px;
       }
     }
@@ -1100,7 +1451,7 @@
       &__field {
         &__feed {
           &-btn {
-            top: 43%;
+            top: 43.5%;
           }
           &-btnup {
             top: 54%;

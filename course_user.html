@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CREATEX</title>
+  </head>
+  <body>
+    <header class="course__user">
+      <div class="container">
+        <input type="checkbox" id="burger" />
+        <label for="burger"></label>
+        <nav>
+          <ul>
+            <li class="navigation-check">
+              <a href="./about.html">About Us</a>
+            </li>
+            <li class="navigation-check">
+              <a href="./courses.html">Courses</a>
+            </li>
+            <li class="navigation-check">
+              <a class="name_red_html" href="./events.html">Events</a>
+            </li>
+            <li class="navigation-check"><a href="./blog.html">Blog</a></li>
+            <li class="navigation-check">
+              <a href="./contacts.html">Contacts</a>
+            </li>
+            <li>
+              <button id="btn-open-sing-in" class="actions_login">
+                <img class="login_img" src="img/login_img.svg" alt="login" />
+                Log in
+              </button>
+            </li>
+            <li>
+              <button id="btn-open-sing-up" class="actions_login">
+                <img class="login_img" src="img/login_img.svg" alt="login" />
+                Register
+              </button>
+            </li>
+            <li class="get-consultation-navigation">
+              <a href="./contacts.html" class="btn">Get consutlation</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="wrapper-modal-sing-in">
+          <div id="overlay"></div>
+          <div id="modal-window">
+            <h3>Sing In</h3>
+            <span class="modal-window-sing"
+              >Sign in to your account using email and password provided during
+              registration.</span
+            >
+
+            <form class="sing__in__field" action="">
+              <div class="sing__in__field__feed">
+                <label for="">Email</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="email"
+                  placeholder="Your working email"
+                />
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Password</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="password"
+                  placeholder="●●●●●●●●●●●●●"
+                />
+                <button class="sing__in__field__feed-btn" type="submit">
+                  <img src="img/Eye.svg" alt="Eye" />
+                </button>
+              </div>
+              <div
+                class="questions__question__field__blocking sing__in__field__check"
+              >
+                <label
+                  class="questions__question__field__block-agree sing__in__field__check__keep"
+                >
+                  <input
+                    class="questions__question__field__block-agree-checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    class="questions__question__field__block-agree-fake"
+                  ></span>
+                  <span
+                    class="questions__question__field__block-agree-span sing__in__field__check__keep-keep"
+                    >Keep me signed in</span
+                  >
+                </label>
+                <button class="sing__in__field__check-forgot">
+                  Forgot password?
+                </button>
+              </div>
+              <div class="sing__in__field__btns">
+                <button class="sing__in__field__btns-btn btn" type="submit">
+                  Sign in
+                </button>
+              </div>
+              <div class="sing__in__field-account-btn">
+                <span class="sing__in__field__btn-do"
+                  >Don't have an account?</span
+                >
+                <button class="sing__in__field__check-forgot">Sign up</button>
+              </div>
+            </form>
+
+            <div class="sing__in__line"></div>
+            <div class="sing__in__social">
+              <span class="modal-window-sing sing__in__social-span"
+                >Or sign in with</span
+              >
+              <ul class="sing__in__social__list">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="img/Facebook-sing.svg" alt="FB"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://google.com"
+                    ><img src="img/Google-sing.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><img src="img/twitter_contact.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com"
+                    ><img src="img/Linked-In-sing.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div id="wrapper-modal-sing-up">
+          <div id="overlayup"></div>
+          <div id="modal-windowup">
+            <h3>Sing Up</h3>
+            <span class="modal-window-sing"
+              >Sign in to your account using email and password provided during
+              registration.</span
+            >
+            <form class="sing__in__field" action="">
+              <div class="sing__in__field__feed">
+                <label for="">Full Name</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="text"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Email</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="email"
+                  placeholder="Your working email"
+                />
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Password</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="password"
+                  placeholder="●●●●●●●●●●●●●"
+                />
+                <button class="sing__in__field__feed-btn" type="submit">
+                  <img src="img/Eye.svg" alt="Eye" />
+                </button>
+              </div>
+              <div class="sing__in__field__feed">
+                <label for="">Confirm Password</label>
+                <input
+                  class="sing__in__field__feed-back"
+                  type="password"
+                  placeholder="●●●●●●●●●●●●●"
+                />
+                <button class="sing__in__field__feed-btnup" type="submit">
+                  <img src="img/Eye.svg" alt="Eye" />
+                </button>
+              </div>
+              <div
+                class="questions__question__field__blocking sing__in__field__check"
+              >
+                <label
+                  class="questions__question__field__block-agree sing__in__field__check__keep"
+                >
+                  <input
+                    class="questions__question__field__block-agree-checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    class="questions__question__field__block-agree-fake"
+                  ></span>
+                  <span
+                    class="questions__question__field__block-agree-span sing__in__field__check__keep-keep"
+                    >Remember me</span
+                  >
+                </label>
+              </div>
+              <div class="sing__in__field__btns">
+                <button class="sing__in__field__btns-btn btn" type="submit">
+                  Sign up
+                </button>
+              </div>
+              <div class="sing__in__field-account-btn">
+                <span class="sing__in__field-btn-do"
+                  >Already have an account?</span
+                >
+                <button class="sing__in__field__check-forgot">Sign in</button>
+              </div>
+            </form>
+            <div class="sing__in__line"></div>
+            <div class="sing__in__social">
+              <span class="modal-window-sing sing__in__social-span"
+                >Or sign in with</span
+              >
+              <ul class="sing__in__social__list">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="img/Facebook-sing.svg" alt="FB"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://google.com"
+                    ><img src="img/Google-sing.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><img src="img/twitter_contact.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com"
+                    ><img src="img/Linked-In-sing.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="header_top">
+          <ul class="header_top_menu">
+            <li class="first_chiled_menu">
+              <a href="./index.html"
+                ><img class="logo_header" src="img/logo.svg" alt="logo"
+              /></a>
+            </li>
+            <li class="li_hover"><a href="./about.html">About Us</a></li>
+            <li class="li_hover">
+              <a class="name_red_html" href="./courses.html">Courses</a>
+            </li>
+            <li class="li_hover"><a href="./events.html">Events</a></li>
+            <li class="li_hover"><a href="./blog.html">Blog</a></li>
+            <li class="li_hover last_chiled_menu">
+              <a href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+          <div class="header_top_actions">
+            <a href="./contacts.html" class="actions_consultation btn"
+              >Get consutlation</a
+            >
+            <div class="btn-login">
+              <button id="btn-open-sing-in1" class="actions_login">
+                <img class="login_img" src="img/login_img.svg" alt="login" />
+                Log in&nbsp;/&nbsp;
+              </button>
+              <button id="btn-open-sing-up1" class="actions_login">
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="human">
+          <h4 class="name_red_html">course</h4>
+          <h2>User Experience. Principles of Human-Centered Design</h2>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="wrapper expirience">
+          <div class="expirience__course">
+            <div class="expirience__course__about">
+              <h2>About the course</h2>
+              <p>
+                Bibendum vulputate adipiscing venenatis at est, a eu tincidunt.
+                Leo aenean congue in sagittis, felis maecenas amet varius at.
+                Pellentesque euismod in faucibus at elementum. Tellus maecenas
+                libero est tempus sit cras at malesuada diam. Consequat senectus
+                dictumst non hac dignissim montes, pretium, egestas molestie.
+                Sed magna aliquet ornare nibh vel lectus diam eget pretium.
+                Lorem risus nunc tincidunt tortor, mi nulla pellentesque
+              </p>
+            </div>
+            <div class="expirience__course__lern">
+              <h3>You will learn:</h3>
+              <ul class="statistics__right__imgandtext__list">
+                <li>
+                  A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                </li>
+                <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                <li>
+                  Consequat feugiat habitant gravida quisque elit bibendum id
+                  adipiscing sed.
+                </li>
+                <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                <li>
+                  Fringilla in nec risus congue venenatis pretium posuere nec.
+                </li>
+                <li>Cursus eu pretium, vulputate tempus quam massa sed at.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="expirience__join">
+            <div class="expirience__join__dates">
+              <p class="expirience__join__dates__data">Dates</p>
+              <p class="expirience__join__dates__red">Sept 7 – Nov 2</p>
+              <span class="expirience__join__dates__info">
+                Metus turpis sit lorem lacus, in elit tellus lacus.
+              </span>
+            </div>
+            <div class="expirience__join__dates">
+              <p class="expirience__join__dates__data">Duration</p>
+              <p class="expirience__join__dates__red">2 months – 8 lessons</p>
+              <span class="expirience__join__dates__info">
+                Rhoncus pellentesque auctor auctor orci vulputate faucibus quis
+                ut.
+              </span>
+            </div>
+            <div class="expirience__join__dates">
+              <p class="expirience__join__dates__data">Price</p>
+              <p class="expirience__join__dates__red">$120 per month</p>
+              <span class="expirience__join__dates__info">
+                Nulla sem adipiscing adipiscing felis fringilla. Adipiscing
+                mauris quam ac elit tristique dis.
+              </span>
+            </div>
+            <button class="btn expirience__join__btn">Join the course</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fishers">
+      <div class="container">
+        <div class="wrapper fisher">
+          <div class="fisher__image">
+            <img src="img/Cody-Fisher.png" alt="Cody Fisher" />
+          </div>
+          <div class="fisher__curator">
+            <h4>Course curator</h4>
+            <h2>Cody Fisher</h2>
+            <span>Senior UX designer in IT Product Company</span>
+            <ul class="fisher__curator__rate">
+              <li>4.9 rate</li>
+              <li>4 courses</li>
+              <li>350 students</li>
+            </ul>
+            <p>
+              Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
+              Tempus curabitur venenatis, vulputate venenatis fermentum ante.
+              Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus
+              sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem
+              vulputate molestie laoreet at massa sed pharetra. Ac commodo
+              platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam
+              vel aliquam tristique sollicitudin interdum quam.
+            </p>
+            <ul class="fisher__curator__social">
+              <li>
+                <a target="_blank" href="https://facebook.com/"
+                  ><img src="img/Facebook_contact.svg" alt="FB"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://behance.com"
+                  ><img src="img/behance.svg" alt="Bahance"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/"
+                  ><img src="img/twitter_contact.svg" alt="TW"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://linkedin.com"
+                  ><img src="img/Linked-In_contact.svg" alt="IN"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="container">
+        <div class="steps__heading">
+          <h4>Main steps</h4>
+          <h2>Online learning process</h2>
+        </div>
+        <div class="steps__step">
+          <div class="steps__step__idle">
+            <div class="steps__step__idle__number">
+              <p>01</p>
+              <div class="steps__step__idle__number__line"></div>
+            </div>
+            <p class="steps__step__idle__text">
+              Watching online video lectures
+            </p>
+            <span>
+              Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam
+              velit nostrud aliquip sunt.
+            </span>
+          </div>
+          <div class="steps__step__idle">
+            <div class="steps__step__idle__number">
+              <p>02</p>
+              <div class="steps__step__idle__number__line"></div>
+            </div>
+            <p class="steps__step__idle__text">Passing test</p>
+            <span>
+              Anim reprehenderit sint voluptate exercitation adipisicing laborum
+              adipisicing. Minim ad tempor est ea.
+            </span>
+          </div>
+          <div class="steps__step__idle">
+            <div class="steps__step__idle__number">
+              <p>03</p>
+              <div class="steps__step__idle__number__line"></div>
+            </div>
+            <p class="steps__step__idle__text">Curator’s feedback</p>
+            <span>
+              Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore
+              dolore et ad et veniam ad deserunt.
+            </span>
+          </div>
+          <div class="steps__step__idle">
+            <div class="steps__step__idle__number">
+              <p>04</p>
+            </div>
+            <p class="steps__step__idle__text">Corrections if needed</p>
+            <span>
+              Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+              voluptate ullamco proident ea ad.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="timer">
+      <div class="container discount">
+        <div class="timing">
+          <h3>20% discount for early birds!</h3>
+        </div>
+        <form class="choosejoin">
+          <div class="choosejoin__check">
+            <label class="choosejoin__check__full" for="#">Full name</label>
+            <input
+              class="choosejoin__check__pick"
+              type="text"
+              placeholder="Your full name"
+            />
+          </div>
+          <div class="choosejoin__check">
+            <label class="choosejoin__check__full" for="#">Email</label>
+            <input
+              class="choosejoin__check__pick"
+              type="email"
+              placeholder="Your working email"
+            />
+          </div>
+          <div class="choosejoin__check">
+            <label class="choosejoin__check__full" for="#">Phone</label>
+            <input
+              class="choosejoin__check__pick"
+              type="tel"
+              placeholder="Your phone number"
+            />
+          </div>
+          <button class="btn" type="submit">Join the course</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="wrapper whom">
+          <div class="whom__for">
+            <h4>For whom?</h4>
+            <h2>Who will benefit from the course:</h2>
+          </div>
+          <ul class="statistics__right__imgandtext__list whom__list">
+            <li>Specialists with more than 1 year of active work experience</li>
+            <li>
+              Mobile app designers who want to improve their skills in solving
+              business problems, creating and testing<br />human-centered
+              interfaces
+            </li>
+            <li>
+              Professional designers who want to feel more confident in UX
+            </li>
+            <li>
+              Specialists who would like to structure their knowledge, fill in
+              the gaps
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="wrapper course__program">
+          <div class="accordion">
+            <h4>Course program</h4>
+            <h2>What will you learn</h2>
+            <details class="accordion__lesson" open>
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 1.</span>Aliquet lectus urna
+                viverra in odio.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 2.</span>Orci commodo,
+                viverra orci mollis ut euismod.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 3.</span>Sagittis vitae
+                facilisi rutrum amet mauris quisque vel.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 4.</span>In id dolor quis
+                nunc, urna hendrerit pharetra.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 5.</span>Est, ut tempus id
+                rutrum facilisi.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 6.</span>Amet nec in
+                pellentesque.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 7.</span>Massa vel arcu
+                mauris, id vel rhoncus mattis quis.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+            <details class="accordion__lesson">
+              <summary class="accordion__lesson__lessons">
+                <span class="name_red_html">Lesson 8.</span>Neque, cursus sapien
+                nullam id.
+              </summary>
+              <p class="accordion__lesson__nulla">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+                pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur
+                turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                Curabitur faucibus porttitor quis sem lacus, arcu feugiat
+                facilisis. Commodo nunc orci vitae accumsan id.
+              </p>
+            </details>
+          </div>
+          <img src="img/illustration-program.svg" alt="illustration-program" />
+        </div>
+      </div>
+    </section>
+    <section class="team sliderteamleave slider_team team_course">
+      <div class="container">
+        <div class="benefits">
+          <h4>Testimonials</h4>
+          <h2>What our students say</h2>
+        </div>
+        <div class="benefit">
+          <div class="button button2">
+            <div class="arrow-left" id="btn-prev1">
+              <div class="arrow-black-left">
+                <img src="img/prev-btn.svg" alt="arrow-left" />
+              </div>
+              <div class="arrow-red-left">
+                <img src="img/Right.svg" alt="arrow-left" />
+              </div>
+            </div>
+          </div>
+          <div class="rewiews">
+            <img class="braces" src="img/braces.svg" alt="braces" />
+            <div class="rewiew rewiew-active">
+              <p class="text-study">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/image.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Eleanor Pena</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Feedback is a written or oral statement based on the expression
+                of a personal emotional and evaluative attitude to what he saw,
+                heard or experienced. This is an opinion about someone or
+                something, analysis, analysis, evaluation of a product or
+                service provided
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Diana.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Diana Anderson</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Thank you very much for your work! I express my deep gratitude
+                to the entire team. I signed up, quickly helped with the design.
+                The whole team is very friendly, polite and tactful. And also
+                there are always pleasant conditions and discounts for us. Thank
+                you very much for your work!
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Andrea.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Andrea Pearson</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Customer reviews - feedback from users on your products or
+                services and an obligatory attribute of a business. However,
+                companies do not always understand their meaning: they do not
+                collect, they only respond to positive responses and do not work
+                with negative ones. This approach is a mistake. Reviews form
+                customer loyalty.
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Maria.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Maria Longoria</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+            <div class="rewiew">
+              <p class="text-study">
+                Customer reviews are one of the pillars of business. Whole sales
+                systems are built on reviews, a reputation is earned, and the
+                company acquires loyal customers. At the same time, such a
+                phenomenon as negative reviews cannot be ruled out. No matter
+                how hard you try, you can't avoid criticism.
+              </p>
+              <div class="study-user">
+                <div class="study-img">
+                  <img src="img/Alex.png" alt="image" />
+                </div>
+                <div class="study-name">
+                  <p>Alex Evans</p>
+                  <span> Position, Course </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button button2">
+            <div class="arrow-right" id="btn-next1">
+              <div class="arrow-black-right">
+                <img src="img/prev-btn.svg" alt="arrow-right" />
+              </div>
+              <div class="arrow-red-right">
+                <img src="img/Right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <div class="control control-active"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+        </div>
+      </div>
+    </section>
+    <section class="team teamliave">
+      <div class="container">
+        <div class="wrapper">
+          <img src="img/header_middle.svg" alt="header_middle" />
+          <div class="leave">
+            <h4>Leave a request now and get 20% off!</h4>
+            <h2>Register for the course</h2>
+            <form class="choosejoin leave__choose">
+              <div class="choosejoin__check">
+                <label class="choosejoin__check__full" for="#">Full name</label>
+                <input
+                  class="choosejoin__check__pick leave__choose__pick"
+                  type="text"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="choosejoin__check">
+                <label class="choosejoin__check__full" for="#">Email</label>
+                <input
+                  class="choosejoin__check__pick leave__choose__pick"
+                  type="email"
+                  placeholder="Your working email"
+                />
+              </div>
+              <div class="choosejoin__check">
+                <label class="choosejoin__check__full" for="#">Phone</label>
+                <input
+                  class="choosejoin__check__pick leave__choose__pick"
+                  type="tel"
+                  placeholder="Your phone number"
+                />
+              </div>
+              <button class="btn leave__choose__btn" type="submit">
+                Join the course
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="check__other">
+                <div class="teams__course">
+                    <div class="team-heads">
+                      <div class="team-head">
+                        <h4>Check other courses</h4>
+                        <h2>You may also like</h2>
+                      </div>
+                      <div class="button">
+                        <div class="arrow-left" id="btn-prev">
+                          <div class="arrow-black-left">
+                            <img src="img/prev-btn.svg" alt="arrow-left" />
+                          </div>
+                          <div class="arrow-red-left">
+                            <img src="img/Right.svg" alt="arrow-left" />
+                          </div>
+                        </div>
+                        <div class="arrow-right" id="btn-next">
+                          <div class="arrow-black-right">
+                            <img src="img/prev-btn.svg" alt="arrow-right" />
+                          </div>
+                          <div class="arrow-red-right">
+                            <img src="img/Right.svg" alt="arrow-right" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-content card__content__course">
+                        <div class="cards">
+                          <div class="img">
+                            <img src="img/image1.png" alt="image1" />
+                          </div>
+                          <div class="card">
+                            <span class="green bad">Marketing</span>
+                            <p class="badge">The Ultimate Google Ads Training Course</p>
+                            <p class="speaker">
+                              <span class="price">$100</span>| by Jerome Bel
+                            </p>
+                          </div>
+                        </div>
+                        <div class="cards">
+                          <div class="img">
+                            <img src="img/image4.png" alt="image4" />
+                          </div>
+                          <div class="card">
+                            <span class="blue bad">Management</span>
+                            <p class="badge">Prduct Management Fundamentals</p>
+                            <p class="speaker">
+                              <span class="price">$480</span>| by Marvin McKinney
+                            </p>
+                          </div>
+                        </div>
+                    </div>                
+                <div class="do">
+                    <h3>Do you want more courses?</h3>
+                    <a class="btn" href="./courses.html">View all courses</a>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="foot">
+          <div class="block-foot1">
+            <img class="logo-foot" src="img/logofoot.svg" alt="Logo" />
+            <p>
+              Createx Online School is a leader in online studying. We have lots
+              of courses and programs from the main market experts. We provide
+              relevant approaches to&nbsp;online learning, internships and
+              employment in&nbsp;the&nbsp;largest companies in the country.
+            </p>
+            <a class="foot-link" href="https://facebook.com" target="_blank"
+              ><img src="img/Facebook-fot.svg" alt="FB"
+            /></a>
+            <a class="foot-link" href="https://twitter.com/" target="_blank"
+              ><img src="img/Twitter-fot.svg" alt="TW"
+            /></a>
+            <a class="foot-link" href="https://Youtube.com" target="_blank"
+              ><img src="img/YouTube-fot.svg" alt="Y"
+            /></a>
+            <a class="foot-link" href="https://telegram.com" target="_blank"
+              ><img src="img/telegram-fot.svg" alt="Telegram"
+            /></a>
+            <a class="foot-link" href="https://instagram.com" target="_blank"
+              ><img src="img/Instagram-fot.svg" alt="Inst"
+            /></a>
+            <a href="https://linkedin.com" target="_blank"
+              ><img src="img/Linked-In-fot.svg" alt="IN"
+            /></a>
+          </div>
+          <div class="block-foot2">
+            <p class="foot-p">SITE MAP</p>
+            <ul class="ul-foot">
+              <li><a class="li-foot" href="#">About Us</a></li>
+              <li><a class="li-foot" href="#">Courses</a></li>
+              <li><a class="li-foot" href="#">Events</a></li>
+              <li><a class="li-foot" href="#">Blog</a></li>
+              <li><a class="li-foot" href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="block-foot3">
+            <p class="foot-p">COURSES</p>
+            <ul class="ul-foot">
+              <li><a class="li-foot" href="#">Marketing</a></li>
+              <li><a class="li-foot" href="#">Management</a></li>
+              <li><a class="li-foot" href="#">HR & Recruting</a></li>
+              <li><a class="li-foot" href="#">Design</a></li>
+              <li><a class="li-foot" href="#">Development</a></li>
+            </ul>
+          </div>
+          <div class="block-foot4">
+            <p class="foot-p">CONTACT US</p>
+            <ul class="ul-foot">
+              <li>
+                <a class="li-foot" href="tel:(405)555-0128"
+                  ><img
+                    class="icon-foot icon-foot1"
+                    src="img/iPhone.svg"
+                    alt="Phone"
+                  />(405) 555-0128</a
+                >
+              </li>
+              <li>
+                <a class="li-foot" href="mailto:hello@createx.com"
+                  ><img
+                    class="icon-foot"
+                    src="img/Mail.svg"
+                    alt="mail"
+                  />hello@createx.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="block-foot5">
+            <p class="foot-p">SIGN UP TO OUR NEWSLETTER</p>
+            <form class="form-footer" action="#">
+              <input
+                class="address"
+                type="email"
+                placeholder="Email address"
+                name="email"
+                required
+              />
+              <button class="arrowmail" type="submit">
+                <img src="img/arrowemail.svg" alt="arrow" />
+              </button>
+            </form>
+            <p class="subscribe">
+              *Subscribe to our newsletter to receive communications and early
+              updates from Createx SEO Agency.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_footer">
+        <div class="container">
+          <div class="all-rights">
+            <div class="all-right">
+              <p>© All rights reserved.Made with</p>
+              <img class="heart" src="img/Heart.svg" alt="heart" />
+              <p>by Createx Studio</p>
+            </div>
+            <div class="go">
+              <a href="#">GO TO TOP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app2.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
