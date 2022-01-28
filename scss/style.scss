@@ -197,10 +197,12 @@
 .masterclass {
   &__filters {
     margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     &__choose {
-      display: inline-flex;
+      display:flex;
       align-items: center;
-      margin-right: 38px;
       span {
         font-size: 14px;
         color: #787a80;
@@ -687,6 +689,7 @@
         }
         &__share {
           display: flex;
+          align-items: center;
           &-shar {
             font-weight: bold;
             margin-right: 12px;
@@ -697,7 +700,6 @@
               color: #787a80;
               font-weight: bold;
               font-size: 14px;
-              margin-bottom: 12px;
               &:hover {
                 background: #ff3f3a;
                 color: #fff;
@@ -1270,9 +1272,8 @@
 @media (max-width: 1280px) {
   .masterclass {
     &__filters {
-      text-align: center;
+      text-align: start;
       &__choose {
-        margin-right: 10px;
         margin-bottom: 20px;
       }
     }
@@ -1332,12 +1333,19 @@
           &-agree {
             margin-bottom: 20px;
           }
+          &-enter{
+            width: 705px;
+          }
         }
       }
     }
   }
+
   .contacts {
-    &__info {
+    &__container{
+      padding-bottom: 60px;
+    }
+          &__info {
       &__contact {
         max-width: 300px;
       }
@@ -1376,7 +1384,6 @@
   .questions {
     &__question {
       &__field {
-        max-width: 500px;
         &__block {
           &-message {
             max-width: 500px;
@@ -1457,15 +1464,6 @@
 @media (max-width: 576px) {
   .questions {
     padding-bottom: 60px;
-    &__question {
-      &__field {
-        &__block {
-          &-message {
-            max-width: 358px;
-          }
-        }
-      }
-    }
   }
   .journal {
     flex-direction: column;
@@ -1496,7 +1494,27 @@
       }
     }
   }
+  .questions {
+    &__question {
+      &__field {
+        &__block {
+          &-message {
+            max-width: 350px;
+          }
+          &-enter {
+            max-width: 350px;
+          }
+        }
+        &__blocking {
+          &-btn {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 500px) {
   .sing {
     &__in {
@@ -1548,6 +1566,11 @@
           &__share {
             display: block;
           }
+        }
+      }
+      &__foot{
+        button{
+          margin-bottom: 12px;
         }
       }
     }

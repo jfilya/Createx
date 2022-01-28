@@ -1297,6 +1297,8 @@ h3 {
     display: flex;
     justify-content: center;
     background: #fff;
+    cursor:pointer;
+    z-index: 2;
   }
   #burger:checked + label + nav {
     display: block;
@@ -1390,9 +1392,6 @@ h3 {
     align-items: center;
     margin-bottom: 40px;
   }
-  .btn-about {
-    margin-right: 10px;
-  }
   .block-foot1 {
     margin-bottom: 30px;
   }
@@ -1468,6 +1467,12 @@ h3 {
   .info-text-event {
     max-width: 310px;
   }
+  .btn-about{
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 193px;
+    text-align: center;
+  }
 }
 
 
@@ -1529,6 +1534,9 @@ h3 {
   }
   .event-head > h2 {
     margin-bottom: 30px;
+  }
+  .btn-about {
+    margin-right: 20px;
   }
 
   .info > p {
@@ -1685,6 +1693,7 @@ h3 {
   .btn-about {
     margin-bottom: 15px;
     margin-right: 0;
+    max-width: 498px;
   }
   .do {
     display: block;
@@ -1801,6 +1810,12 @@ h3 {
   }
   .show{
     margin-top: 20px;
+  }
+  .header_middle_about>.btn {
+display:inline-flex;
+  }
+  .btn-about{
+    justify-content: center;
   }
 }
 @media (max-width: 500px) {

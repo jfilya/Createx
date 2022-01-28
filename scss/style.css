@@ -180,11 +180,13 @@
 
 .masterclass__filters {
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .masterclass__filters__choose {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin-right: 38px;
 }
 .masterclass__filters__choose span {
   font-size: 14px;
@@ -649,6 +651,7 @@
 }
 .statistics__right__caption__headingfoot__share {
   display: flex;
+  align-items: center;
 }
 .statistics__right__caption__headingfoot__share-shar {
   font-weight: bold;
@@ -661,7 +664,6 @@
   color: #787a80;
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 12px;
 }
 .statistics__right__caption__headingfoot__share-shar-btn:hover {
   background: #ff3f3a;
@@ -1207,10 +1209,9 @@
 
 @media (max-width: 1280px) {
   .masterclass__filters {
-    text-align: center;
+    text-align: start;
   }
   .masterclass__filters__choose {
-    margin-right: 10px;
     margin-bottom: 20px;
   }
 
@@ -1257,7 +1258,13 @@
   .questions__question__field__block-agree {
     margin-bottom: 20px;
   }
+  .questions__question__field__block-enter {
+    width: 705px;
+  }
 
+  .contacts__container {
+    padding-bottom: 60px;
+  }
   .contacts__info__contact {
     max-width: 300px;
   }
@@ -1290,9 +1297,6 @@
     width: auto;
   }
 
-  .questions__question__field {
-    max-width: 500px;
-  }
   .questions__question__field__block-message {
     max-width: 500px;
   }
@@ -1356,9 +1360,6 @@
   .questions {
     padding-bottom: 60px;
   }
-  .questions__question__field__block-message {
-    max-width: 358px;
-  }
 
   .journal {
     flex-direction: column;
@@ -1377,6 +1378,16 @@
   }
   .statistics__right__foot {
     display: block;
+  }
+
+  .questions__question__field__block-message {
+    max-width: 350px;
+  }
+  .questions__question__field__block-enter {
+    max-width: 350px;
+  }
+  .questions__question__field__blocking-btn {
+    display: inline;
   }
 }
 @media (max-width: 500px) {
@@ -1409,6 +1420,9 @@
   }
   .statistics__right__caption__headingfoot__share {
     display: block;
+  }
+  .statistics__right__foot button {
+    margin-bottom: 12px;
   }
 
   .sing__in__field__feed-btn {
