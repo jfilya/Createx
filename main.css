@@ -139,7 +139,7 @@ nav {
     0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
-  z-index: 2;
+  z-index: 1;
 }
 .navigation-check {
   margin-bottom: 20px;
@@ -1896,6 +1896,9 @@ display:inline-flex;
   }
   .show{
     margin-top: 20px;
+  }
+  .wrapper-blog-inp>img{
+    max-width: 90%;
   }
 }
 

@@ -187,6 +187,7 @@
 .masterclass__filters__choose {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 .masterclass__filters__choose span {
   font-size: 14px;
@@ -1555,6 +1556,10 @@
   }
   .event__numdate__single__btn {
     max-width: 220px;
+  }
+
+  .eyebtn {
+    top: 42%;
   }
 }
 @media (max-width: 375px) {
