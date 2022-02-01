@@ -201,7 +201,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     &__choose {
-      display:flex;
+      display: flex;
       align-items: center;
       span {
         font-size: 14px;
@@ -1191,6 +1191,7 @@
   max-width: 395px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .newsletter {
   max-width: 600px;
@@ -1206,11 +1207,12 @@
       justify-content: space-between;
       display: flex;
       margin-bottom: 24px;
+      flex-wrap: wrap;
       &__pick {
         border: 1px solid #d7dadd;
         box-sizing: border-box;
         border-radius: 4px;
-        width: 422px;
+        max-width: 422px;
         height: 52px;
         padding-left: 16px;
       }
@@ -1227,9 +1229,10 @@
 .request {
   padding-bottom: 120px;
 }
-.eventcard{
-  display:flex;
+.eventcard {
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .event {
   &__numdate {
@@ -1266,7 +1269,7 @@
     }
   }
 }
-.doexplore{
+.doexplore {
   padding-bottom: 180px;
 }
 @media (max-width: 1280px) {
@@ -1306,6 +1309,31 @@
       max-width: 600px;
     }
   }
+  .fisher {
+    &__curator {
+      max-width: 500px;
+    }
+  }
+  .choosejoin {
+    &__check {
+      &__pick {
+        max-width: 230px;
+      }
+    }
+  }
+  .leave {
+    &__choose {
+      &__pick {
+        max-width: 400px;
+      }
+      &__btn {
+        max-width: 400px;
+      }
+    }
+  }
+  .eventcard {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1315,6 +1343,24 @@
   .statistics {
     &__right {
       max-width: 570px;
+    }
+  }
+  .choosejoin {
+    &__check {
+      &__pick {
+        max-width: 210px;
+      }
+    }
+  }
+  .leave {
+    max-width: 330px;
+    &__choose {
+      &__pick {
+        max-width: 330px;
+      }
+      &__btn {
+        max-width: 330px;
+      }
     }
   }
 }
@@ -1333,19 +1379,18 @@
           &-agree {
             margin-bottom: 20px;
           }
-          &-enter{
+          &-enter {
             width: 705px;
           }
         }
       }
     }
   }
-
   .contacts {
-    &__container{
+    &__container {
       padding-bottom: 60px;
     }
-          &__info {
+    &__info {
       &__contact {
         max-width: 300px;
       }
@@ -1362,6 +1407,13 @@
     &__left {
       display: none;
     }
+  }
+  .expirience,
+  .fisher,
+  .whom,
+  .course__program,
+  .register {
+    flex-direction: column;
   }
 }
 
@@ -1459,6 +1511,20 @@
       }
     }
   }
+  .fisher__image img {
+    position: static;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .register {
+    display: flex;
+  }
+  .doh {
+    max-width: 215px;
+  }
+  .choosejoin__btn {
+    width: 210px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1513,6 +1579,44 @@
       }
     }
   }
+  .fisher {
+    &__image {
+      max-width: 450px;
+    }
+  }
+
+  .expirience {
+    &__join {
+      max-width: 450px;
+      &__btn {
+        max-width: 380px;
+      }
+    }
+  }
+  .choosejoin {
+    &__check {
+      margin-bottom: 20px;
+    }
+  }
+  .leave {
+    &__choose {
+      &__btn {
+        max-width: 330px;
+      }
+    }
+  }
+  .discount {
+    &__choose {
+      &__check {
+        &__pick {
+          margin-bottom: 20px;
+        }
+        &__btn {
+          width: 190px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 500px) {
@@ -1537,6 +1641,31 @@
       }
       &__line {
         width: 400px;
+      }
+    }
+  }
+  .fisher {
+    &__image {
+      max-width: 320px;
+      height: auto;
+    }
+  }
+  .expirience {
+    &__join {
+      max-width: 320px;
+      height: auto;
+      &__btn {
+        max-width: 250px;
+      }
+    }
+  }
+  .event {
+    &__numdate {
+      max-width: 350px;
+      &__single{
+        &__btn{
+          max-width: 300px;
+        }
       }
     }
   }
@@ -1568,8 +1697,8 @@
           }
         }
       }
-      &__foot{
-        button{
+      &__foot {
+        button {
           margin-bottom: 12px;
         }
       }
@@ -1598,6 +1727,16 @@
       &__line {
         width: 300px;
         margin-left: -11px;
+      }
+    }
+  }
+  .event {
+    &__numdate {
+      max-width: 280px;
+      &__single{
+        &__btn{
+          max-width: 220px;
+        }
       }
     }
   }
@@ -1633,6 +1772,34 @@
   .statistics {
     &__right {
       max-width: 270px;
+    }
+  }
+  .fisher {
+    &__image {
+      max-width: 280px;
+      height: auto;
+    }
+  }
+  .discount {
+    padding: 20px 20px;
+  }
+  .leave {
+    max-width: 280px;
+    &__choose {
+      &__pick {
+        max-width: 270px;
+      }
+      &__btn {
+        max-width: 270px;
+      }
+    }
+  }
+  .expirience {
+    &__join {
+      max-width: 280px;
+      &__btn {
+        max-width: 210px;
+      }
     }
   }
 }

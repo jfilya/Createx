@@ -1125,6 +1125,7 @@
   max-width: 395px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .newsletter {
@@ -1144,12 +1145,13 @@
   justify-content: space-between;
   display: flex;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 .discount__choose__check__pick {
   border: 1px solid #d7dadd;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 422px;
+  max-width: 422px;
   height: 52px;
   padding-left: 16px;
 }
@@ -1168,6 +1170,7 @@
 .eventcard {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .event__numdate {
@@ -1236,6 +1239,25 @@
   .statistics__right {
     max-width: 600px;
   }
+
+  .fisher__curator {
+    max-width: 500px;
+  }
+
+  .choosejoin__check__pick {
+    max-width: 230px;
+  }
+
+  .leave__choose__pick {
+    max-width: 400px;
+  }
+  .leave__choose__btn {
+    max-width: 400px;
+  }
+
+  .eventcard {
+    justify-content: space-around;
+  }
 }
 @media (max-width: 1024px) {
   .numbersbut {
@@ -1244,6 +1266,20 @@
 
   .statistics__right {
     max-width: 570px;
+  }
+
+  .choosejoin__check__pick {
+    max-width: 210px;
+  }
+
+  .leave {
+    max-width: 330px;
+  }
+  .leave__choose__pick {
+    max-width: 330px;
+  }
+  .leave__choose__btn {
+    max-width: 330px;
   }
 }
 @media (max-width: 960px) {
@@ -1280,6 +1316,14 @@
   }
   .statistics__left {
     display: none;
+  }
+
+  .expirience,
+.fisher,
+.whom,
+.course__program,
+.register {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -1355,6 +1399,24 @@
   .masterclass__filters__choose {
     margin-right: 0px;
   }
+
+  .fisher__image img {
+    position: static;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .register {
+    display: flex;
+  }
+
+  .doh {
+    max-width: 215px;
+  }
+
+  .choosejoin__btn {
+    width: 210px;
+  }
 }
 @media (max-width: 576px) {
   .questions {
@@ -1389,6 +1451,32 @@
   .questions__question__field__blocking-btn {
     display: inline;
   }
+
+  .fisher__image {
+    max-width: 450px;
+  }
+
+  .expirience__join {
+    max-width: 450px;
+  }
+  .expirience__join__btn {
+    max-width: 380px;
+  }
+
+  .choosejoin__check {
+    margin-bottom: 20px;
+  }
+
+  .leave__choose__btn {
+    max-width: 330px;
+  }
+
+  .discount__choose__check__pick {
+    margin-bottom: 20px;
+  }
+  .discount__choose__check__btn {
+    width: 190px;
+  }
 }
 @media (max-width: 500px) {
   .sing__in__field__feed-back {
@@ -1402,6 +1490,26 @@
   }
   .sing__in__line {
     width: 400px;
+  }
+
+  .fisher__image {
+    max-width: 320px;
+    height: auto;
+  }
+
+  .expirience__join {
+    max-width: 320px;
+    height: auto;
+  }
+  .expirience__join__btn {
+    max-width: 250px;
+  }
+
+  .event__numdate {
+    max-width: 350px;
+  }
+  .event__numdate__single__btn {
+    max-width: 300px;
   }
 }
 @media (max-width: 420px) {
@@ -1441,6 +1549,13 @@
     width: 300px;
     margin-left: -11px;
   }
+
+  .event__numdate {
+    max-width: 280px;
+  }
+  .event__numdate__single__btn {
+    max-width: 220px;
+  }
 }
 @media (max-width: 375px) {
   .questions__question__field__block-enter {
@@ -1462,5 +1577,31 @@
 
   .statistics__right {
     max-width: 270px;
+  }
+
+  .fisher__image {
+    max-width: 280px;
+    height: auto;
+  }
+
+  .discount {
+    padding: 20px 20px;
+  }
+
+  .leave {
+    max-width: 280px;
+  }
+  .leave__choose__pick {
+    max-width: 270px;
+  }
+  .leave__choose__btn {
+    max-width: 270px;
+  }
+
+  .expirience__join {
+    max-width: 280px;
+  }
+  .expirience__join__btn {
+    max-width: 210px;
   }
 }/*# sourceMappingURL=style.css.map */
