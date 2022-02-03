@@ -1233,18 +1233,18 @@
 .eventcard {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .event {
   &__numdate {
-    display: block;
+    align-items: stretch;
+    flex-direction: column;
     max-width: 390px;
     height: 323px;
     padding: 24px;
 
     &__single {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: -20px;
       &__date {
         font-weight: bold;
         font-size: 28px;
@@ -1260,7 +1260,6 @@
         padding: 10px;
       }
       &__formation {
-        margin-bottom: 50px;
         p {
           max-width: 342px;
           font-size: 18px;
