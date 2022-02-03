@@ -647,9 +647,9 @@ h3 {
 }
 .people {
   align-items: center;
-  display: flex;
+  text-align: center;
   flex-direction: column;
-  min-width: 285px;
+  width: 285px;
 }
 .slider {
   overflow: hidden;
@@ -1240,16 +1240,18 @@ h3 {
   .image1 > img {
     width: 90%;
   }
-  .people {
+  /* .people {
     align-items: center;
-    display: flex;
     flex-direction: column;
     width: 50%;
-  }
-  .team-people {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  } */
+  .people, .team-card, .show {
+    width: 235px;
+    height: auto;
+}
+.show{
+  margin-top: 30px;
+}
   .cards_course {
     max-width: 330px;
     height: auto;
@@ -1384,6 +1386,10 @@ h3 {
   .header_top {
     justify-content: flex-start;
   }
+  .people, .team-card, .show{
+    width: 230px;
+    height: auto;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1478,6 +1484,13 @@ h3 {
     width: 193px;
     text-align: center;
   }
+  .people, .team-card, .show {
+    width: 170px;
+    height: auto;
+}
+.show {
+  margin-top: 20px;
+}
 }
 
 @media (max-width: 768px) {
@@ -1568,9 +1581,6 @@ h3 {
   .people {
     width: 25%;
   }
-  .button {
-    display: none;
-  }
   .people > p {
     font-size: 16px;
   }
@@ -1659,6 +1669,9 @@ h3 {
   .show {
     margin-top: 16px;
   }
+  .icon{
+    justify-content: center;  
+  }
 }
 
 @media (max-width: 576px) {
@@ -1716,10 +1729,6 @@ h3 {
   .inp {
     margin-right: 10px;
   }
-  .people {
-    width: 170px;
-    height: auto;
-  }
   .badge {
     width: 200px;
   }
@@ -1769,8 +1778,8 @@ h3 {
   .footer_footer {
     text-align: center;
   }
-  .team-card {
-    width: 170px;
+  .team-card, .people {
+    width: 100px;
     height: auto;
   }
   .card_course {
@@ -1810,7 +1819,8 @@ h3 {
     width: 250px;
   }
   .show > img {
-    width: 170px;
+    width: 100px;
+    margin-top: -9px;
   }
   .show {
     margin-top: 20px;
@@ -1843,6 +1853,21 @@ h3 {
   [for="burger"] {
     padding: 0px;
   }
+  .team-people{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .button{
+    display:none;
+  }
+  .people, .team-card, .show, .show>img {
+    width: 120px;
+    height: auto;
+}
+.show>img{
+ margin-top: 1px;
+}
+
 }
 @media (max-width: 420px) {
   .container {
