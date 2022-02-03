@@ -633,11 +633,8 @@ h3 {
   display: flex;
 }
 .team-people {
-  display: none;
-  justify-content: space-between;
-}
-.people-active {
   display: flex;
+  justify-content: space-between;
 }
 .team-card {
   justify-content: center;
@@ -652,6 +649,14 @@ h3 {
   align-items: center;
   display: flex;
   flex-direction: column;
+  min-width: 285px;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+.line {
+  transition: all ease 1s;
 }
 .people > p {
   font-size: 20px;
@@ -1297,7 +1302,7 @@ h3 {
     display: flex;
     justify-content: center;
     background: #fff;
-    cursor:pointer;
+    cursor: pointer;
     z-index: 2;
   }
   #burger:checked + label + nav {
@@ -1376,8 +1381,8 @@ h3 {
   .get-consultation-navigation {
     display: none;
   }
-  .header_top{
-    justify-content: flex-start;  
+  .header_top {
+    justify-content: flex-start;
   }
 }
 
@@ -1467,14 +1472,13 @@ h3 {
   .info-text-event {
     max-width: 310px;
   }
-  .btn-about{
+  .btn-about {
     margin-bottom: 20px;
     margin-right: 0px;
     width: 193px;
     text-align: center;
   }
 }
-
 
 @media (max-width: 768px) {
   .container {
@@ -1649,10 +1653,10 @@ h3 {
     text-align: center;
     margin-bottom: 20px;
   }
-  .show>img{
+  .show > img {
     width: 130px;
   }
-  .show{
+  .show {
     margin-top: 16px;
   }
 }
@@ -1805,16 +1809,16 @@ h3 {
   .blog__agree {
     width: 250px;
   }
-  .show>img{
+  .show > img {
     width: 170px;
   }
-  .show{
+  .show {
     margin-top: 20px;
   }
-  .header_middle_about>.btn {
-display:inline-flex;
+  .header_middle_about > .btn {
+    display: inline-flex;
   }
-  .btn-about{
+  .btn-about {
     justify-content: center;
   }
 }
@@ -1829,7 +1833,7 @@ display:inline-flex;
     height: 450px;
     position: fixed;
   }
-  nav>ul{
+  nav > ul {
     position: absolute;
   }
   #modal-windowup,
@@ -1888,16 +1892,16 @@ display:inline-flex;
     width: 145px;
     height: auto;
   }
-  .team-card{
+  .team-card {
     width: 150px;
   }
-  .show>img{
+  .show > img {
     width: 150px;
   }
-  .show{
+  .show {
     margin-top: 20px;
   }
-  .wrapper-blog-inp>img{
+  .wrapper-blog-inp > img {
     max-width: 90%;
   }
 }
@@ -1957,11 +1961,11 @@ display:inline-flex;
   }
   .input_search_course {
     width: 270px;
-}
-.show>img{
-  width: 120px;
-}
-.show{
-  margin-top: 16px;
-}
+  }
+  .show > img {
+    width: 120px;
+  }
+  .show {
+    margin-top: 16px;
+  }
 }

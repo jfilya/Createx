@@ -51,3 +51,6 @@ dots.forEach((item,indexDot)=>{
 
 next1.addEventListener('click', nextSlide2);
 prev1.addEventListener('click', prevSlide2);
+
+
+
