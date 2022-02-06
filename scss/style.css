@@ -179,7 +179,6 @@
 }
 
 .masterclass__filters {
-  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -187,7 +186,7 @@
 .masterclass__filters__choose {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 37px;
 }
 .masterclass__filters__choose span {
   font-size: 14px;
@@ -1208,6 +1207,9 @@
   padding-bottom: 180px;
 }
 
+.arrow-left {
+  cursor: pointer;
+}
 .arrow-left svg {
   transform: rotate(180deg);
 }
@@ -1223,6 +1225,9 @@
   stroke: #fff;
 }
 
+.arrow-right {
+  cursor: pointer;
+}
 .arrow-right svg:hover circle {
   fill: #ff3f3a;
 }
@@ -1235,11 +1240,37 @@
   stroke: #fff;
 }
 
+.eventsevent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blockactive {
+  display: none;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.filter button {
+  display: flex;
+}
+
+.btnlist {
+  margin-right: 13px;
+}
+
 @media (max-width: 1280px) {
   .masterclass__filters {
     text-align: start;
   }
   .masterclass__filters__choose {
+    margin-right: 20px;
     margin-bottom: 20px;
   }
 
@@ -1308,6 +1339,10 @@
   }
 }
 @media (max-width: 960px) {
+  .filter button {
+    display: none;
+  }
+
   .questions__container {
     display: block;
     text-align: center;
