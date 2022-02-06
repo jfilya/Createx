@@ -1272,6 +1272,41 @@
 .doexplore {
   padding-bottom: 180px;
 }
+.arrow-left {
+
+  svg {  transform: rotate(180deg);
+    &:hover {
+      circle{
+        fill: #ff3f3a;
+      }
+      path {
+        fill: #fff;
+        stroke: #fff;
+      }
+      line {
+        fill: #fff;
+        stroke: #fff;
+      }
+    }
+  }
+}
+.arrow-right {
+  svg {
+    &:hover {
+      circle{
+        fill: #ff3f3a;
+      }
+      path {
+        fill: #fff;
+        stroke: #fff;
+      }
+      line {
+        fill: #fff;
+        stroke: #fff;
+      }
+    }
+  }
+}
 @media (max-width: 1280px) {
   .masterclass {
     &__filters {

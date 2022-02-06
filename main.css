@@ -593,45 +593,6 @@ h3 {
 .button {
   display: flex;
 }
-.arrow-left,
-.arrow-right,
-.arrow-red-right,
-.arrow-red-left {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  cursor: pointer;
-}
-.arrow-black-left {
-  margin-top: 14px;
-}
-.arrow-red-right,
-.arrow-red-left {
-  background: #ff3f3a;
-}
-.arrow-black-right,
-.arrow-red-left {
-  transform: rotate(180deg);
-}
-.arrow-left:hover .arrow-black-left {
-  display: none;
-}
-.arrow-right:hover .arrow-black-right {
-  display: none;
-}
-.arrow-red-left,
-.arrow-red-right {
-  display: none;
-}
-.arrow-left:hover .arrow-red-left {
-  display: flex;
-}
-.arrow-right:hover .arrow-red-right {
-  display: flex;
-}
 .team-people {
   display: flex;
   justify-content: space-between;
