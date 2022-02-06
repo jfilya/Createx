@@ -1510,6 +1510,10 @@
   }
 }
 @media (max-width: 576px) {
+  .timing {
+    display: block;
+  }
+
   .questions {
     padding-bottom: 60px;
   }

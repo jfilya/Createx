@@ -1322,14 +1322,14 @@
   margin-bottom: 60px;
   justify-content: space-between;
   flex-wrap: wrap;
-  button{
+  button {
     display: flex;
   }
 }
 .btnlist {
   margin-right: 13px;
 }
-.timing{
+.timing {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1346,10 +1346,10 @@
     padding-bottom: 25px;
     text-align: center;
     line-height: 26px;
-    &:last-child{
+    &:last-child {
       margin-right: 0px;
     }
-    &::before{
+    &::before {
       content: attr(data-title);
       display: block;
       position: absolute;
@@ -1456,9 +1456,9 @@
 }
 
 @media (max-width: 960px) {
-  .filter{
-    button{
-      display:none;
+  .filter {
+    button {
+      display: none;
     }
   }
   .questions {
@@ -1623,6 +1623,9 @@
 }
 
 @media (max-width: 576px) {
+  .timing {
+   display:block;
+  }
   .questions {
     padding-bottom: 60px;
   }
