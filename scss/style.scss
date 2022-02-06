@@ -1329,6 +1329,38 @@
 .btnlist {
   margin-right: 13px;
 }
+.timing{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer {
+  &__items {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__item {
+    margin-right: 24px;
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+    line-height: 26px;
+    &:last-child{
+      margin-right: 0px;
+    }
+    &::before{
+      content: attr(data-title);
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      font-size: 14px;
+    }
+  }
+}
+
 @media (max-width: 1280px) {
   .masterclass {
     &__filters {
