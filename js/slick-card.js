@@ -1,31 +1,29 @@
 $(function(){
-    $('.bloges').slick({
+    $('.card-content').slick({
         prevArrow: '.arrow-left',
         nextArrow: '.arrow-right',
             infinite: true,
-            variableWidth: true,
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1, 
             responsive: [               
                 {
                     breakpoint: 1281,
                     settings: {
-                      slidesToShow: 3,
+                      slidesToShow: 2,
                       slidesToScroll: 1
                     }
                   },
                 {
                   breakpoint: 769,
                   settings: {
-                    centerMode: true
+                    slidesToShow: 1,
                   }
                 },
                 {
                   breakpoint: 501,
                   settings: {
                     dots:true,
-                    slidesToShow: 1,
-                    centerMode: true
+                    slidesToShow: 1
                   }
                 }
               ] 

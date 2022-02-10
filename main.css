@@ -274,7 +274,6 @@ nav {
 }
 .header_middle_right > img {
   height: 551px;
-  margin-right: -50px;
 }
 .header_bottom {
   display: flex;
@@ -382,7 +381,7 @@ h2 {
 .cards {
   margin-bottom: 30px;
   display: flex;
-  border: 1px solid #e5e8ed;
+  border: 1px solid #E5E8ED;
   max-width: 600px;
   max-height: 214px;
   border-radius: 4px;
@@ -659,11 +658,10 @@ h3 {
   margin-bottom: 60px;
 }
 .rewiew {
-  display: none;
+  max-width: 1020px;
   padding: 64px 105px 64px 163px;
-}
-.rewiew-active {
-  display: block;
+  flex-direction: column;
+  position: relative;
 }
 .text-study {
   font-size: 20px;
@@ -671,8 +669,9 @@ h3 {
   margin: 0 0 24px 0;
 }
 .braces {
-  padding: 64px 105px;
   position: absolute;
+  top: 18%;
+  left: 12%;
 }
 .study-user {
   display: flex;
@@ -1203,11 +1202,6 @@ h3 {
   .image1 > img {
     width: 90%;
   }
-  /* .people {
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-  } */
   .people, .team-card, .show {
     width: 235px;
     height: auto;
@@ -1242,6 +1236,9 @@ h3 {
   }
   .info-text-event {
     max-width: 550px;
+  }
+  .rewiews{
+    max-width: 895px;
   }
 }
 
@@ -1350,6 +1347,9 @@ h3 {
     width: 230px;
     height: auto;
   }
+  .rewiews{
+    max-width: 850px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1450,6 +1450,9 @@ h3 {
 }
 .show {
   margin-top: 20px;
+}
+.rewiews{
+  max-width: 700px;
 }
 }
 
@@ -1640,6 +1643,7 @@ h3 {
   .container {
     max-width: 500px;
   }
+
   .header_middle_right > img {
     height: 300px;
   }
@@ -1793,10 +1797,27 @@ h3 {
   .btn-about {
     justify-content: center;
   }
+  .slides-card{
+    width: auto;
+    flex-direction: column;
+    text-align: start;
+    height: 360px;
+  }
+  .slides-card>.img{
+    width: 448px;
+    display: flex;
+    justify-content: center;
+  }
+  .slides-card>.card{
+    padding-left: 10px;
+  }
 }
 @media (max-width: 500px) {
   .container{
     max-width: 90;
+  }
+  .slides-card>.img{
+    max-width: 100%;
   }
   .actions_consultation {
     display: none;
@@ -1833,7 +1854,6 @@ h3 {
  margin-top: 1px;
 }
 
-
 }
 @media (max-width: 420px) {
   .container {
@@ -1845,6 +1865,7 @@ h3 {
   }
   .rewiews {
     height: 345px;
+    max-width: 320px;
   }
   .block-foot4 > ul {
     display: flex;
@@ -1894,6 +1915,9 @@ h3 {
   }
   .wrapper-blog-inp > img {
     max-width: 90%;
+  }
+  .rewiews{
+    max-width: 280px;
   }
 }
 
