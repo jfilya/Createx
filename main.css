@@ -4,6 +4,7 @@
 ::-ms-reveal {
   display: none;
 }
+
 h1,
 h2,
 h3,
@@ -110,6 +111,8 @@ button {
 #modal-windowup {
   height: 839px;
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .modal-window-sing {
   color: #787a80;
@@ -1281,9 +1284,6 @@ h3 {
     flex-wrap: nowrap;
     margin-bottom: 100px;
   }
-  .blogvid {
-    margin: 0 10px;
-  }
   .about_us {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1515,7 +1515,9 @@ h3 {
   .btn-about {
     margin-right: 20px;
   }
-
+.blog{
+  margin-bottom: 60px;
+}
   .info > p {
     max-width: 560px;
   }
@@ -1595,7 +1597,7 @@ h3 {
   .info,
   .blog,
   .info-text-event {
-    max-width: 330px;
+    max-width: 260px;
   }
   .blogstatist,
   .blog-stat-img,
@@ -1636,7 +1638,7 @@ h3 {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 90%;
+    max-width: 500px;
   }
   .header_middle_right > img {
     height: 300px;
@@ -1793,6 +1795,9 @@ h3 {
   }
 }
 @media (max-width: 500px) {
+  .container{
+    max-width: 90;
+  }
   .actions_consultation {
     display: none;
   }
@@ -1827,6 +1832,7 @@ h3 {
 .show>img{
  margin-top: 1px;
 }
+
 
 }
 @media (max-width: 420px) {

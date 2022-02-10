@@ -1,41 +1,49 @@
-const prev = document.getElementById('btn-prev');
-const next = document.getElementById('btn-next');
-const slides = document.querySelectorAll('.bloges');
+$(function(){
+    $('.bloges').slick({
+        prevArrow: '.arrow-left',
+        nextArrow: '.arrow-right',
+            infinite: true,
+            variableWidth: true,
+            slidesToShow: 3,
+            slidesToScroll: 1, 
+            responsive: [               
+                {
+                    breakpoint: 1281,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                    }
+                  },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 769,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerMode: true
+                  }
+                },
+                {
+                  breakpoint: 501,
+                  settings: {
+                    dots:true,
+                    slidesToShow: 1,
+                    centerMode: true
+                  }
+                }
+              ] 
+    });
+
+})
 
 
-let index = 0;
-
-const activeSlide = n => {
-    for(slide of slides) {
-        slide.classList.remove('active-blogs');
-    } 
-    slides[n].classList.add('active-blogs');
-}
-
-const prepareCurrentSlide = ind => {
-    activeSlide(index);
-}
-const nextSlide = () => {
-    if(index == slides.length-1) {
-        index = 0;
-        prepareCurrentSlide(index);
-    }  else {
-        index++;
-        prepareCurrentSlide(index);
-    }
-}
-
-const prevSlide = () => {
-    if(index == 0) {
-        index = slides.length-1;
-        prepareCurrentSlide(index);
-    }  else {
-        index--;
-        prepareCurrentSlide(index);
-    }
-}
-
-next.addEventListener('click', nextSlide);
-prev.addEventListener('click', prevSlide);
 
 
+
+// с помощью панели разработчика смотрим , как называется класс со стрелками и точками и в css  исправляем так, как нам нужно
