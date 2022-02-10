@@ -186,7 +186,11 @@
       font-weight: bold;
 
       &-img {
-        transform: rotate(180deg);
+        &:hover{
+          path{
+            fill:#ff3f3a;
+          }
+        }
       }
       &:hover {
         color: #ff3f3a;
@@ -293,15 +297,51 @@
         display: block;
         margin-bottom: 20px;
         text-align: start;
+        &-btn.activeeye{
+          &::before{
+            opacity:0;
+          }
+        }
         &-btn {
           position: absolute;
           top: 47.5%;
           right: 15%;
+          cursor:pointer;
+          &::before{
+            position: absolute;
+            content: "";
+            width: 19px;
+            height: 1px;
+            transform: rotate(45deg);
+            background-color: #1e212c;
+            top: 38%;
+            left: -17%;
+            transition: .3s all ease;
+            opacity:1;
+          }
+        }
+        &-btnup.activeeye{
+          &::before{
+            opacity:0;
+          }
         }
         &-btnup {
           position: absolute;
           top: 58.5%;
           right: 15%;
+          cursor:pointer;
+          &::before{
+            position: absolute;
+            content: "";
+            width: 19px;
+            height: 1px;
+            transform: rotate(45deg);
+            background-color: #1e212c;
+            top: 38%;
+            left: -17%;
+            transition: .3s all ease;
+            opacity:1;
+          }
         }
         &-back {
           border: 1px solid #d7dadd;

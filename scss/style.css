@@ -171,8 +171,8 @@
 .numbersbut__li-button {
   font-weight: bold;
 }
-.numbersbut__li-button-img {
-  transform: rotate(180deg);
+.numbersbut__li-button-img:hover path {
+  fill: #ff3f3a;
 }
 .numbersbut__li-button:hover {
   color: #ff3f3a;
@@ -278,15 +278,47 @@
   margin-bottom: 20px;
   text-align: start;
 }
+.sing__in__field__feed-btn.activeeye::before {
+  opacity: 0;
+}
 .sing__in__field__feed-btn {
   position: absolute;
   top: 47.5%;
   right: 15%;
+  cursor: pointer;
+}
+.sing__in__field__feed-btn::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: #1e212c;
+  top: 38%;
+  left: -17%;
+  transition: 0.3s all ease;
+  opacity: 1;
+}
+.sing__in__field__feed-btnup.activeeye::before {
+  opacity: 0;
 }
 .sing__in__field__feed-btnup {
   position: absolute;
   top: 58.5%;
   right: 15%;
+  cursor: pointer;
+}
+.sing__in__field__feed-btnup::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: #1e212c;
+  top: 38%;
+  left: -17%;
+  transition: 0.3s all ease;
+  opacity: 1;
 }
 .sing__in__field__feed-back {
   border: 1px solid #d7dadd;
