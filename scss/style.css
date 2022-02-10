@@ -277,14 +277,15 @@
   display: block;
   margin-bottom: 20px;
   text-align: start;
+  position: relative;
 }
 .sing__in__field__feed-btn.activeeye::before {
   opacity: 0;
 }
 .sing__in__field__feed-btn {
   position: absolute;
-  top: 47.5%;
-  right: 15%;
+  top: 54.5%;
+  right: 5%;
   cursor: pointer;
 }
 .sing__in__field__feed-btn::before {
@@ -304,8 +305,8 @@
 }
 .sing__in__field__feed-btnup {
   position: absolute;
-  top: 58.5%;
-  right: 15%;
+  top: 56.5%;
+  right: 5%;
   cursor: pointer;
 }
 .sing__in__field__feed-btnup::before {
@@ -1672,7 +1673,7 @@
   }
 
   .sing__in__field__feed-btn {
-    top: 43.5%;
+    top: 54.5%;
   }
   .sing__in__field__feed-btnup {
     top: 54%;
@@ -1693,7 +1694,7 @@
   }
 
   .eyebtn {
-    top: 42%;
+    top: 55%;
   }
 }
 @media (max-width: 375px) {

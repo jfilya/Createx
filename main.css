@@ -111,8 +111,6 @@ button {
 #modal-windowup {
   height: 839px;
   transform: translate(-50%, -50%);
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 .modal-window-sing {
   color: #787a80;

@@ -297,6 +297,7 @@
         display: block;
         margin-bottom: 20px;
         text-align: start;
+        position:relative;
         &-btn.activeeye{
           &::before{
             opacity:0;
@@ -304,8 +305,8 @@
         }
         &-btn {
           position: absolute;
-          top: 47.5%;
-          right: 15%;
+          top: 54.5%;
+          right: 5%;
           cursor:pointer;
           &::before{
             position: absolute;
@@ -327,8 +328,8 @@
         }
         &-btnup {
           position: absolute;
-          top: 58.5%;
-          right: 15%;
+          top: 56.5%;
+          right: 5%;
           cursor:pointer;
           &::before{
             position: absolute;
@@ -1857,7 +1858,7 @@
       &__field {
         &__feed {
           &-btn {
-            top: 43.5%;
+            top: 54.5%;
           }
           &-btnup {
             top: 54%;
@@ -1884,7 +1885,7 @@
     }
   }
   .eyebtn {
-    top: 42%;
+    top: 55%;
   }
 }
 
