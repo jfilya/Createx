@@ -1145,7 +1145,7 @@ h3 {
 
 @media (max-width: 1280px) {
   .container {
-    max-width: 1025px;
+    width: 1025px;
   }
   .header_middle_right > img {
     margin-right: 0px;
@@ -1242,7 +1242,7 @@ h3 {
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 971px;
+    width: 971px;
   }
   .li_hover,
   .btn-login {
@@ -1352,7 +1352,7 @@ h3 {
 
 @media (max-width: 960px) {
   .container {
-    max-width: 779px;
+    width: 779px;
   }
   .header_middle_title {
     font-size: 50px;
@@ -1456,7 +1456,7 @@ h3 {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 587px;
+    width: 587px;
   }
   .header_middle {
     flex-direction: column-reverse;
@@ -1639,7 +1639,7 @@ h3 {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 500px;
+    width: 500px;
   }
 
   .header_middle_right > img {
@@ -1812,7 +1812,7 @@ h3 {
 }
 @media (max-width: 500px) {
   .container{
-    max-width: 90;
+    width: 90%;
   }
   .slides-card>.img{
     max-width: 100%;
