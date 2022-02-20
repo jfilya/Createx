@@ -841,6 +841,9 @@ h3 {
 .block-foot1 {
   max-width: 280px;
 }
+.block-foot{
+  margin-right: 5px;
+}
 .logo-foot {
   margin-bottom: 24px;
 }
@@ -1351,9 +1354,6 @@ h3 {
   }
   .rewiews {
     max-width: 850px;
-  }
-  .block-foot{
-    min-width: 100px
   }
 }
 
