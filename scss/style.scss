@@ -1472,6 +1472,9 @@
   .numbersbut {
     margin-bottom: 60px;
   }
+  *{
+    text-size-adjust:none;
+  }
   .statistics {
     &__right {
       max-width: 570px;

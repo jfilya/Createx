@@ -1387,6 +1387,12 @@
     margin-bottom: 60px;
   }
 
+  * {
+    -webkit-text-size-adjust: none;
+       -moz-text-size-adjust: none;
+            text-size-adjust: none;
+  }
+
   .statistics__right {
     max-width: 570px;
   }
