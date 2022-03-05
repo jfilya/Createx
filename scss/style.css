@@ -1616,9 +1616,10 @@
 
   .discount__choose__check__pick {
     margin-bottom: 20px;
+    width: 100%;
   }
   .discount__choose__check__btn {
-    width: 190px;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {

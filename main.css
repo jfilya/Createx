@@ -1007,6 +1007,7 @@ h3 {
 .card_course {
   margin: 24px;
 }
+
 .button_convert {
   display: block;
   margin-left: auto;
@@ -1818,6 +1819,11 @@ h3 {
   }
   .slides-card > .card {
     padding-left: 10px;
+  }
+  .card-ind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 500px) {
